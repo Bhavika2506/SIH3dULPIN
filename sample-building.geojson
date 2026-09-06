@@ -1,0 +1,321 @@
+{
+  "type": "FeatureCollection",
+  "name": "5_Storey_Cadastral_Building",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-101",
+        "unitNumber": "A-101",
+        "floorNumber": 1,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0, 0],
+            [10, 0],
+            [10, 8],
+            [0, 8],
+            [0, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-101",
+        "unitNumber": "B-101",
+        "floorNumber": 1,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [10, 0],
+            [20, 0],
+            [20, 8],
+            [10, 8],
+            [10, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-101",
+        "unitNumber": "C-101",
+        "floorNumber": 1,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20, 0],
+            [30, 0],
+            [30, 8],
+            [20, 8],
+            [20, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-201",
+        "unitNumber": "A-201",
+        "floorNumber": 2,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0, 0],
+            [10, 0],
+            [10, 8],
+            [0, 8],
+            [0, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-201",
+        "unitNumber": "B-201",
+        "floorNumber": 2,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [10, 0],
+            [20, 0],
+            [20, 8],
+            [10, 8],
+            [10, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-201",
+        "unitNumber": "C-201",
+        "floorNumber": 2,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20, 0],
+            [30, 0],
+            [30, 8],
+            [20, 8],
+            [20, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-301",
+        "unitNumber": "A-301",
+        "floorNumber": 3,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0, 0],
+            [10, 0],
+            [10, 8],
+            [0, 8],
+            [0, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-301",
+        "unitNumber": "B-301",
+        "floorNumber": 3,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [10, 0],
+            [20, 0],
+            [20, 8],
+            [10, 8],
+            [10, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-301",
+        "unitNumber": "C-301",
+        "floorNumber": 3,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20, 0],
+            [30, 0],
+            [30, 8],
+            [20, 8],
+            [20, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-401",
+        "unitNumber": "A-401",
+        "floorNumber": 4,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0, 0],
+            [10, 0],
+            [10, 8],
+            [0, 8],
+            [0, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-401",
+        "unitNumber": "B-401",
+        "floorNumber": 4,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [10, 0],
+            [20, 0],
+            [20, 8],
+            [10, 8],
+            [10, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-401",
+        "unitNumber": "C-401",
+        "floorNumber": 4,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20, 0],
+            [30, 0],
+            [30, 8],
+            [20, 8],
+            [20, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-501",
+        "unitNumber": "A-501",
+        "floorNumber": 5,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0, 0],
+            [10, 0],
+            [10, 8],
+            [0, 8],
+            [0, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-501",
+        "unitNumber": "B-501",
+        "floorNumber": 5,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [10, 0],
+            [20, 0],
+            [20, 8],
+            [10, 8],
+            [10, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-501",
+        "unitNumber": "C-501",
+        "floorNumber": 5,
+        "area": 80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20, 0],
+            [30, 0],
+            [30, 8],
+            [20, 8],
+            [20, 0]
+          ]
+        ]
+      }
+    }
+  ]
+}

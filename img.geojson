@@ -1,0 +1,228 @@
+{
+  "type": "FeatureCollection",
+  "buildingName": "Imaginary_Innovation_Hub",
+  "buildingId": "BLD-IMAGINARY-3STORY",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-RECEPTION",
+        "unitNumber": "Main Lobby & Reception",
+        "floorNumber": 1,
+        "spaceType": "Hall",
+        "area": 48.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F01-RECEPTION"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0, 14], [8, 14], [8, 20], [0, 20], [0, 14]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-MAKERLAB",
+        "unitNumber": "Robotics & Maker Lab",
+        "floorNumber": 1,
+        "spaceType": "Lab",
+        "area": 72.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F01-MAKERLAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[12, 8], [20, 8], [20, 20], [12, 20], [12, 8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-STAIRS",
+        "unitNumber": "Central Stairs Core",
+        "floorNumber": 1,
+        "spaceType": "Stairs",
+        "area": 16.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F01-STAIRS"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[12, 0], [16, 0], [16, 4], [12, 4], [12, 0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-LIFT",
+        "unitNumber": "Elevator Lift Shaft",
+        "floorNumber": 1,
+        "spaceType": "Lift",
+        "area": 8.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F01-LIFT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[16, 0], [20, 0], [20, 4], [16, 4], [16, 0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-CORRIDOR",
+        "unitNumber": "Main Entrance Corridor",
+        "floorNumber": 1,
+        "spaceType": "Passage",
+        "area": 32.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F01-CORRIDOR"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[8, 0], [12, 0], [12, 20], [8, 20], [8, 0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1F-INCUBATOR",
+        "unitNumber": "Startup Incubator Hub",
+        "floorNumber": 2,
+        "spaceType": "Office",
+        "area": 72.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F02-INCUBATOR"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0, 8], [8, 8], [8, 20], [0, 20], [0, 8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1F-STAIRS",
+        "unitNumber": "Central Stairs Core",
+        "floorNumber": 2,
+        "spaceType": "Stairs",
+        "area": 16.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F02-STAIRS"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[12, 0], [16, 0], [16, 4], [12, 4], [12, 0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1F-LIFT",
+        "unitNumber": "Elevator Lift Shaft",
+        "floorNumber": 2,
+        "spaceType": "Lift",
+        "area": 8.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F02-LIFT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[16, 0], [20, 0], [20, 4], [16, 4], [16, 0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1F-CORRIDOR",
+        "unitNumber": "Central Corridor",
+        "floorNumber": 2,
+        "spaceType": "Passage",
+        "area": 32.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F02-CORRIDOR"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[8, 0], [12, 0], [12, 20], [8, 20], [8, 0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2F-EXECUTIVE",
+        "unitNumber": "Executive Boardroom",
+        "floorNumber": 3,
+        "spaceType": "Office",
+        "area": 60.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F03-EXEC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0, 10], [8, 10], [8, 20], [0, 20], [0, 10]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2F-STAIRS",
+        "unitNumber": "Central Stairs Core",
+        "floorNumber": 3,
+        "spaceType": "Stairs",
+        "area": 16.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F03-STAIRS"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[12, 0], [16, 0], [16, 4], [12, 4], [12, 0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2F-LIFT",
+        "unitNumber": "Elevator Lift Shaft",
+        "floorNumber": 3,
+        "spaceType": "Lift",
+        "area": 8.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F03-LIFT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[16, 0], [20, 0], [20, 4], [16, 4], [16, 0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2F-CORRIDOR",
+        "unitNumber": "Top Floor Gallery Corridor",
+        "floorNumber": 3,
+        "spaceType": "Passage",
+        "area": 32.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-HUB-F03-CORRIDOR"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[8, 0], [12, 0], [12, 20], [8, 20], [8, 0]]]
+      }
+    }
+  ]
+}
