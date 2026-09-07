@@ -1,9 +1,21 @@
 "use client";
 
 import type { ParsedBuilding } from "@/src/lib/parser/types";
+import { exportToCityGML } from "@/src/exporters/citygmlExporter";
+import { exportToLandXML } from "@/src/exporters/landxmlExporter";
 
 export default function ExportPanel({ building }: { building: ParsedBuilding }) {
-  const handleExport = () => {
+  const downloadFile = (content: string, filename: string, type: string) => {
+    const blob = new Blob([content], { type });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const handleGeoJSONExport = () => {
     const features = building.floors.flatMap((floor) =>
       floor.units.map((unit) => ({
         type: "Feature",
@@ -14,14 +26,14 @@ export default function ExportPanel({ building }: { building: ParsedBuilding }) 
           areaSqMeters: unit.area,
           elevationMeters: floor.elevation,
           heightMeters: floor.height,
-          ulpin: unit.ulpin || `3D-${building.id}-F${unit.floorNumber}-${unit.unitNumber}`,
+          ulpin: unit.ulpin,
         },
         geometry: {
           type: "Polygon",
           coordinates: [
             [
               ...unit.polygon.map((p) => [p.x, p.y]),
-              [unit.polygon[0].x, unit.polygon[0].y], // Close polygon ring
+              [unit.polygon[0].x, unit.polygon[0].y],
             ],
           ],
         },
@@ -35,15 +47,11 @@ export default function ExportPanel({ building }: { building: ParsedBuilding }) 
       features,
     };
 
-    const blob = new Blob([JSON.stringify(geojson, null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = `${building.name.toLowerCase()}_3d_cadastre.geojson`;
-    link.click();
-    URL.revokeObjectURL(url);
+    downloadFile(
+      JSON.stringify(geojson, null, 2),
+      `${building.name.toLowerCase()}_3d_cadastre.geojson`,
+      "application/json"
+    );
   };
 
   return (
@@ -61,29 +69,74 @@ export default function ExportPanel({ building }: { building: ParsedBuilding }) 
       }}
     >
       <div>
-        <div style={{ fontSize: "15px", fontWeight: 800 }}>Export 3D Cadastral Parcel</div>
+        <div style={{ fontSize: "15px", fontWeight: 800 }}>Export 3D Cadastral Models</div>
         <div style={{ marginTop: "4px", fontSize: "12px", color: "#64748b" }}>
-          Download volumetric parcel geometries and registered 3D ULPIN metadata in standard 3D GeoJSON format.
+          Export volumetric parcel models into industry-standard GIS, survey, and BIM formats.
         </div>
       </div>
 
-      <button
-        type="button"
-        onClick={handleExport}
-        style={{
-          border: "none",
-          borderRadius: "8px",
-          padding: "10px 18px",
-          background: "#059669",
-          color: "#ffffff",
-          fontWeight: 700,
-          fontSize: "13px",
-          cursor: "pointer",
-          whiteSpace: "nowrap",
-        }}
-      >
-        ↓ Export 3D GeoJSON
-      </button>
+      <div style={{ display: "flex", gap: "10px" }}>
+        <button
+          type="button"
+          onClick={handleGeoJSONExport}
+          style={{
+            border: "none",
+            borderRadius: "8px",
+            padding: "10px 14px",
+            background: "#059669",
+            color: "#ffffff",
+            fontWeight: 700,
+            fontSize: "12px",
+            cursor: "pointer",
+          }}
+        >
+          ↓ 3D GeoJSON
+        </button>
+        <button
+          type="button"
+          onClick={() =>
+            downloadFile(
+              exportToCityGML(building),
+              `${building.name.toLowerCase()}_citygml3.gml`,
+              "application/xml"
+            )
+          }
+          style={{
+            border: "none",
+            borderRadius: "8px",
+            padding: "10px 14px",
+            background: "#2563eb",
+            color: "#ffffff",
+            fontWeight: 700,
+            fontSize: "12px",
+            cursor: "pointer",
+          }}
+        >
+          ↓ CityGML 3.0
+        </button>
+        <button
+          type="button"
+          onClick={() =>
+            downloadFile(
+              exportToLandXML(building),
+              `${building.name.toLowerCase()}_landxml.xml`,
+              "application/xml"
+            )
+          }
+          style={{
+            border: "none",
+            borderRadius: "8px",
+            padding: "10px 14px",
+            background: "#4f46e5",
+            color: "#ffffff",
+            fontWeight: 700,
+            fontSize: "12px",
+            cursor: "pointer",
+          }}
+        >
+          ↓ LandXML
+        </button>
+      </div>
     </div>
   );
 }

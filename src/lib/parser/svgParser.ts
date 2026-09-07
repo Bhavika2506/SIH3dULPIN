@@ -9,7 +9,6 @@ export function parseSVG(
 ): ParsedBuilding {
   const polygons: Point2D[][] = [];
 
-  // Extract <polygon points="..." />
   const polygonMatches = svgContent.matchAll(/points=["']([^"']+)["']/g);
   for (const match of polygonMatches) {
     const rawPoints = match[1].trim().split(/\s+|,/);
@@ -22,7 +21,6 @@ export function parseSVG(
     if (points.length >= 3) polygons.push(points);
   }
 
-  // Extract <rect x="..." y="..." width="..." height="..." />
   const rectMatches = svgContent.matchAll(/<rect[^>]+>/g);
   for (const match of rectMatches) {
     const rectStr = match[0];
@@ -57,18 +55,16 @@ export function parseSVG(
     ulpin: `3D-${buildingName.toUpperCase()}-F01-10${index + 1}`,
   }));
 
-  const floors: Floor2D[] = [
-    {
-      floorNumber: 1,
-      elevation: 0,
-      height: DEFAULT_FLOOR_HEIGHT,
-      units,
-    },
-  ];
-
   return {
     id: `BLD-${Date.now().toString().slice(-4)}`,
     name: buildingName,
-    floors,
+    floors: [
+      {
+        floorNumber: 1,
+        elevation: 0,
+        height: DEFAULT_FLOOR_HEIGHT,
+        units,
+      },
+    ],
   };
 }

@@ -1,0 +1,58 @@
+{
+  "type": "FeatureCollection",
+  "buildingName": "Subterranean_Urban_Hub",
+  "buildingId": "BLD-SUB-001",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B02-UTILITY-PIPE",
+        "unitNumber": "Subsurface Drainage & Utility Pipe",
+        "floorNumber": -2,
+        "spaceType": "Utility",
+        "area": 24.0,
+        "elevationMeters": -6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-B02-UTIL01"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0, 0], [20, 0], [20, 3], [0, 3], [0, 0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B01-PARKING",
+        "unitNumber": "Basement Parking B1",
+        "floorNumber": -1,
+        "spaceType": "Basement",
+        "area": 120.0,
+        "elevationMeters": -3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-B01-PARK01"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0, 0], [20, 0], [20, 15], [0, 15], [0, 0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F01-LOBBY",
+        "unitNumber": "Ground Floor Main Lobby",
+        "floorNumber": 1,
+        "spaceType": "Hall",
+        "area": 120.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-LOBBY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0, 0], [20, 0], [20, 15], [0, 15], [0, 0]]]
+      }
+    }
+  ]
+}

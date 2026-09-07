@@ -1,10 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type {
-  ParsedBuilding,
-  Property2D,
-} from "@/src/lib/parser/types";
+import type { ParsedBuilding, Property2D } from "@/src/lib/parser/types";
 
 type Property = Property2D & {
   ulpin: string;
@@ -16,7 +13,7 @@ function getProperties(building?: ParsedBuilding | null): Property[] {
   return building.floors.flatMap((floor) =>
     floor.units.map((unit, index) => ({
       ...unit,
-      ulpin: `3D-${building.id}-${floor.floorNumber}-${index + 1}`,
+      ulpin: unit.ulpin || `3D-${building.id}-${floor.floorNumber}-${index + 1}`,
     }))
   );
 }
@@ -30,20 +27,13 @@ export default function CadastralGraph({
   selectedNodeId?: string | null;
   onNodeSelect?: (nodeId: string) => void;
 }) {
-  const properties = useMemo(
-    () => getProperties(building),
-    [building]
-  );
-
+  const properties = useMemo(() => getProperties(building), [building]);
   const [selected, setSelected] = useState<Property | null>(null);
 
-  const floors = useMemo(
-    () =>
-      building?.floors
-        ? [...building.floors].sort((a, b) => b.floorNumber - a.floorNumber)
-        : [],
-    [building]
-  );
+  const floors = useMemo(() => {
+    if (!building?.floors) return [];
+    return [...building.floors].sort((a, b) => b.floorNumber - a.floorNumber);
+  }, [building]);
 
   useEffect(() => {
     if (!selectedNodeId) {
@@ -51,10 +41,7 @@ export default function CadastralGraph({
       return;
     }
 
-    const property = properties.find(
-      (item) => item.id === selectedNodeId
-    );
-
+    const property = properties.find((item) => item.id === selectedNodeId);
     setSelected(property ?? null);
   }, [selectedNodeId, properties]);
 
@@ -74,8 +61,8 @@ export default function CadastralGraph({
         style={{
           width: "100%",
           padding: "30px",
-          background: "#f8fafc",
-          border: "1px solid #e2e8f0",
+          background: "#0f172a",
+          border: "1px solid #1e293b",
           borderRadius: "14px",
           textAlign: "center",
           color: "#64748b",
@@ -91,18 +78,20 @@ export default function CadastralGraph({
     <div
       style={{
         width: "100%",
-        minWidth: "max-content",
-        background: "#f8fafc",
-        border: "1px solid #e2e8f0",
+        maxWidth: "100%",
+        background: "#0f172a",
+        border: "1px solid #1e293b",
         borderRadius: "14px",
+        overflow: "hidden",
+        color: "#f8fafc",
       }}
     >
-      {/* HEADER WITH STICKY POSITIONING FOR SCROLLING */}
+      {/* HEADER WITH STICKY POSITIONING */}
       <div
         style={{
           padding: "18px 22px",
-          background: "#ffffff",
-          borderBottom: "1px solid #e2e8f0",
+          background: "rgba(15, 23, 42, 0.95)",
+          borderBottom: "1px solid #1e293b",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
@@ -110,29 +99,14 @@ export default function CadastralGraph({
           position: "sticky",
           top: 0,
           zIndex: 10,
-          borderRadius: "14px 14px 0 0",
         }}
       >
         <div>
-          <h2
-            style={{
-              margin: 0,
-              fontSize: "20px",
-              fontWeight: 700,
-              color: "#0f172a",
-            }}
-          >
+          <h2 style={{ margin: 0, fontSize: "18px", fontWeight: 800, color: "#f8fafc" }}>
             3D Cadastral Property Graph
           </h2>
-
-          <p
-            style={{
-              margin: "5px 0 0",
-              fontSize: "13px",
-              color: "#64748b",
-            }}
-          >
-            Building → Floor → Volumetric Property
+          <p style={{ margin: "4px 0 0", fontSize: "12px", color: "#94a3b8" }}>
+            Building → Floor Level → Volumetric Property
           </p>
         </div>
 
@@ -142,332 +116,272 @@ export default function CadastralGraph({
           style={{
             padding: "8px 14px",
             borderRadius: "7px",
-            border: "1px solid #cbd5e1",
-            background: "#ffffff",
+            border: "1px solid #334155",
+            background: "#1e293b",
             cursor: "pointer",
-            fontWeight: 600,
+            fontWeight: 700,
+            fontSize: "12px",
+            color: "#f8fafc",
             flexShrink: 0,
           }}
         >
-          Reset
+          Reset Selection
         </button>
       </div>
 
-      {/* SCROLLABLE GRAPH CONTAINER */}
+      {/* INTERNAL SCROLLABLE GRAPH BODY CONTAINER */}
       <div
         style={{
-          padding: "30px",
-          overflow: "auto",
+          padding: "24px",
+          overflowX: "auto",
+          overflowY: "auto",
+          maxHeight: "550px",
         }}
       >
-        {/* BUILDING NODE */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginBottom: "35px",
-          }}
-        >
-          <div
-            style={{
-              width: "230px",
-              padding: "18px",
-              borderRadius: "12px",
-              background: "#111827",
-              color: "#ffffff",
-              textAlign: "center",
-              boxShadow: "0 8px 20px rgba(0,0,0,0.12)",
-            }}
-          >
+        <div style={{ minWidth: "max-content", paddingBottom: "10px" }}>
+          {/* BUILDING NODE */}
+          <div style={{ display: "flex", justifyContent: "center", marginBottom: "35px" }}>
             <div
               style={{
-                fontSize: "11px",
-                opacity: 0.7,
-                letterSpacing: "1px",
+                width: "240px",
+                padding: "16px",
+                borderRadius: "12px",
+                background: "#1e293b",
+                color: "#ffffff",
+                textAlign: "center",
+                border: "1px solid #334155",
+                boxShadow: "0 8px 20px rgba(0,0,0,0.3)",
               }}
             >
-              BUILDING
-            </div>
-
-            <div
-              style={{
-                fontSize: "19px",
-                fontWeight: 700,
-                marginTop: "5px",
-              }}
-            >
-              {building.name}
-            </div>
-
-            <div
-              style={{
-                fontSize: "11px",
-                marginTop: "5px",
-                opacity: 0.75,
-              }}
-            >
-              {building.id}
+              <div
+                style={{
+                  fontSize: "10px",
+                  color: "#38bdf8",
+                  letterSpacing: "1px",
+                  fontWeight: 800,
+                }}
+              >
+                BUILDING PARCEL
+              </div>
+              <div style={{ fontSize: "17px", fontWeight: 800, marginTop: "4px" }}>
+                {building.name}
+              </div>
+              <div
+                style={{
+                  fontSize: "11px",
+                  marginTop: "4px",
+                  color: "#94a3b8",
+                  fontFamily: "monospace",
+                }}
+              >
+                {building.id}
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* MAIN VERTICAL CONNECTION */}
-        <div
-          style={{
-            width: "2px",
-            height: "25px",
-            background: "#94a3b8",
-            margin: "-35px auto 15px",
-          }}
-        />
+          {/* MAIN VERTICAL CONNECTOR */}
+          <div
+            style={{
+              width: "2px",
+              height: "25px",
+              background: "#334155",
+              margin: "-35px auto 15px",
+            }}
+          />
 
-        {/* FLOORS */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "22px",
-          }}
-        >
-          {floors.map((floor, floorIndex) => {
-            const floorProperties = properties.filter(
-              (property) => property.floorNumber === floor.floorNumber
-            );
+          {/* FLOORS LIST */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+            {floors.map((floor, floorIndex) => {
+              const floorProperties = properties.filter(
+                (property) => property.floorNumber === floor.floorNumber
+              );
 
-            return (
-              <div key={floor.floorNumber}>
-                {/* FLOOR CARD */}
-                <div
-                  style={{
-                    background: "#ffffff",
-                    border: "1px solid #cbd5e1",
-                    borderRadius: "12px",
-                    overflow: "hidden",
-                    boxShadow: "0 3px 10px rgba(15,23,42,0.05)",
-                  }}
-                >
-                  {/* FLOOR HEADER */}
+              return (
+                <div key={floor.floorNumber}>
+                  {/* FLOOR CONTAINER CARD */}
                   <div
                     style={{
-                      padding: "12px 18px",
-                      background: "#eff6ff",
-                      borderBottom: "1px solid #dbeafe",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      gap: "15px",
+                      background: "rgba(30, 41, 59, 0.4)",
+                      border: "1px solid #334155",
+                      borderRadius: "12px",
+                      overflow: "hidden",
                     }}
                   >
-                    <div>
-                      <span
-                        style={{
-                          fontSize: "12px",
-                          color: "#2563eb",
-                          fontWeight: 700,
-                        }}
-                      >
-                        FLOOR
-                      </span>
-
-                      <span
-                        style={{
-                          marginLeft: "8px",
-                          fontSize: "18px",
-                          fontWeight: 700,
-                          color: "#0f172a",
-                        }}
-                      >
-                        {floor.floorNumber}
-                      </span>
-                    </div>
-
+                    {/* FLOOR CARD HEADER */}
                     <div
                       style={{
-                        fontSize: "12px",
-                        color: "#64748b",
+                        padding: "10px 16px",
+                        background: "rgba(15, 23, 42, 0.6)",
+                        borderBottom: "1px solid #334155",
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        gap: "15px",
                       }}
                     >
-                      {floorProperties.length} properties
-                    </div>
-                  </div>
-
-                  {/* PROPERTY NODES */}
-                  <div
-                    style={{
-                      padding: "20px",
-                      display: "grid",
-                      gridTemplateColumns:
-                        "repeat(auto-fit, minmax(210px, 1fr))",
-                      gap: "16px",
-                    }}
-                  >
-                    {floorProperties.length === 0 && (
-                      <div
-                        style={{
-                          padding: "18px",
-                          borderRadius: "10px",
-                          border: "1px dashed #cbd5e1",
-                          color: "#64748b",
-                          fontSize: "12px",
-                          background: "#f8fafc",
-                        }}
-                      >
-                        No properties detected on this floor.
-                      </div>
-                    )}
-
-                    {floorProperties.map((property) => {
-                      const isSelected = selected?.id === property.id;
-
-                      return (
-                        <button
-                          key={property.id}
-                          type="button"
-                          onClick={() => selectProperty(property)}
+                      <div>
+                        <span style={{ fontSize: "11px", color: "#38bdf8", fontWeight: 800 }}>
+                          FLOOR LEVEL
+                        </span>
+                        <span
                           style={{
-                            textAlign: "left",
-                            padding: "16px",
-                            borderRadius: "10px",
-                            border: isSelected
-                              ? "2px solid #f59e0b"
-                              : "1px solid #d1fae5",
-                            background: isSelected ? "#fffbeb" : "#f0fdf4",
-                            cursor: "pointer",
-                            transition: "all 0.15s ease",
-                            minWidth: 0,
+                            marginLeft: "8px",
+                            fontSize: "16px",
+                            fontWeight: 800,
+                            color: "#f8fafc",
                           }}
                         >
-                          <div
+                          {floor.floorNumber}
+                        </span>
+                      </div>
+                      <div style={{ fontSize: "11px", color: "#94a3b8", fontWeight: 600 }}>
+                        {floorProperties.length} property units
+                      </div>
+                    </div>
+
+                    {/* PROPERTY NODES GRID */}
+                    <div
+                      style={{
+                        padding: "16px",
+                        display: "grid",
+                        gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+                        gap: "14px",
+                      }}
+                    >
+                      {floorProperties.length === 0 && (
+                        <div
+                          style={{
+                            padding: "16px",
+                            borderRadius: "8px",
+                            border: "1px dashed #334155",
+                            color: "#64748b",
+                            fontSize: "12px",
+                          }}
+                        >
+                          No units detected on this level.
+                        </div>
+                      )}
+
+                      {floorProperties.map((property) => {
+                        const isSelected = selected?.id === property.id;
+
+                        return (
+                          <button
+                            key={property.id}
+                            type="button"
+                            onClick={() => selectProperty(property)}
                             style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                              gap: "10px",
+                              textAlign: "left",
+                              padding: "14px",
+                              borderRadius: "9px",
+                              border: isSelected ? "2px solid #f59e0b" : "1px solid #334155",
+                              background: isSelected ? "rgba(245, 158, 11, 0.15)" : "#0f172a",
+                              cursor: "pointer",
+                              transition: "all 0.15s ease",
+                              minWidth: 0,
                             }}
                           >
-                            <span
+                            <div
                               style={{
-                                fontSize: "17px",
-                                fontWeight: 700,
-                                color: "#065f46",
+                                display: "flex",
+                                justifyContent: "space-between",
+                                alignItems: "center",
+                                gap: "8px",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  fontSize: "15px",
+                                  fontWeight: 800,
+                                  color: "#f8fafc",
+                                  overflow: "hidden",
+                                  textOverflow: "ellipsis",
+                                  whiteSpace: "nowrap",
+                                }}
+                              >
+                                {property.unitNumber}
+                              </span>
+                              <span
+                                style={{
+                                  fontSize: "9px",
+                                  padding: "3px 6px",
+                                  borderRadius: "4px",
+                                  background: "#2563eb",
+                                  color: "#ffffff",
+                                  fontWeight: 800,
+                                  flexShrink: 0,
+                                }}
+                              >
+                                PARCEL
+                              </span>
+                            </div>
+
+                            <div style={{ marginTop: "10px", fontSize: "12px", color: "#94a3b8" }}>
+                              Area: <strong>{property.area} m²</strong>
+                            </div>
+
+                            <div
+                              style={{
+                                marginTop: "6px",
+                                fontSize: "10px",
+                                color: "#64748b",
+                                fontFamily: "monospace",
                                 overflow: "hidden",
                                 textOverflow: "ellipsis",
                                 whiteSpace: "nowrap",
                               }}
+                              title={property.ulpin}
                             >
-                              {property.unitNumber}
-                            </span>
-
-                            <span
-                              style={{
-                                fontSize: "10px",
-                                padding: "4px 7px",
-                                borderRadius: "5px",
-                                background: "#059669",
-                                color: "#ffffff",
-                                flexShrink: 0,
-                              }}
-                            >
-                              PROPERTY
-                            </span>
-                          </div>
-
-                          <div
-                            style={{
-                              marginTop: "12px",
-                              fontSize: "13px",
-                              color: "#475569",
-                            }}
-                          >
-                            Area: <strong>{property.area} m²</strong>
-                          </div>
-
-                          <div
-                            style={{
-                              marginTop: "7px",
-                              fontSize: "11px",
-                              color: "#64748b",
-                              fontFamily: "monospace",
-                              overflow: "hidden",
-                              textOverflow: "ellipsis",
-                              whiteSpace: "nowrap",
-                            }}
-                            title={property.ulpin}
-                          >
-                            {property.ulpin}
-                          </div>
-
-                          <div
-                            style={{
-                              marginTop: "8px",
-                              fontSize: "10px",
-                              color: isSelected ? "#b45309" : "#64748b",
-                              fontWeight: 600,
-                            }}
-                          >
-                            {isSelected ? "Selected" : "Click to inspect"}
-                          </div>
-                        </button>
-                      );
-                    })}
+                              {property.ulpin}
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
 
-                {/* VERTICAL RELATIONSHIP */}
-                {floorIndex < floors.length - 1 && (
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      margin: "4px 0",
-                    }}
-                  >
+                  {/* VERTICAL LINKAGE CONNECTOR */}
+                  {floorIndex < floors.length - 1 && (
                     <div
                       style={{
-                        width: "2px",
-                        height: "14px",
-                        background: "#7c3aed",
-                      }}
-                    />
-
-                    <div
-                      style={{
-                        fontSize: "9px",
-                        fontWeight: 700,
-                        color: "#7c3aed",
-                        padding: "3px 8px",
-                        borderRadius: "5px",
-                        background: "#f5f3ff",
-                        border: "1px solid #ddd6fe",
-                        whiteSpace: "nowrap",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        margin: "4px 0",
                       }}
                     >
-                      VERTICAL RELATION
+                      <div style={{ width: "2px", height: "12px", background: "#a855f7" }} />
+                      <div
+                        style={{
+                          fontSize: "9px",
+                          fontWeight: 800,
+                          color: "#a855f7",
+                          padding: "2px 6px",
+                          borderRadius: "4px",
+                          background: "rgba(168, 85, 247, 0.15)",
+                          border: "1px solid rgba(168, 85, 247, 0.3)",
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        VERTICAL STACK
+                      </div>
+                      <div style={{ width: "2px", height: "12px", background: "#a855f7" }} />
                     </div>
-
-                    <div
-                      style={{
-                        width: "2px",
-                        height: "14px",
-                        background: "#7c3aed",
-                      }}
-                    />
-                  </div>
-                )}
-              </div>
-            );
-          })}
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
 
-      {/* PROPERTY DETAIL PANEL */}
+      {/* INSPECTOR PANEL */}
       {selected && (
         <div
           style={{
-            borderTop: "1px solid #e2e8f0",
-            background: "#ffffff",
-            padding: "22px",
+            borderTop: "1px solid #1e293b",
+            background: "#0f172a",
+            padding: "20px",
           }}
         >
           <div
@@ -481,23 +395,16 @@ export default function CadastralGraph({
             <div>
               <div
                 style={{
-                  fontSize: "11px",
-                  color: "#64748b",
-                  fontWeight: 700,
+                  fontSize: "10px",
+                  color: "#38bdf8",
+                  fontWeight: 800,
                   letterSpacing: "0.8px",
                 }}
               >
-                SELECTED 3D PROPERTY
+                SELECTED VOLUMETRIC PARCEL
               </div>
-
-              <h3
-                style={{
-                  margin: "5px 0 0",
-                  fontSize: "22px",
-                  fontWeight: 700,
-                }}
-              >
-                Apartment {selected.unitNumber}
+              <h3 style={{ margin: "4px 0 0", fontSize: "18px", fontWeight: 800, color: "#f8fafc" }}>
+                Unit {selected.unitNumber}
               </h3>
             </div>
 
@@ -506,7 +413,8 @@ export default function CadastralGraph({
               onClick={resetSelection}
               style={{
                 border: "none",
-                background: "#f1f5f9",
+                background: "#1e293b",
+                color: "#94a3b8",
                 borderRadius: "6px",
                 padding: "6px 10px",
                 cursor: "pointer",
@@ -517,43 +425,22 @@ export default function CadastralGraph({
             </button>
           </div>
 
-          {/* DETAILS */}
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
-              gap: "12px",
-              marginTop: "18px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
+              gap: "10px",
+              marginTop: "14px",
             }}
           >
             <Detail label="Property ID" value={selected.id} />
-            <Detail label="Unit Number" value={selected.unitNumber} />
-            <Detail label="Floor" value={String(selected.floorNumber)} />
-            <Detail label="Area" value={`${selected.area} m²`} />
-            <Detail label="3D ULPIN" value={selected.ulpin} />
+            <Detail label="Unit Code" value={selected.unitNumber} />
+            <Detail label="Floor Number" value={String(selected.floorNumber)} />
+            <Detail label="Surface Area" value={`${selected.area} m²`} />
+            <Detail label="Assigned 3D ULPIN" value={selected.ulpin} />
           </div>
         </div>
       )}
-
-      {/* LEGEND */}
-      <div
-        style={{
-          padding: "14px 22px",
-          borderTop: "1px solid #e2e8f0",
-          background: "#f8fafc",
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "25px",
-          fontSize: "12px",
-          color: "#475569",
-          borderRadius: "0 0 14px 14px",
-        }}
-      >
-        <span>● Building</span>
-        <span>● Floor</span>
-        <span>● Property</span>
-        <span>┃ Vertical relationship</span>
-      </div>
     </div>
   );
 }
@@ -562,31 +449,16 @@ function Detail({ label, value }: { label: string; value: string }) {
   return (
     <div
       style={{
-        padding: "12px",
-        background: "#f8fafc",
+        padding: "10px 12px",
+        background: "rgba(30, 41, 59, 0.5)",
         borderRadius: "8px",
-        border: "1px solid #e2e8f0",
+        border: "1px solid #334155",
       }}
     >
-      <div
-        style={{
-          fontSize: "10px",
-          color: "#64748b",
-          fontWeight: 700,
-          marginBottom: "5px",
-        }}
-      >
+      <div style={{ fontSize: "10px", color: "#94a3b8", fontWeight: 700, marginBottom: "3px" }}>
         {label}
       </div>
-
-      <div
-        style={{
-          fontSize: "13px",
-          fontWeight: 600,
-          color: "#0f172a",
-          wordBreak: "break-word",
-        }}
-      >
+      <div style={{ fontSize: "12px", fontWeight: 700, color: "#f8fafc", wordBreak: "break-word" }}>
         {value}
       </div>
     </div>

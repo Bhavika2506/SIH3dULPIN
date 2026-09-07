@@ -10,6 +10,7 @@ export interface Property2D {
   area: number;
   polygon: Point2D[];
   ulpin?: string;
+  spaceType?: string;
 }
 
 export interface Floor2D {
@@ -23,4 +24,8 @@ export interface ParsedBuilding {
   id: string;
   name: string;
   floors: Floor2D[];
+  georeference?: {
+    latitude: number;
+    longitude: number;
+  };
 }

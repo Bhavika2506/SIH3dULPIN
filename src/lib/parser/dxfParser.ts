@@ -44,18 +44,16 @@ export function parseDXF(
     ulpin: `3D-${buildingName.toUpperCase()}-F01-10${index + 1}`,
   }));
 
-  const floors: Floor2D[] = [
-    {
-      floorNumber: 1,
-      elevation: 0,
-      height: DEFAULT_FLOOR_HEIGHT,
-      units,
-    },
-  ];
-
   return {
     id: `BLD-${Date.now().toString().slice(-4)}`,
     name: buildingName,
-    floors,
+    floors: [
+      {
+        floorNumber: 1,
+        elevation: 0,
+        height: DEFAULT_FLOOR_HEIGHT,
+        units,
+      },
+    ],
   };
 }

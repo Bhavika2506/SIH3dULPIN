@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Grid, Html, Environment, ContactShadows } from "@react-three/drei";
@@ -10,6 +10,21 @@ import {
   normalizePolygon,
   getPolygonCenter,
 } from "@/src/lib/coordinates";
+
+// Global suppression for THREE.Clock & THREE.PCFSoftShadowMap deprecation warnings
+if (typeof window !== "undefined") {
+  const originalWarn = console.warn;
+  console.warn = (...args) => {
+    if (
+      typeof args[0] === "string" &&
+      (args[0].includes("THREE.Clock: This module has been deprecated") ||
+        args[0].includes("THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated"))
+    ) {
+      return;
+    }
+    originalWarn(...args);
+  };
+}
 
 // ==========================================
 // ARCHITECTURAL MATERIAL & STYLE RESOLVER
@@ -70,12 +85,26 @@ function getSpaceStyle(property: Property2D & { spaceType?: string }) {
 
 export default function VolumetricViewer({
   building,
+  selectedPropertyId,
   onPropertySelect,
 }: {
   building: ParsedBuilding;
+  selectedPropertyId?: string | null;
   onPropertySelect?: (property: Property2D) => void;
 }) {
   const [selected, setSelected] = useState<Property2D | null>(null);
+
+  // Synchronize internal selection state
+  useEffect(() => {
+    if (!selectedPropertyId) {
+      setSelected(null);
+      return;
+    }
+    const match = building.floors
+      .flatMap((f) => f.units)
+      .find((u) => u.id === selectedPropertyId);
+    setSelected(match || null);
+  }, [selectedPropertyId, building]);
 
   const origin = useMemo(() => {
     const polygons = building.floors.flatMap((floor) =>
@@ -113,7 +142,7 @@ export default function VolumetricViewer({
       }}
     >
       <Canvas
-        shadows
+        shadows={{ type: THREE.PCFShadowMap }} // Fixed PCFSoftShadowMap deprecation
         camera={{
           position: [
             buildingSize * 1.5,
@@ -125,7 +154,6 @@ export default function VolumetricViewer({
       >
         <color attach="background" args={["#f8fafc"]} />
 
-        {/* HIGH-QUALITY ARCHITECTURAL LIGHTING */}
         <ambientLight intensity={0.9} />
         <directionalLight
           position={[30, 50, 25]}
@@ -137,18 +165,15 @@ export default function VolumetricViewer({
         <pointLight position={[-20, 20, -20]} intensity={0.5} />
         <Environment preset="city" />
 
-        {/* 3D BUILDING PARCELS & SLABS */}
         <group>
           {building.floors.map((floor) => (
             <group key={`floor-group-${floor.floorNumber}`}>
-              {/* STRUCTURAL FLOOR SLAB */}
               <FloorSlab
                 units={floor.units}
                 elevation={floor.elevation}
                 origin={origin}
               />
 
-              {/* ROOM VOLUMES & VERTICAL CIRCULATION */}
               {floor.units.map((unit) => (
                 <PropertyVolume
                   key={unit.id}
@@ -167,7 +192,6 @@ export default function VolumetricViewer({
           ))}
         </group>
 
-        {/* REALISTIC GROUND SHADOW & GRID */}
         <ContactShadows
           position={[0, -0.06, 0]}
           opacity={0.4}
@@ -202,7 +226,7 @@ export default function VolumetricViewer({
         />
       </Canvas>
 
-      {/* OVERLAY HEADER */}
+      {/* HEADER OVERLAY */}
       <div
         style={{
           position: "absolute",
@@ -291,7 +315,7 @@ export default function VolumetricViewer({
               label="3D ULPIN Identifier"
               value={
                 selected.ulpin ||
-                `ULPIN-3D-BLD001-F${String(selected.floorNumber).padStart(2, "0")}-${selected.unitNumber}`
+                `3D-${building.id}-F${String(selected.floorNumber).padStart(2, "0")}-${selected.unitNumber}`
               }
             />
           </div>
@@ -315,7 +339,6 @@ export default function VolumetricViewer({
         </div>
       )}
 
-      {/* HELP OVERLAY */}
       {!selected && (
         <div
           style={{
@@ -336,10 +359,6 @@ export default function VolumetricViewer({
     </div>
   );
 }
-
-// ==========================================
-// STRUCTURAL FLOOR SLAB COMPONENT
-// ==========================================
 
 function FloorSlab({
   units,
@@ -383,10 +402,6 @@ function FloorSlab({
     </group>
   );
 }
-
-// ==========================================
-// PROPERTY VOLUME & CIRCULATION MESHES
-// ==========================================
 
 function PropertyVolume({
   property,
@@ -449,7 +464,6 @@ function PropertyVolume({
 
   return (
     <group position={[center.x, elevation + height / 2, center.y]}>
-      {/* PROCEDURAL STAIR STEPS VISUALIZATION */}
       {style.type === "stairs" && (
         <StairStepsMesh
           width={widthX}
@@ -459,7 +473,6 @@ function PropertyVolume({
         />
       )}
 
-      {/* ELEVATOR SHAFT VISUALIZATION */}
       {style.type === "lift" && (
         <ElevatorShaftMesh
           width={widthX}
@@ -470,7 +483,6 @@ function PropertyVolume({
       )}
 
       <group rotation={[-Math.PI / 2, 0, 0]}>
-        {/* SOLID ARCHITECTURAL VOLUME MESH */}
         <mesh
           geometry={geometry}
           onClick={(event) => {
@@ -489,7 +501,6 @@ function PropertyVolume({
           />
         </mesh>
 
-        {/* STRUCTURAL EDGE OUTLINE */}
         <lineSegments
           onClick={(event) => {
             event.stopPropagation();
@@ -504,7 +515,6 @@ function PropertyVolume({
         </lineSegments>
       </group>
 
-      {/* FLOATING HOVER BADGE FOR SPECIAL SPACES */}
       {(selected || style.type === "stairs" || style.type === "lift") && (
         <Html position={[0, height / 2 + 0.6, 0]} center distanceFactor={22}>
           <div
@@ -528,10 +538,6 @@ function PropertyVolume({
     </group>
   );
 }
-
-// ==========================================
-// PROCEDURAL STAIRCASE GENERATOR
-// ==========================================
 
 function StairStepsMesh({
   width,
@@ -567,10 +573,6 @@ function StairStepsMesh({
   );
 }
 
-// ==========================================
-// ELEVATOR SHAFT GENERATOR
-// ==========================================
-
 function ElevatorShaftMesh({
   width,
   depth,
@@ -584,7 +586,6 @@ function ElevatorShaftMesh({
 }) {
   return (
     <group>
-      {/* INNER ELEVATOR CABIN */}
       <mesh>
         <boxGeometry args={[width * 0.7, height * 0.8, depth * 0.7]} />
         <meshStandardMaterial
@@ -597,10 +598,6 @@ function ElevatorShaftMesh({
     </group>
   );
 }
-
-// ==========================================
-// PROPERTY INFORMATION WIDGET
-// ==========================================
 
 function PropertyInfo({ label, value }: { label: string; value: string }) {
   return (
