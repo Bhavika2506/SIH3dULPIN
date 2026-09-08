@@ -62,7 +62,7 @@ export async function savePendingBuilding(parsedBuilding: ParsedBuilding) {
                 id: unit.id,
                 unitNumber: unit.unitNumber || unit.id,
                 area: unit.area ?? 0,
-                spaceType: unit.spaceType || "RESIDENTIAL", // 👈 FIX: Added fallback to satisfy required Prisma field
+                spaceType: unit.spaceType || "RESIDENTIAL",
                 polygon: typeof unit.polygon === "string" ? unit.polygon : JSON.stringify(unit.polygon),
                 ulpin: unit.ulpin || null,
               })),
@@ -96,7 +96,6 @@ export async function approveBuilding(buildingId: string, surveyorId: string) {
         },
       });
 
-      // Target unit or property table safely depending on Prisma client configuration
       const unitDelegate = (tx as any).property || (tx as any).unit;
 
       for (const floor of updatedBuilding.floors) {

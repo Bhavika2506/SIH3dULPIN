@@ -8,6 +8,8 @@ import {
   detectFileFormat,
 } from "@/src/lib/parser/fileParser";
 
+import RealWorldMapViewer from "./RealWorldMapViewer";
+
 export default function FileUploader({
   onParsed,
 }: {

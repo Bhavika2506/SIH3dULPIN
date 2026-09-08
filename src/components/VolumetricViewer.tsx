@@ -168,7 +168,6 @@ export default function VolumetricViewer({
         />
         <pointLight position={[-20, 20, -20]} intensity={0.5} />
 
-        {/* Wrapped in Suspense to prevent canvas crashes on HDR texture download failures */}
         <Suspense fallback={null}>
           <Environment preset="city" />
         </Suspense>

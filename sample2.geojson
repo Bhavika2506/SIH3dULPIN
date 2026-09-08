@@ -1,0 +1,256 @@
+{
+  "type": "FeatureCollection",
+  "buildingName": "College_Building_Main_Block",
+  "buildingId": "BLD-COLLEGE-3D-FULL",
+  "georeference": {
+    "latitude": 18.4475,
+    "longitude": 73.8214,
+    "elevationOffset": 0.0
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-PASSAGE", "unitNumber": "Main Ground Corridor", "floorNumber": 1, "spaceType": "Passage", "area": 54, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-PASSAGE" },
+      "geometry": { "type": "Polygon", "coordinates": [[[6, 0], [8, 0], [8, 27], [6, 27], [6, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-STAIRS-NORTH", "unitNumber": "Stairs North (External)", "floorNumber": 1, "spaceType": "Stairs", "area": 24, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-STAIRS-N" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 27], [14, 27], [14, 31], [8, 31], [8, 27]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-STAIRS-SOUTH", "unitNumber": "Stairs South (External)", "floorNumber": 1, "spaceType": "Stairs", "area": 24, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-STAIRS-S" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, -4], [6, -4], [6, 0], [0, 0], [0, -4]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-LIFT", "unitNumber": "Central Lift Shaft", "floorNumber": 1, "spaceType": "Lift", "area": 6, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-LIFT" },
+      "geometry": { "type": "Polygon", "coordinates": [[[14, 12], [16, 12], [16, 15], [14, 15], [14, 12]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-01", "unitNumber": "Food Court", "floorNumber": 1, "spaceType": "Hall", "area": 36, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-FOODCOURT" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 21], [6, 21], [6, 27], [0, 27], [0, 21]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-02", "unitNumber": "Main Canteen", "floorNumber": 1, "spaceType": "Hall", "area": 36, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-CANTEEN" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 21], [14, 21], [14, 27], [8, 27], [8, 21]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-03", "unitNumber": "Computer Lab 3", "floorNumber": 1, "spaceType": "Lab", "area": 42, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-COMPLAB3" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 14], [6, 14], [6, 21], [0, 21], [0, 14]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-04", "unitNumber": "Computer Lab 2", "floorNumber": 1, "spaceType": "Lab", "area": 42, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-COMPLAB2" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 7], [6, 7], [6, 14], [0, 14], [0, 7]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-05", "unitNumber": "Chemistry Lab", "floorNumber": 1, "spaceType": "Lab", "area": 42, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-CHEMLAB" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 0], [6, 0], [6, 7], [0, 7], [0, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-06", "unitNumber": "Computer Lab 1", "floorNumber": 1, "spaceType": "Lab", "area": 36, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-COMPLAB1" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 15], [14, 15], [14, 21], [8, 21], [8, 15]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-07", "unitNumber": "CCTV Room", "floorNumber": 1, "spaceType": "Office", "area": 30, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-CCTV" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 7], [14, 7], [14, 12], [8, 12], [8, 7]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "GF-WC-LADIES", "unitNumber": "Ladies W/C", "floorNumber": 1, "spaceType": "Restroom", "area": 42, "elevationMeters": 0.0, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F01-WC-L" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 0], [14, 0], [14, 7], [8, 7], [8, 0]]] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "id": "1F-PASSAGE", "unitNumber": "First Floor Corridor", "floorNumber": 2, "spaceType": "Passage", "area": 54, "elevationMeters": 3.2, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F02-PASSAGE" },
+      "geometry": { "type": "Polygon", "coordinates": [[[6, 0], [8, 0], [8, 27], [6, 27], [6, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "1F-STAIRS-NORTH", "unitNumber": "Stairs North (External)", "floorNumber": 2, "spaceType": "Stairs", "area": 24, "elevationMeters": 3.2, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F02-STAIRS-N" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 27], [14, 27], [14, 31], [8, 31], [8, 27]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "1F-STAIRS-SOUTH", "unitNumber": "Stairs South (External)", "floorNumber": 2, "spaceType": "Stairs", "area": 24, "elevationMeters": 3.2, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F02-STAIRS-S" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, -4], [6, -4], [6, 0], [0, 0], [0, -4]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "1F-LIFT", "unitNumber": "Central Lift Shaft", "floorNumber": 2, "spaceType": "Lift", "area": 6, "elevationMeters": 3.2, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F02-LIFT" },
+      "geometry": { "type": "Polygon", "coordinates": [[[14, 12], [16, 12], [16, 15], [14, 15], [14, 12]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "1F-01", "unitNumber": "Central Library", "floorNumber": 2, "spaceType": "Facility", "area": 72, "elevationMeters": 3.2, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F02-LIBRARY" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 15], [6, 15], [6, 27], [0, 27], [0, 15]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "1F-02", "unitNumber": "Study Hall", "floorNumber": 2, "spaceType": "Hall", "area": 72, "elevationMeters": 3.2, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F02-STUDY" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 15], [14, 15], [14, 27], [8, 27], [8, 15]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "1F-03", "unitNumber": "Staff Room", "floorNumber": 2, "spaceType": "Office", "area": 90, "elevationMeters": 3.2, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F02-STAFF" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 0], [6, 0], [6, 15], [0, 15], [0, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "1F-04", "unitNumber": "Admin Office", "floorNumber": 2, "spaceType": "Office", "area": 72, "elevationMeters": 3.2, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F02-ADMIN" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 0], [14, 0], [14, 12], [8, 12], [8, 0]]] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "id": "2F-PASSAGE", "unitNumber": "Second Floor Passage", "floorNumber": 3, "spaceType": "Passage", "area": 54, "elevationMeters": 6.4, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F03-PASSAGE" },
+      "geometry": { "type": "Polygon", "coordinates": [[[6, 0], [8, 0], [8, 27], [6, 27], [6, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "2F-STAIRS-NORTH", "unitNumber": "Stairs North (External)", "floorNumber": 3, "spaceType": "Stairs", "area": 24, "elevationMeters": 6.4, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F03-STAIRS-N" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 27], [14, 27], [14, 31], [8, 31], [8, 27]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "2F-STAIRS-SOUTH", "unitNumber": "Stairs South (External)", "floorNumber": 3, "spaceType": "Stairs", "area": 24, "elevationMeters": 6.4, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F03-STAIRS-S" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, -4], [6, -4], [6, 0], [0, 0], [0, -4]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "2F-LIFT", "unitNumber": "Central Lift Shaft", "floorNumber": 3, "spaceType": "Lift", "area": 6, "elevationMeters": 6.4, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F03-LIFT" },
+      "geometry": { "type": "Polygon", "coordinates": [[[14, 12], [16, 12], [16, 15], [14, 15], [14, 12]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "2F-01", "unitNumber": "Admission Section", "floorNumber": 3, "spaceType": "Office", "area": 72, "elevationMeters": 6.4, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F03-ADMISSION" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 15], [14, 15], [14, 27], [8, 27], [8, 15]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "2F-02", "unitNumber": "Physics Lab", "floorNumber": 3, "spaceType": "Lab", "area": 72, "elevationMeters": 6.4, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F03-PHYSICS" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 0], [14, 0], [14, 12], [8, 12], [8, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "2F-03", "unitNumber": "Classroom 1", "floorNumber": 3, "spaceType": "Classroom", "area": 54, "elevationMeters": 6.4, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F03-CR1" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 18], [6, 18], [6, 27], [0, 27], [0, 18]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "2F-04", "unitNumber": "Classroom 2", "floorNumber": 3, "spaceType": "Classroom", "area": 54, "elevationMeters": 6.4, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F03-CR2" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 9], [6, 9], [6, 18], [0, 18], [0, 9]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "2F-05", "unitNumber": "Classroom 3", "floorNumber": 3, "spaceType": "Classroom", "area": 54, "elevationMeters": 6.4, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F03-CR3" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 0], [6, 0], [6, 9], [0, 9], [0, 0]]] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "id": "3F-PASSAGE", "unitNumber": "Third Floor Passage", "floorNumber": 4, "spaceType": "Passage", "area": 54, "elevationMeters": 9.6, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F04-PASSAGE" },
+      "geometry": { "type": "Polygon", "coordinates": [[[6, 0], [8, 0], [8, 27], [6, 27], [6, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "3F-STAIRS-NORTH", "unitNumber": "Stairs North (External)", "floorNumber": 4, "spaceType": "Stairs", "area": 24, "elevationMeters": 9.6, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F04-STAIRS-N" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 27], [14, 27], [14, 31], [8, 31], [8, 27]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "3F-STAIRS-SOUTH", "unitNumber": "Stairs South (External)", "floorNumber": 4, "spaceType": "Stairs", "area": 24, "elevationMeters": 9.6, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F04-STAIRS-S" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, -4], [6, -4], [6, 0], [0, 0], [0, -4]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "3F-LIFT", "unitNumber": "Central Lift Shaft", "floorNumber": 4, "spaceType": "Lift", "area": 6, "elevationMeters": 9.6, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F04-LIFT" },
+      "geometry": { "type": "Polygon", "coordinates": [[[14, 12], [16, 12], [16, 15], [14, 15], [14, 12]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "3F-01", "unitNumber": "HOD Office", "floorNumber": 4, "spaceType": "Office", "area": 36, "elevationMeters": 9.6, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F04-HOD" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 21], [14, 21], [14, 27], [8, 27], [8, 21]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "3F-02", "unitNumber": "Classroom 6", "floorNumber": 4, "spaceType": "Classroom", "area": 54, "elevationMeters": 9.6, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F04-CR6" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 18], [6, 18], [6, 27], [0, 27], [0, 18]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "3F-03", "unitNumber": "Classroom 5", "floorNumber": 4, "spaceType": "Classroom", "area": 54, "elevationMeters": 9.6, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F04-CR5" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 9], [6, 9], [6, 18], [0, 18], [0, 9]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "3F-04", "unitNumber": "Classroom 4", "floorNumber": 4, "spaceType": "Classroom", "area": 54, "elevationMeters": 9.6, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F04-CR4" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 0], [6, 0], [6, 9], [0, 9], [0, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "3F-05", "unitNumber": "Seminar Hall", "floorNumber": 4, "spaceType": "Hall", "area": 72, "elevationMeters": 9.6, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F04-SEMINAR" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 0], [14, 0], [14, 12], [8, 12], [8, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "3F-06", "unitNumber": "Meeting Room", "floorNumber": 4, "spaceType": "Office", "area": 36, "elevationMeters": 9.6, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F04-MEETING" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 15], [14, 15], [14, 21], [8, 21], [8, 15]]] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "id": "4F-PASSAGE", "unitNumber": "Fourth Floor Passage", "floorNumber": 5, "spaceType": "Passage", "area": 54, "elevationMeters": 12.8, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F05-PASSAGE" },
+      "geometry": { "type": "Polygon", "coordinates": [[[6, 0], [8, 0], [8, 27], [6, 27], [6, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "4F-STAIRS-NORTH", "unitNumber": "Stairs North (External)", "floorNumber": 5, "spaceType": "Stairs", "area": 24, "elevationMeters": 12.8, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F05-STAIRS-N" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 27], [14, 27], [14, 31], [8, 31], [8, 27]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "4F-STAIRS-SOUTH", "unitNumber": "Stairs South (External)", "floorNumber": 5, "spaceType": "Stairs", "area": 24, "elevationMeters": 12.8, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F05-STAIRS-S" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, -4], [6, -4], [6, 0], [0, 0], [0, -4]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "4F-LIFT", "unitNumber": "Central Lift Shaft", "floorNumber": 5, "spaceType": "Lift", "area": 6, "elevationMeters": 12.8, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F05-LIFT" },
+      "geometry": { "type": "Polygon", "coordinates": [[[14, 12], [16, 12], [16, 15], [14, 15], [14, 12]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "4F-01", "unitNumber": "OOP Lab", "floorNumber": 5, "spaceType": "Lab", "area": 54, "elevationMeters": 12.8, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F05-OOPLAB" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 18], [6, 18], [6, 27], [0, 27], [0, 18]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "4F-02", "unitNumber": "OS Lab", "floorNumber": 5, "spaceType": "Lab", "area": 54, "elevationMeters": 12.8, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F05-OSLAB" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 9], [6, 9], [6, 18], [0, 18], [0, 9]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "4F-03", "unitNumber": "DS Lab", "floorNumber": 5, "spaceType": "Lab", "area": 72, "elevationMeters": 12.8, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F05-DSLAB" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 15], [14, 15], [14, 27], [8, 27], [8, 15]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "4F-04", "unitNumber": "RH Lab", "floorNumber": 5, "spaceType": "Lab", "area": 72, "elevationMeters": 12.8, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F05-RHLAB" },
+      "geometry": { "type": "Polygon", "coordinates": [[[8, 0], [14, 0], [14, 12], [8, 12], [8, 0]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "4F-05", "unitNumber": "Server Room", "floorNumber": 5, "spaceType": "Facility", "area": 54, "elevationMeters": 12.8, "heightMeters": 3.2, "ulpin": "3D-COLLEGE-F05-SERVER" },
+      "geometry": { "type": "Polygon", "coordinates": [[[0, 0], [6, 0], [6, 9], [0, 9], [0, 0]]] }
+    }
+  ]
+}

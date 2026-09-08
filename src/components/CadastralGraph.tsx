@@ -1,23 +1,32 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { ParsedBuilding, Property2D } from "@/src/lib/parser/types";
+import type { ParsedBuilding, Property2D, Floor2D } from "@/src/lib/parser/types";
 
 type Property = Property2D & {
   ulpin: string;
-  floorNumber: number; // 👈 Ensures floorNumber exists on Property type
+  floorNumber: number;
 };
 
+/**
+ * Robustly retrieves and normalizes properties from either pre-grouped building floors 
+ * or a flat list of features/units.
+ */
 function getProperties(building?: ParsedBuilding | null): Property[] {
-  if (!building?.floors) return [];
+  if (!building) return [];
 
-  return building.floors.flatMap((floor) =>
-    (floor.units || []).map((unit, index) => ({
-      ...unit,
-      floorNumber: floor.floorNumber, // 👈 Fixes "No units detected" by explicitly setting floorNumber
-      ulpin: unit.ulpin || `3D-${building.id}-${floor.floorNumber}-${index + 1}`,
-    }))
-  );
+  // Case 1: Standard hierarchical floors structure
+  if (building.floors && building.floors.length > 0) {
+    return building.floors.flatMap((floor) =>
+      (floor.units || []).map((unit, index) => ({
+        ...unit,
+        floorNumber: floor.floorNumber,
+        ulpin: unit.ulpin || `3D-${building.id}-F${floor.floorNumber}-${index + 1}`,
+      }))
+    );
+  }
+
+  return [];
 }
 
 export default function CadastralGraph({
@@ -33,9 +42,27 @@ export default function CadastralGraph({
   const [selected, setSelected] = useState<Property | null>(null);
 
   const floors = useMemo(() => {
-    if (!building?.floors) return [];
+    if (!building?.floors || building.floors.length === 0) {
+      // Fallback: derive floors dynamically from properties if building.floors is empty
+      const floorMap = new Map<number, Property[]>();
+      properties.forEach((p) => {
+        const list = floorMap.get(p.floorNumber) || [];
+        list.push(p);
+        floorMap.set(p.floorNumber, list);
+      });
+
+      return Array.from(floorMap.entries())
+        .sort(([a], [b]) => b - a)
+        .map(([floorNum, units]) => ({
+          floorNumber: floorNum,
+          elevation: (floorNum - 1) * 3.2,
+          height: 3.2,
+          units,
+        }));
+    }
+
     return [...building.floors].sort((a, b) => b.floorNumber - a.floorNumber);
-  }, [building]);
+  }, [building, properties]);
 
   useEffect(() => {
     if (!selectedNodeId) {
@@ -88,7 +115,7 @@ export default function CadastralGraph({
         color: "#f8fafc",
       }}
     >
-      {/* HEADER WITH STICKY POSITIONING */}
+      {/* HEADER */}
       <div
         style={{
           padding: "18px 22px",
@@ -131,7 +158,7 @@ export default function CadastralGraph({
         </button>
       </div>
 
-      {/* INTERNAL SCROLLABLE GRAPH BODY CONTAINER */}
+      {/* BODY CONTAINER */}
       <div
         style={{
           padding: "24px",
@@ -145,7 +172,7 @@ export default function CadastralGraph({
           <div style={{ display: "flex", justifyContent: "center", marginBottom: "35px" }}>
             <div
               style={{
-                width: "240px",
+                width: "260px",
                 padding: "16px",
                 borderRadius: "12px",
                 background: "#1e293b",
@@ -181,7 +208,6 @@ export default function CadastralGraph({
             </div>
           </div>
 
-          {/* MAIN VERTICAL CONNECTOR */}
           <div
             style={{
               width: "2px",
@@ -193,14 +219,13 @@ export default function CadastralGraph({
 
           {/* FLOORS LIST */}
           <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-            {floors.map((floor, floorIndex) => {
+            {floors.map((floor) => {
               const floorProperties = properties.filter(
                 (property) => property.floorNumber === floor.floorNumber
               );
 
               return (
                 <div key={floor.floorNumber}>
-                  {/* FLOOR CONTAINER CARD */}
                   <div
                     style={{
                       background: "rgba(30, 41, 59, 0.4)",
@@ -209,7 +234,6 @@ export default function CadastralGraph({
                       overflow: "hidden",
                     }}
                   >
-                    {/* FLOOR CARD HEADER */}
                     <div
                       style={{
                         padding: "10px 16px",
@@ -241,7 +265,6 @@ export default function CadastralGraph({
                       </div>
                     </div>
 
-                    {/* PROPERTY NODES GRID */}
                     <div
                       style={{
                         padding: "16px",
@@ -314,7 +337,7 @@ export default function CadastralGraph({
                                   flexShrink: 0,
                                 }}
                               >
-                                PARCEL
+                                {property.spaceType || "PARCEL"}
                               </span>
                             </div>
 
@@ -341,35 +364,6 @@ export default function CadastralGraph({
                       })}
                     </div>
                   </div>
-
-                  {/* VERTICAL LINKAGE CONNECTOR */}
-                  {floorIndex < floors.length - 1 && (
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        margin: "4px 0",
-                      }}
-                    >
-                      <div style={{ width: "2px", height: "12px", background: "#a855f7" }} />
-                      <div
-                        style={{
-                          fontSize: "9px",
-                          fontWeight: 800,
-                          color: "#a855f7",
-                          padding: "2px 6px",
-                          borderRadius: "4px",
-                          background: "rgba(168, 85, 247, 0.15)",
-                          border: "1px solid rgba(168, 85, 247, 0.3)",
-                          whiteSpace: "nowrap",
-                        }}
-                      >
-                        VERTICAL STACK
-                      </div>
-                      <div style={{ width: "2px", height: "12px", background: "#a855f7" }} />
-                    </div>
-                  )}
                 </div>
               );
             })}

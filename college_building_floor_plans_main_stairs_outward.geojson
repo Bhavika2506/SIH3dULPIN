@@ -1,0 +1,3632 @@
+{
+  "type": "FeatureCollection",
+  "buildingName": "College_Building_5Storey",
+  "buildingId": "BLD-COLLEGE-5STOREY-GEOREFERENCED",
+  "georeference": {
+    "latitude": 18.5204,
+    "longitude": 73.8567,
+    "elevationOffset": 0.0
+  },
+  "buildingFootprint": {
+    "widthMeters": 14.0,
+    "lengthMeters": 27.0
+  },
+  "floorNames": {
+    "1": "Ground Floor",
+    "2": "1st Floor",
+    "3": "2nd Floor",
+    "4": "3rd Floor",
+    "5": "4th Floor"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-FOODCOURT",
+        "unitNumber": "GF-FOODCOURT",
+        "roomName": "Food Court",
+        "category": "common",
+        "floorNumber": 1,
+        "area": 22.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-FOODCOURT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              25.0
+            ],
+            [
+              11.0,
+              25.0
+            ],
+            [
+              11.0,
+              27.0
+            ],
+            [
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              25.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-SINK",
+        "unitNumber": "GF-SINK",
+        "roomName": "Sink",
+        "category": "misc",
+        "floorNumber": 1,
+        "area": 3.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-SINK"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.0,
+              26.0
+            ],
+            [
+              14.0,
+              26.0
+            ],
+            [
+              14.0,
+              27.0
+            ],
+            [
+              11.0,
+              27.0
+            ],
+            [
+              11.0,
+              26.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-CANTEEN-ENT",
+        "unitNumber": "GF-CANTEEN-ENT",
+        "roomName": "Canteen Entrance",
+        "category": "misc",
+        "floorNumber": 1,
+        "area": 3.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-CANTEEN-ENT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.0,
+              25.0
+            ],
+            [
+              14.0,
+              25.0
+            ],
+            [
+              14.0,
+              26.0
+            ],
+            [
+              11.0,
+              26.0
+            ],
+            [
+              11.0,
+              25.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-CANTEEN",
+        "unitNumber": "GF-CANTEEN",
+        "roomName": "Canteen",
+        "category": "common",
+        "floorNumber": 1,
+        "area": 98.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-CANTEEN"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0,
+              18
+            ],
+            [
+              14,
+              18
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              0,
+              25
+            ],
+            [
+              0,
+              18
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-COMPLAB3",
+        "unitNumber": "GF-COMPLAB3",
+        "roomName": "Computer Lab 3",
+        "category": "lab",
+        "floorNumber": 1,
+        "area": 24.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-COMPLAB3"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0,
+              13
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              0,
+              17
+            ],
+            [
+              0,
+              13
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-COMPLAB2",
+        "unitNumber": "GF-COMPLAB2",
+        "roomName": "Computer Lab 2",
+        "category": "lab",
+        "floorNumber": 1,
+        "area": 30.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-COMPLAB2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              8.0
+            ],
+            [
+              6.0,
+              8.0
+            ],
+            [
+              6.0,
+              13.0
+            ],
+            [
+              0.0,
+              13.0
+            ],
+            [
+              0.0,
+              8.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-CHEMLAB",
+        "unitNumber": "GF-CHEMLAB",
+        "roomName": "Chemistry Lab",
+        "category": "lab",
+        "floorNumber": 1,
+        "area": 30.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-CHEMLAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              6.0,
+              3.0
+            ],
+            [
+              6.0,
+              8.0
+            ],
+            [
+              0.0,
+              8.0
+            ],
+            [
+              0.0,
+              3.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-STAIRS-BL",
+        "unitNumber": "GF-STAIRS-BL",
+        "roomName": "Stairs (Bottom-Left)",
+        "category": "circulation",
+        "floorNumber": 1,
+        "area": 18.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-STAIRS-BL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              6.0,
+              0.0
+            ],
+            [
+              6.0,
+              3.0
+            ],
+            [
+              0.0,
+              3.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-STAIRS-MAIN",
+        "unitNumber": "GF-STAIRS-MAIN",
+        "roomName": "Stairs (Main Stairwell)",
+        "category": "circulation",
+        "floorNumber": 1,
+        "area": 42.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-STAIRS-MAIN",
+        "stairOrientation": "outward",
+        "facingDirection": "south",
+        "entrySide": "south",
+        "runDirection": "north",
+        "orientationNote": "Main stair flight faces outward toward the front/exterior (south, Y decreasing); aligned vertically on all floors."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8,
+              10
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              14,
+              17
+            ],
+            [
+              8,
+              17
+            ],
+            [
+              8,
+              10
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-OPENSPACE",
+        "unitNumber": "GF-OPENSPACE",
+        "roomName": "Open Space",
+        "category": "common",
+        "floorNumber": 1,
+        "area": 12.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-OPENSPACE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              8
+            ],
+            [
+              14.0,
+              8
+            ],
+            [
+              14.0,
+              10
+            ],
+            [
+              8.0,
+              10
+            ],
+            [
+              8.0,
+              8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-COMPLAB1",
+        "unitNumber": "GF-COMPLAB1",
+        "roomName": "Computer Lab 1",
+        "category": "lab",
+        "floorNumber": 1,
+        "area": 24.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-COMPLAB1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              4
+            ],
+            [
+              14.0,
+              4
+            ],
+            [
+              14.0,
+              8
+            ],
+            [
+              8.0,
+              8
+            ],
+            [
+              8.0,
+              4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-CCTV",
+        "unitNumber": "GF-CCTV",
+        "roomName": "CCTV Room",
+        "category": "office",
+        "floorNumber": 1,
+        "area": 12.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-CCTV"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              2
+            ],
+            [
+              14.0,
+              2
+            ],
+            [
+              14.0,
+              4
+            ],
+            [
+              8.0,
+              4
+            ],
+            [
+              8.0,
+              2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-LADIES-WC",
+        "unitNumber": "GF-LADIES-WC",
+        "roomName": "Ladies W/C",
+        "category": "restroom",
+        "floorNumber": 1,
+        "area": 12.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-LADIES-WC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              0
+            ],
+            [
+              14.0,
+              0
+            ],
+            [
+              14.0,
+              2
+            ],
+            [
+              8.0,
+              2
+            ],
+            [
+              8.0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-PASSAGE",
+        "unitNumber": "GF-PASSAGE",
+        "roomName": "Passage",
+        "category": "circulation",
+        "floorNumber": 1,
+        "area": 36.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-PASSAGE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.0,
+              0.0
+            ],
+            [
+              8.0,
+              0.0
+            ],
+            [
+              8.0,
+              18.0
+            ],
+            [
+              6.0,
+              18.0
+            ],
+            [
+              6.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GF-LIFT",
+        "unitNumber": "GF-LIFT",
+        "roomName": "Lift",
+        "category": "circulation",
+        "floorNumber": 1,
+        "area": 4.0,
+        "elevationMeters": 0.0,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F01-LIFT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.0,
+              -2.0
+            ],
+            [
+              8.0,
+              -2.0
+            ],
+            [
+              8.0,
+              0.0
+            ],
+            [
+              6.0,
+              0.0
+            ],
+            [
+              6.0,
+              -2.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-STAIRS-TL",
+        "unitNumber": "F1-STAIRS-TL",
+        "roomName": "Stairs (Top-Left)",
+        "category": "circulation",
+        "floorNumber": 2,
+        "area": 4.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-STAIRS-TL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              25.0
+            ],
+            [
+              2.0,
+              25.0
+            ],
+            [
+              2.0,
+              27.0
+            ],
+            [
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              25.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-GENTS-WC",
+        "unitNumber": "F1-GENTS-WC",
+        "roomName": "Gents W/C",
+        "category": "restroom",
+        "floorNumber": 2,
+        "area": 8.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-GENTS-WC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.0,
+              25.0
+            ],
+            [
+              6.0,
+              25.0
+            ],
+            [
+              6.0,
+              27.0
+            ],
+            [
+              2.0,
+              27.0
+            ],
+            [
+              2.0,
+              25.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-LIBRARY",
+        "unitNumber": "F1-LIBRARY",
+        "roomName": "Library",
+        "category": "common",
+        "floorNumber": 2,
+        "area": 42.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-LIBRARY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              18.0
+            ],
+            [
+              6.0,
+              18.0
+            ],
+            [
+              6.0,
+              25.0
+            ],
+            [
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              18.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-RECEPTION-1",
+        "unitNumber": "F1-RECEPTION-1",
+        "roomName": "Reception (Library Corridor)",
+        "category": "office",
+        "floorNumber": 2,
+        "area": 12.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-RECEPTION-1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              16.0
+            ],
+            [
+              6.0,
+              16.0
+            ],
+            [
+              6.0,
+              18.0
+            ],
+            [
+              0.0,
+              18.0
+            ],
+            [
+              0.0,
+              16.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-STAIRS-ML",
+        "unitNumber": "F1-STAIRS-ML",
+        "roomName": "Stairs (Mid-Left)",
+        "category": "circulation",
+        "floorNumber": 2,
+        "area": 12.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-STAIRS-ML"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              14.0
+            ],
+            [
+              6.0,
+              14.0
+            ],
+            [
+              6.0,
+              16.0
+            ],
+            [
+              0.0,
+              16.0
+            ],
+            [
+              0.0,
+              14.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-RECEPTION-2",
+        "unitNumber": "F1-RECEPTION-2",
+        "roomName": "Reception (Entrance)",
+        "category": "office",
+        "floorNumber": 2,
+        "area": 12.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-RECEPTION-2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              12.0
+            ],
+            [
+              6.0,
+              12.0
+            ],
+            [
+              6.0,
+              14.0
+            ],
+            [
+              0.0,
+              14.0
+            ],
+            [
+              0.0,
+              12.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-OFFICE-L",
+        "unitNumber": "F1-OFFICE-L",
+        "roomName": "Office",
+        "category": "office",
+        "floorNumber": 2,
+        "area": 36.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-OFFICE-L"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              6.0
+            ],
+            [
+              6.0,
+              6.0
+            ],
+            [
+              6.0,
+              12.0
+            ],
+            [
+              0.0,
+              12.0
+            ],
+            [
+              0.0,
+              6.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-LAB",
+        "unitNumber": "F1-LAB",
+        "roomName": "Lab",
+        "category": "lab",
+        "floorNumber": 2,
+        "area": 18.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-LAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              6.0,
+              3.0
+            ],
+            [
+              6.0,
+              6.0
+            ],
+            [
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              3.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-STAIRS-BL",
+        "unitNumber": "F1-STAIRS-BL",
+        "roomName": "Stairs (Bottom-Left)",
+        "category": "circulation",
+        "floorNumber": 2,
+        "area": 18.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-STAIRS-BL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              6.0,
+              0.0
+            ],
+            [
+              6.0,
+              3.0
+            ],
+            [
+              0.0,
+              3.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-STUDYHALL",
+        "unitNumber": "F1-STUDYHALL",
+        "roomName": "Study Hall",
+        "category": "assembly",
+        "floorNumber": 2,
+        "area": 60.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-STUDYHALL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              17
+            ],
+            [
+              14.0,
+              17
+            ],
+            [
+              14.0,
+              27
+            ],
+            [
+              8.0,
+              27
+            ],
+            [
+              8.0,
+              17
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-STAIRS-MAIN",
+        "unitNumber": "F1-STAIRS-MAIN",
+        "roomName": "Stairs (Main Stairwell)",
+        "category": "circulation",
+        "floorNumber": 2,
+        "area": 42.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-STAIRS-MAIN",
+        "stairOrientation": "outward",
+        "facingDirection": "south",
+        "entrySide": "south",
+        "runDirection": "north",
+        "orientationNote": "Main stair flight faces outward toward the front/exterior (south, Y decreasing); aligned vertically on all floors."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8,
+              10
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              14,
+              17
+            ],
+            [
+              8,
+              17
+            ],
+            [
+              8,
+              10
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-OFFICE-R",
+        "unitNumber": "F1-OFFICE-R",
+        "roomName": "Office",
+        "category": "office",
+        "floorNumber": 2,
+        "area": 12.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-OFFICE-R"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              8
+            ],
+            [
+              14.0,
+              8
+            ],
+            [
+              14.0,
+              10
+            ],
+            [
+              8.0,
+              10
+            ],
+            [
+              8.0,
+              8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-SEMINARHALL",
+        "unitNumber": "F1-SEMINARHALL",
+        "roomName": "Seminar Hall",
+        "category": "assembly",
+        "floorNumber": 2,
+        "area": 36.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-SEMINARHALL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              2
+            ],
+            [
+              14.0,
+              2
+            ],
+            [
+              14.0,
+              8
+            ],
+            [
+              8.0,
+              8
+            ],
+            [
+              8.0,
+              2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-LADIES-WC",
+        "unitNumber": "F1-LADIES-WC",
+        "roomName": "Ladies W/C",
+        "category": "restroom",
+        "floorNumber": 2,
+        "area": 12.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-LADIES-WC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              0
+            ],
+            [
+              14.0,
+              0
+            ],
+            [
+              14.0,
+              2
+            ],
+            [
+              8.0,
+              2
+            ],
+            [
+              8.0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-PASSAGE",
+        "unitNumber": "F1-PASSAGE",
+        "roomName": "Passage",
+        "category": "circulation",
+        "floorNumber": 2,
+        "area": 54.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-PASSAGE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.0,
+              0.0
+            ],
+            [
+              8.0,
+              0.0
+            ],
+            [
+              8.0,
+              27.0
+            ],
+            [
+              6.0,
+              27.0
+            ],
+            [
+              6.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F1-LIFT",
+        "unitNumber": "F1-LIFT",
+        "roomName": "Lift",
+        "category": "circulation",
+        "floorNumber": 2,
+        "area": 4.0,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F02-LIFT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.0,
+              -2.0
+            ],
+            [
+              8.0,
+              -2.0
+            ],
+            [
+              8.0,
+              0.0
+            ],
+            [
+              6.0,
+              0.0
+            ],
+            [
+              6.0,
+              -2.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-STAIRS-TL",
+        "unitNumber": "F2-STAIRS-TL",
+        "roomName": "Stairs (Top-Left)",
+        "category": "circulation",
+        "floorNumber": 3,
+        "area": 12.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-STAIRS-TL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              25.0
+            ],
+            [
+              6.0,
+              25.0
+            ],
+            [
+              6.0,
+              27.0
+            ],
+            [
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              25.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-FACULTY-1",
+        "unitNumber": "F2-FACULTY-1",
+        "roomName": "Faculty Room",
+        "category": "office",
+        "floorNumber": 3,
+        "area": 24.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-FACULTY-1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              21.0
+            ],
+            [
+              6.0,
+              21.0
+            ],
+            [
+              6.0,
+              25.0
+            ],
+            [
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              21.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-FACULTY-2",
+        "unitNumber": "F2-FACULTY-2",
+        "roomName": "Faculty Room",
+        "category": "office",
+        "floorNumber": 3,
+        "area": 24.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-FACULTY-2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              17.0
+            ],
+            [
+              6.0,
+              17.0
+            ],
+            [
+              6.0,
+              21.0
+            ],
+            [
+              0.0,
+              21.0
+            ],
+            [
+              0.0,
+              17.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-DIRECTOR",
+        "unitNumber": "F2-DIRECTOR",
+        "roomName": "Director's Office",
+        "category": "office",
+        "floorNumber": 3,
+        "area": 24.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-DIRECTOR"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              13.0
+            ],
+            [
+              6.0,
+              13.0
+            ],
+            [
+              6.0,
+              17.0
+            ],
+            [
+              0.0,
+              17.0
+            ],
+            [
+              0.0,
+              13.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-BEELAB",
+        "unitNumber": "F2-BEELAB",
+        "roomName": "BEE Lab",
+        "category": "lab",
+        "floorNumber": 3,
+        "area": 24.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-BEELAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              9.0
+            ],
+            [
+              6.0,
+              9.0
+            ],
+            [
+              6.0,
+              13.0
+            ],
+            [
+              0.0,
+              13.0
+            ],
+            [
+              0.0,
+              9.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-BXELAB",
+        "unitNumber": "F2-BXELAB",
+        "roomName": "BXE Lab",
+        "category": "lab",
+        "floorNumber": 3,
+        "area": 18.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-BXELAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              6.0
+            ],
+            [
+              6.0,
+              6.0
+            ],
+            [
+              6.0,
+              9.0
+            ],
+            [
+              0.0,
+              9.0
+            ],
+            [
+              0.0,
+              6.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-GRAPHICSLAB",
+        "unitNumber": "F2-GRAPHICSLAB",
+        "roomName": "Graphics Lab",
+        "category": "lab",
+        "floorNumber": 3,
+        "area": 18.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-GRAPHICSLAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              6.0,
+              3.0
+            ],
+            [
+              6.0,
+              6.0
+            ],
+            [
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              3.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-STAIRS-BL",
+        "unitNumber": "F2-STAIRS-BL",
+        "roomName": "Stairs (Bottom-Left)",
+        "category": "circulation",
+        "floorNumber": 3,
+        "area": 18.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-STAIRS-BL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              6.0,
+              0.0
+            ],
+            [
+              6.0,
+              3.0
+            ],
+            [
+              0.0,
+              3.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-LADIES-WC",
+        "unitNumber": "F2-LADIES-WC",
+        "roomName": "Ladies W/C",
+        "category": "restroom",
+        "floorNumber": 3,
+        "area": 12.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-LADIES-WC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              25.0
+            ],
+            [
+              14.0,
+              25.0
+            ],
+            [
+              14.0,
+              27.0
+            ],
+            [
+              8.0,
+              27.0
+            ],
+            [
+              8.0,
+              25.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-RECEPTION",
+        "unitNumber": "F2-RECEPTION",
+        "roomName": "Reception",
+        "category": "office",
+        "floorNumber": 3,
+        "area": 12.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-RECEPTION"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              23.0
+            ],
+            [
+              14.0,
+              23.0
+            ],
+            [
+              14.0,
+              25.0
+            ],
+            [
+              8.0,
+              25.0
+            ],
+            [
+              8.0,
+              23.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-ADMISSION",
+        "unitNumber": "F2-ADMISSION",
+        "roomName": "Admission / Scholarship Section",
+        "category": "office",
+        "floorNumber": 3,
+        "area": 36.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-ADMISSION"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              17.0
+            ],
+            [
+              14.0,
+              17.0
+            ],
+            [
+              14.0,
+              23.0
+            ],
+            [
+              8.0,
+              23.0
+            ],
+            [
+              8.0,
+              17.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-STAIRS-MAIN",
+        "unitNumber": "F2-STAIRS-MAIN",
+        "roomName": "Stairs (Main Stairwell)",
+        "category": "circulation",
+        "floorNumber": 3,
+        "area": 42.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-STAIRS-MAIN",
+        "stairOrientation": "outward",
+        "facingDirection": "south",
+        "entrySide": "south",
+        "runDirection": "north",
+        "orientationNote": "Main stair flight faces outward toward the front/exterior (south, Y decreasing); aligned vertically on all floors."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8,
+              10
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              14,
+              17
+            ],
+            [
+              8,
+              17
+            ],
+            [
+              8,
+              10
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-ENQUIRY",
+        "unitNumber": "F2-ENQUIRY",
+        "roomName": "Enquiry Office",
+        "category": "office",
+        "floorNumber": 3,
+        "area": 36.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-ENQUIRY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              4.0
+            ],
+            [
+              14.0,
+              4.0
+            ],
+            [
+              14.0,
+              10.0
+            ],
+            [
+              8.0,
+              10.0
+            ],
+            [
+              8.0,
+              4.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-PHYSICSLAB",
+        "unitNumber": "F2-PHYSICSLAB",
+        "roomName": "Physics Lab",
+        "category": "lab",
+        "floorNumber": 3,
+        "area": 12.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-PHYSICSLAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              2.0
+            ],
+            [
+              14.0,
+              2.0
+            ],
+            [
+              14.0,
+              4.0
+            ],
+            [
+              8.0,
+              4.0
+            ],
+            [
+              8.0,
+              2.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-GENTS-WC",
+        "unitNumber": "F2-GENTS-WC",
+        "roomName": "Gents W/C",
+        "category": "restroom",
+        "floorNumber": 3,
+        "area": 12.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-GENTS-WC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              0.0
+            ],
+            [
+              14.0,
+              0.0
+            ],
+            [
+              14.0,
+              2.0
+            ],
+            [
+              8.0,
+              2.0
+            ],
+            [
+              8.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-PASSAGE",
+        "unitNumber": "F2-PASSAGE",
+        "roomName": "Passage",
+        "category": "circulation",
+        "floorNumber": 3,
+        "area": 54.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-PASSAGE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.0,
+              0.0
+            ],
+            [
+              8.0,
+              0.0
+            ],
+            [
+              8.0,
+              27.0
+            ],
+            [
+              6.0,
+              27.0
+            ],
+            [
+              6.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-LIFT",
+        "unitNumber": "F2-LIFT",
+        "roomName": "Lift",
+        "category": "circulation",
+        "floorNumber": 3,
+        "area": 4.0,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F03-LIFT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.0,
+              -2.0
+            ],
+            [
+              8.0,
+              -2.0
+            ],
+            [
+              8.0,
+              0.0
+            ],
+            [
+              6.0,
+              0.0
+            ],
+            [
+              6.0,
+              -2.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-STAIRS-TL",
+        "unitNumber": "F3-STAIRS-TL",
+        "roomName": "Stairs (Top-Left)",
+        "category": "circulation",
+        "floorNumber": 4,
+        "area": 12.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-STAIRS-TL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              25.0
+            ],
+            [
+              6.0,
+              25.0
+            ],
+            [
+              6.0,
+              27.0
+            ],
+            [
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              25.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-CLASS6",
+        "unitNumber": "F3-CLASS6",
+        "roomName": "Classroom 6",
+        "category": "classroom",
+        "floorNumber": 4,
+        "area": 18.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-CLASS6"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              22.0
+            ],
+            [
+              6.0,
+              22.0
+            ],
+            [
+              6.0,
+              25.0
+            ],
+            [
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              22.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-CLASS5",
+        "unitNumber": "F3-CLASS5",
+        "roomName": "Classroom 5",
+        "category": "classroom",
+        "floorNumber": 4,
+        "area": 18.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-CLASS5"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              19.0
+            ],
+            [
+              6.0,
+              19.0
+            ],
+            [
+              6.0,
+              22.0
+            ],
+            [
+              0.0,
+              22.0
+            ],
+            [
+              0.0,
+              19.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-CLASS4",
+        "unitNumber": "F3-CLASS4",
+        "roomName": "Classroom 4",
+        "category": "classroom",
+        "floorNumber": 4,
+        "area": 18.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-CLASS4"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              16.0
+            ],
+            [
+              6.0,
+              16.0
+            ],
+            [
+              6.0,
+              19.0
+            ],
+            [
+              0.0,
+              19.0
+            ],
+            [
+              0.0,
+              16.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-EXAMFAC-1",
+        "unitNumber": "F3-EXAMFAC-1",
+        "roomName": "Exam / Faculty",
+        "category": "office",
+        "floorNumber": 4,
+        "area": 15.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-EXAMFAC-1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              13.5
+            ],
+            [
+              6.0,
+              13.5
+            ],
+            [
+              6.0,
+              16.0
+            ],
+            [
+              0.0,
+              16.0
+            ],
+            [
+              0.0,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-EXAMFAC-2",
+        "unitNumber": "F3-EXAMFAC-2",
+        "roomName": "Exam / Faculty",
+        "category": "office",
+        "floorNumber": 4,
+        "area": 15.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-EXAMFAC-2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              11.0
+            ],
+            [
+              6.0,
+              11.0
+            ],
+            [
+              6.0,
+              13.5
+            ],
+            [
+              0.0,
+              13.5
+            ],
+            [
+              0.0,
+              11.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-CLASS3",
+        "unitNumber": "F3-CLASS3",
+        "roomName": "Classroom 3",
+        "category": "classroom",
+        "floorNumber": 4,
+        "area": 18.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-CLASS3"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              8.0
+            ],
+            [
+              6.0,
+              8.0
+            ],
+            [
+              6.0,
+              11.0
+            ],
+            [
+              0.0,
+              11.0
+            ],
+            [
+              0.0,
+              8.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-CLASS2",
+        "unitNumber": "F3-CLASS2",
+        "roomName": "Classroom 2",
+        "category": "classroom",
+        "floorNumber": 4,
+        "area": 18.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-CLASS2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              5.0
+            ],
+            [
+              6.0,
+              5.0
+            ],
+            [
+              6.0,
+              8.0
+            ],
+            [
+              0.0,
+              8.0
+            ],
+            [
+              0.0,
+              5.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-CLASS1",
+        "unitNumber": "F3-CLASS1",
+        "roomName": "Classroom 1",
+        "category": "classroom",
+        "floorNumber": 4,
+        "area": 18.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-CLASS1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              2.0
+            ],
+            [
+              6.0,
+              2.0
+            ],
+            [
+              6.0,
+              5.0
+            ],
+            [
+              0.0,
+              5.0
+            ],
+            [
+              0.0,
+              2.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-STAIRS-BL",
+        "unitNumber": "F3-STAIRS-BL",
+        "roomName": "Stairs (Bottom-Left)",
+        "category": "circulation",
+        "floorNumber": 4,
+        "area": 12.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-STAIRS-BL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              6.0,
+              0.0
+            ],
+            [
+              6.0,
+              2.0
+            ],
+            [
+              0.0,
+              2.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-GENTS-WC",
+        "unitNumber": "F3-GENTS-WC",
+        "roomName": "Gent's W/C",
+        "category": "restroom",
+        "floorNumber": 4,
+        "area": 12.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-GENTS-WC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              25
+            ],
+            [
+              14.0,
+              25
+            ],
+            [
+              14.0,
+              27
+            ],
+            [
+              8.0,
+              27
+            ],
+            [
+              8.0,
+              25
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-HOD",
+        "unitNumber": "F3-HOD",
+        "roomName": "HOD Office",
+        "category": "office",
+        "floorNumber": 4,
+        "area": 12.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-HOD"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              23
+            ],
+            [
+              14.0,
+              23
+            ],
+            [
+              14.0,
+              25
+            ],
+            [
+              8.0,
+              25
+            ],
+            [
+              8.0,
+              23
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-FACULTY",
+        "unitNumber": "F3-FACULTY",
+        "roomName": "Faculty Room",
+        "category": "office",
+        "floorNumber": 4,
+        "area": 12.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-FACULTY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              21
+            ],
+            [
+              14.0,
+              21
+            ],
+            [
+              14.0,
+              23
+            ],
+            [
+              8.0,
+              23
+            ],
+            [
+              8.0,
+              21
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-CLASS8",
+        "unitNumber": "F3-CLASS8",
+        "roomName": "Classroom 8",
+        "category": "classroom",
+        "floorNumber": 4,
+        "area": 12.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-CLASS8"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              19
+            ],
+            [
+              14.0,
+              19
+            ],
+            [
+              14.0,
+              21
+            ],
+            [
+              8.0,
+              21
+            ],
+            [
+              8.0,
+              19
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-CLASS7",
+        "unitNumber": "F3-CLASS7",
+        "roomName": "Classroom 7",
+        "category": "classroom",
+        "floorNumber": 4,
+        "area": 12.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-CLASS7"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              17
+            ],
+            [
+              14.0,
+              17
+            ],
+            [
+              14.0,
+              19
+            ],
+            [
+              8.0,
+              19
+            ],
+            [
+              8.0,
+              17
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-STAIRS-MAIN",
+        "unitNumber": "F3-STAIRS-MAIN",
+        "roomName": "Stairs (Main Stairwell)",
+        "category": "circulation",
+        "floorNumber": 4,
+        "area": 42.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-STAIRS-MAIN",
+        "stairOrientation": "outward",
+        "facingDirection": "south",
+        "entrySide": "south",
+        "runDirection": "north",
+        "orientationNote": "Main stair flight faces outward toward the front/exterior (south, Y decreasing); aligned vertically on all floors."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8,
+              10
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              14,
+              17
+            ],
+            [
+              8,
+              17
+            ],
+            [
+              8,
+              10
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-SEMINARHALL",
+        "unitNumber": "F3-SEMINARHALL",
+        "roomName": "Seminar Hall",
+        "category": "assembly",
+        "floorNumber": 4,
+        "area": 48.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-SEMINARHALL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              2
+            ],
+            [
+              14.0,
+              2
+            ],
+            [
+              14.0,
+              10
+            ],
+            [
+              8.0,
+              10
+            ],
+            [
+              8.0,
+              2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-LADIES-WC",
+        "unitNumber": "F3-LADIES-WC",
+        "roomName": "Ladies W/C",
+        "category": "restroom",
+        "floorNumber": 4,
+        "area": 12.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-LADIES-WC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              0
+            ],
+            [
+              14.0,
+              0
+            ],
+            [
+              14.0,
+              2
+            ],
+            [
+              8.0,
+              2
+            ],
+            [
+              8.0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-PASSAGE",
+        "unitNumber": "F3-PASSAGE",
+        "roomName": "Passage",
+        "category": "circulation",
+        "floorNumber": 4,
+        "area": 54.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-PASSAGE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.0,
+              0.0
+            ],
+            [
+              8.0,
+              0.0
+            ],
+            [
+              8.0,
+              27.0
+            ],
+            [
+              6.0,
+              27.0
+            ],
+            [
+              6.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-LIFT",
+        "unitNumber": "F3-LIFT",
+        "roomName": "Lift",
+        "category": "circulation",
+        "floorNumber": 4,
+        "area": 4.0,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F04-LIFT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.0,
+              -2.0
+            ],
+            [
+              8.0,
+              -2.0
+            ],
+            [
+              8.0,
+              0.0
+            ],
+            [
+              6.0,
+              0.0
+            ],
+            [
+              6.0,
+              -2.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-STAIRS-TL",
+        "unitNumber": "F4-STAIRS-TL",
+        "roomName": "Stairs (Top-Left)",
+        "category": "circulation",
+        "floorNumber": 5,
+        "area": 12.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-STAIRS-TL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              25.0
+            ],
+            [
+              6.0,
+              25.0
+            ],
+            [
+              6.0,
+              27.0
+            ],
+            [
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              25.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-OOPLAB",
+        "unitNumber": "F4-OOPLAB",
+        "roomName": "OOP Lab",
+        "category": "lab",
+        "floorNumber": 5,
+        "area": 21.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-OOPLAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              21.5
+            ],
+            [
+              6.0,
+              21.5
+            ],
+            [
+              6.0,
+              25.0
+            ],
+            [
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              21.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-OSLAB",
+        "unitNumber": "F4-OSLAB",
+        "roomName": "OS Lab",
+        "category": "lab",
+        "floorNumber": 5,
+        "area": 21.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-OSLAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              18.0
+            ],
+            [
+              6.0,
+              18.0
+            ],
+            [
+              6.0,
+              21.5
+            ],
+            [
+              0.0,
+              21.5
+            ],
+            [
+              0.0,
+              18.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-CLASS3",
+        "unitNumber": "F4-CLASS3",
+        "roomName": "Classroom 3",
+        "category": "classroom",
+        "floorNumber": 5,
+        "area": 18.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-CLASS3"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              15.0
+            ],
+            [
+              6.0,
+              15.0
+            ],
+            [
+              6.0,
+              18.0
+            ],
+            [
+              0.0,
+              18.0
+            ],
+            [
+              0.0,
+              15.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-EXAMFAC-1",
+        "unitNumber": "F4-EXAMFAC-1",
+        "roomName": "Exam / Faculty",
+        "category": "office",
+        "floorNumber": 5,
+        "area": 15.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-EXAMFAC-1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              12.5
+            ],
+            [
+              6.0,
+              12.5
+            ],
+            [
+              6.0,
+              15.0
+            ],
+            [
+              0.0,
+              15.0
+            ],
+            [
+              0.0,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-EXAMFAC-2",
+        "unitNumber": "F4-EXAMFAC-2",
+        "roomName": "Exam / Faculty",
+        "category": "office",
+        "floorNumber": 5,
+        "area": 15.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-EXAMFAC-2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              10.0
+            ],
+            [
+              6.0,
+              10.0
+            ],
+            [
+              6.0,
+              12.5
+            ],
+            [
+              0.0,
+              12.5
+            ],
+            [
+              0.0,
+              10.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-CLASS2",
+        "unitNumber": "F4-CLASS2",
+        "roomName": "Classroom 2",
+        "category": "classroom",
+        "floorNumber": 5,
+        "area": 18.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-CLASS2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              7.0
+            ],
+            [
+              6.0,
+              7.0
+            ],
+            [
+              6.0,
+              10.0
+            ],
+            [
+              0.0,
+              10.0
+            ],
+            [
+              0.0,
+              7.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-CLASS1",
+        "unitNumber": "F4-CLASS1",
+        "roomName": "Classroom 1",
+        "category": "classroom",
+        "floorNumber": 5,
+        "area": 18.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-CLASS1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              4.0
+            ],
+            [
+              6.0,
+              4.0
+            ],
+            [
+              6.0,
+              7.0
+            ],
+            [
+              0.0,
+              7.0
+            ],
+            [
+              0.0,
+              4.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-STAIRS-BL",
+        "unitNumber": "F4-STAIRS-BL",
+        "roomName": "Stairs (Bottom-Left)",
+        "category": "circulation",
+        "floorNumber": 5,
+        "area": 24.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-STAIRS-BL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              6.0,
+              0.0
+            ],
+            [
+              6.0,
+              4.0
+            ],
+            [
+              0.0,
+              4.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-LADIES-WC",
+        "unitNumber": "F4-LADIES-WC",
+        "roomName": "Ladies W/C",
+        "category": "restroom",
+        "floorNumber": 5,
+        "area": 12.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-LADIES-WC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              25
+            ],
+            [
+              14.0,
+              25
+            ],
+            [
+              14.0,
+              27
+            ],
+            [
+              8.0,
+              27
+            ],
+            [
+              8.0,
+              25
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-HOD",
+        "unitNumber": "F4-HOD",
+        "roomName": "HOD Office",
+        "category": "office",
+        "floorNumber": 5,
+        "area": 12.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-HOD"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              23
+            ],
+            [
+              14.0,
+              23
+            ],
+            [
+              14.0,
+              25
+            ],
+            [
+              8.0,
+              25
+            ],
+            [
+              8.0,
+              23
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-FACULTY",
+        "unitNumber": "F4-FACULTY",
+        "roomName": "Faculty Room",
+        "category": "office",
+        "floorNumber": 5,
+        "area": 12.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-FACULTY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              21
+            ],
+            [
+              14.0,
+              21
+            ],
+            [
+              14.0,
+              23
+            ],
+            [
+              8.0,
+              23
+            ],
+            [
+              8.0,
+              21
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-DSLAB",
+        "unitNumber": "F4-DSLAB",
+        "roomName": "DS Lab",
+        "category": "lab",
+        "floorNumber": 5,
+        "area": 12.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-DSLAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              19
+            ],
+            [
+              14.0,
+              19
+            ],
+            [
+              14.0,
+              21
+            ],
+            [
+              8.0,
+              21
+            ],
+            [
+              8.0,
+              19
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-RHLAB",
+        "unitNumber": "F4-RHLAB",
+        "roomName": "RH Lab",
+        "category": "lab",
+        "floorNumber": 5,
+        "area": 12.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-RHLAB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              17
+            ],
+            [
+              14.0,
+              17
+            ],
+            [
+              14.0,
+              19
+            ],
+            [
+              8.0,
+              19
+            ],
+            [
+              8.0,
+              17
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-STAIRS-MAIN",
+        "unitNumber": "F4-STAIRS-MAIN",
+        "roomName": "Stairs (Main Stairwell)",
+        "category": "circulation",
+        "floorNumber": 5,
+        "area": 42.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-STAIRS-MAIN",
+        "stairOrientation": "outward",
+        "facingDirection": "south",
+        "entrySide": "south",
+        "runDirection": "north",
+        "orientationNote": "Main stair flight faces outward toward the front/exterior (south, Y decreasing); aligned vertically on all floors."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8,
+              10
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              14,
+              17
+            ],
+            [
+              8,
+              17
+            ],
+            [
+              8,
+              10
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-SEMINARHALL",
+        "unitNumber": "F4-SEMINARHALL",
+        "roomName": "Seminar Hall",
+        "category": "assembly",
+        "floorNumber": 5,
+        "area": 48.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-SEMINARHALL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              2
+            ],
+            [
+              14.0,
+              2
+            ],
+            [
+              14.0,
+              10
+            ],
+            [
+              8.0,
+              10
+            ],
+            [
+              8.0,
+              2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-GENTS-WC",
+        "unitNumber": "F4-GENTS-WC",
+        "roomName": "Gents W/C",
+        "category": "restroom",
+        "floorNumber": 5,
+        "area": 12.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-GENTS-WC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              0
+            ],
+            [
+              14.0,
+              0
+            ],
+            [
+              14.0,
+              2
+            ],
+            [
+              8.0,
+              2
+            ],
+            [
+              8.0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-PASSAGE",
+        "unitNumber": "F4-PASSAGE",
+        "roomName": "Passage",
+        "category": "circulation",
+        "floorNumber": 5,
+        "area": 54.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-PASSAGE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.0,
+              0.0
+            ],
+            [
+              8.0,
+              0.0
+            ],
+            [
+              8.0,
+              27.0
+            ],
+            [
+              6.0,
+              27.0
+            ],
+            [
+              6.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-LIFT",
+        "unitNumber": "F4-LIFT",
+        "roomName": "Lift",
+        "category": "circulation",
+        "floorNumber": 5,
+        "area": 4.0,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "14-4012-0001-3D-F05-LIFT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.0,
+              -2.0
+            ],
+            [
+              8.0,
+              -2.0
+            ],
+            [
+              8.0,
+              0.0
+            ],
+            [
+              6.0,
+              0.0
+            ],
+            [
+              6.0,
+              -2.0
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "stairwellConfiguration": {
+    "mainStairwell": {
+      "alignment": "vertical",
+      "xRangeMeters": [
+        8,
+        14
+      ],
+      "yRangeMeters": [
+        10,
+        17
+      ],
+      "facingDirection": "south",
+      "entrySide": "south",
+      "runDirection": "north",
+      "outwardFacing": true
+    }
+  }
+}
