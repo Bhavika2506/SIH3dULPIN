@@ -5,14 +5,16 @@ import type { ParsedBuilding, Property2D } from "@/src/lib/parser/types";
 
 type Property = Property2D & {
   ulpin: string;
+  floorNumber: number; // 👈 Ensures floorNumber exists on Property type
 };
 
 function getProperties(building?: ParsedBuilding | null): Property[] {
   if (!building?.floors) return [];
 
   return building.floors.flatMap((floor) =>
-    floor.units.map((unit, index) => ({
+    (floor.units || []).map((unit, index) => ({
       ...unit,
+      floorNumber: floor.floorNumber, // 👈 Fixes "No units detected" by explicitly setting floorNumber
       ulpin: unit.ulpin || `3D-${building.id}-${floor.floorNumber}-${index + 1}`,
     }))
   );

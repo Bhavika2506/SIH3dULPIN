@@ -1,0 +1,165 @@
+{
+  "id": "BLD-5STOREY-SHIVAJINAGAR",
+  "name": "5_Storey_Cadastral_Building_Shivajinagar",
+  "georeference": {
+    "latitude": 18.5302,
+    "longitude": 73.8526
+  },
+  "floors": [
+    {
+      "floorNumber": 1,
+      "elevation": 0.0,
+      "height": 3.2,
+      "units": [
+        {
+          "id": "A-101",
+          "unitNumber": "A-101",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[0, 0], [10, 0], [10, 8], [0, 8], [0, 0]],
+          "ulpin": "14-4012-0001-3D-F01-A101"
+        },
+        {
+          "id": "B-101",
+          "unitNumber": "B-101",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[10, 0], [20, 0], [20, 8], [10, 8], [10, 0]],
+          "ulpin": "14-4012-0001-3D-F01-B101"
+        },
+        {
+          "id": "C-101",
+          "unitNumber": "C-101",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[20, 0], [30, 0], [30, 8], [20, 8], [20, 0]],
+          "ulpin": "14-4012-0001-3D-F01-C101"
+        }
+      ]
+    },
+    {
+      "floorNumber": 2,
+      "elevation": 3.2,
+      "height": 3.2,
+      "units": [
+        {
+          "id": "A-201",
+          "unitNumber": "A-201",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[0, 0], [10, 0], [10, 8], [0, 8], [0, 0]],
+          "ulpin": "14-4012-0001-3D-F02-A201"
+        },
+        {
+          "id": "B-201",
+          "unitNumber": "B-201",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[10, 0], [20, 0], [20, 8], [10, 8], [10, 0]],
+          "ulpin": "14-4012-0001-3D-F02-B201"
+        },
+        {
+          "id": "C-201",
+          "unitNumber": "C-201",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[20, 0], [30, 0], [30, 8], [20, 8], [20, 0]],
+          "ulpin": "14-4012-0001-3D-F02-C201"
+        }
+      ]
+    },
+    {
+      "floorNumber": 3,
+      "elevation": 6.4,
+      "height": 3.2,
+      "units": [
+        {
+          "id": "A-301",
+          "unitNumber": "A-301",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[0, 0], [10, 0], [10, 8], [0, 8], [0, 0]],
+          "ulpin": "14-4012-0001-3D-F03-A301"
+        },
+        {
+          "id": "B-301",
+          "unitNumber": "B-301",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[10, 0], [20, 0], [20, 8], [10, 8], [10, 0]],
+          "ulpin": "14-4012-0001-3D-F03-B301"
+        },
+        {
+          "id": "C-301",
+          "unitNumber": "C-301",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[20, 0], [30, 0], [30, 8], [20, 8], [20, 0]],
+          "ulpin": "14-4012-0001-3D-F03-C301"
+        }
+      ]
+    },
+    {
+      "floorNumber": 4,
+      "elevation": 9.6,
+      "height": 3.2,
+      "units": [
+        {
+          "id": "A-401",
+          "unitNumber": "A-401",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[0, 0], [10, 0], [10, 8], [0, 8], [0, 0]],
+          "ulpin": "14-4012-0001-3D-F04-A401"
+        },
+        {
+          "id": "B-401",
+          "unitNumber": "B-401",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[10, 0], [20, 0], [20, 8], [10, 8], [10, 0]],
+          "ulpin": "14-4012-0001-3D-F04-B401"
+        },
+        {
+          "id": "C-401",
+          "unitNumber": "C-401",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[20, 0], [30, 0], [30, 8], [20, 8], [20, 0]],
+          "ulpin": "14-4012-0001-3D-F04-C401"
+        }
+      ]
+    },
+    {
+      "floorNumber": 5,
+      "elevation": 12.8,
+      "height": 3.2,
+      "units": [
+        {
+          "id": "A-501",
+          "unitNumber": "A-501",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[0, 0], [10, 0], [10, 8], [0, 8], [0, 0]],
+          "ulpin": "14-4012-0001-3D-F05-A501"
+        },
+        {
+          "id": "B-501",
+          "unitNumber": "B-501",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[10, 0], [20, 0], [20, 8], [10, 8], [10, 0]],
+          "ulpin": "14-4012-0001-3D-F05-B501"
+        },
+        {
+          "id": "C-501",
+          "unitNumber": "C-501",
+          "area": 80,
+          "spaceType": "RESIDENTIAL",
+          "polygon": [[20, 0], [30, 0], [30, 8], [20, 8], [20, 0]],
+          "ulpin": "14-4012-0001-3D-F05-C501"
+        }
+      ]
+    }
+  ]
+}

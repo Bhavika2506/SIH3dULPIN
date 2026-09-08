@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect, Suspense } from "react";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Grid, Html, Environment, ContactShadows } from "@react-three/drei";
@@ -142,7 +142,7 @@ export default function VolumetricViewer({
       }}
     >
       <Canvas
-        shadows={{ type: THREE.PCFShadowMap }} // Fixed PCFSoftShadowMap deprecation
+        shadows={{ type: THREE.PCFShadowMap }}
         camera={{
           position: [
             buildingSize * 1.5,
@@ -154,7 +154,11 @@ export default function VolumetricViewer({
       >
         <color attach="background" args={["#f8fafc"]} />
 
-        <ambientLight intensity={0.9} />
+        <ambientLight intensity={0.8} />
+        <hemisphereLight
+          args={["#ffffff", "#cbd5e1", 0.6]}
+          position={[0, 50, 0]}
+        />
         <directionalLight
           position={[30, 50, 25]}
           intensity={1.6}
@@ -163,7 +167,11 @@ export default function VolumetricViewer({
           shadow-mapSize-height={2048}
         />
         <pointLight position={[-20, 20, -20]} intensity={0.5} />
-        <Environment preset="city" />
+
+        {/* Wrapped in Suspense to prevent canvas crashes on HDR texture download failures */}
+        <Suspense fallback={null}>
+          <Environment preset="city" />
+        </Suspense>
 
         <group>
           {building.floors.map((floor) => (
