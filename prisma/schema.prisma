@@ -4,6 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model User {
@@ -44,15 +45,15 @@ model Floor {
 }
 
 model Property {
-  id         String   @id @default(uuid())
-  floorId    String
+  id        String   @id @default(uuid())
+  floorId   String
   unitNumber String
-  ulpin      String?  @unique
-  area       Float
-  spaceType  String
-  polygon    Json
-  createdAt  DateTime @default(now())
-  floor      Floor    @relation(fields: [floorId], references: [id], onDelete: Cascade)
+  ulpin     String?  @unique
+  area      Float
+  spaceType String
+  polygon   Json
+  createdAt DateTime @default(now())
+  floor     Floor    @relation(fields: [floorId], references: [id], onDelete: Cascade)
 }
 
 enum ApprovalStatus {
