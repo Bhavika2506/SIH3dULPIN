@@ -369,7 +369,6 @@ export default function PropertyInspectionPage() {
                         building={building}
                         selectedPropertyId={property.id}
                         onPropertySelect={(p) => handleUnitToggle(p.id)}
-                        style={{ height: "100%", minHeight: "420px", borderRadius: "0.75rem", border: "none" }}
                       />
                     ) : (
                       <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-[#f8f5ee]">
