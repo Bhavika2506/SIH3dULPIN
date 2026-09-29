@@ -1,57 +1,296 @@
 {
   "type": "FeatureCollection",
-  "buildingName": "Subterranean_Urban_Hub",
-  "buildingId": "BLD-SUB-001",
+  "buildingName": "JSPM_NTC_Underground_Utilities",
+  "buildingId": "JSPM-NTC-UNDERGROUND-UTILITIES",
+  "georeference": {
+    "latitude": 18.4414,
+    "longitude": 73.8314,
+    "elevationOffset": 0.0,
+    "coordinateSystem": "WGS84",
+    "anchorType": "surveyedUtilityZone",
+    "surveyedFootprintWGS84": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [73.83046, 18.441735],
+          [73.8322833, 18.4419808],
+          [73.8323232, 18.44096],
+          [73.8305895, 18.4408229],
+          [73.83046, 18.441735]
+        ]
+      ]
+    }
+  },
+  "bbox": [
+    73.83046,
+    18.4408229,
+    73.8323232,
+    18.4419808
+  ],
   "features": [
     {
       "type": "Feature",
       "properties": {
-        "id": "B02-UTILITY-PIPE",
-        "unitNumber": "Subsurface Drainage & Utility Pipe",
-        "floorNumber": -2,
-        "spaceType": "Utility",
-        "area": 24.0,
-        "elevationMeters": -6.4,
-        "heightMeters": 3.2,
-        "ulpin": "14-4012-0001-3D-B02-UTIL01"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[0, 0], [20, 0], [20, 3], [0, 3], [0, 0]]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "B01-PARKING",
-        "unitNumber": "Basement Parking B1",
+        "id": "UTL-WATER-MAIN",
+        "unitNumber": "Potable Water Main",
         "floorNumber": -1,
-        "spaceType": "Basement",
-        "area": 120.0,
-        "elevationMeters": -3.2,
-        "heightMeters": 3.2,
-        "ulpin": "14-4012-0001-3D-B01-PARK01"
+        "spaceType": "Passage",
+        "role": "utility-pipe",
+        "areaApproxSqm": 42.0,
+        "elevationMeters": -2.0,
+        "heightMeters": 0.6,
+        "ulpin": "3D-JSPM-UTL-WTR-01",
+        "displayLabel": "Potable Water Main (300mm DI)",
+        "utilityType": "Water Supply",
+        "pipeDiameterMm": 300,
+        "visibleUnit": true
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[[0, 0], [20, 0], [20, 15], [0, 15], [0, 0]]]
+        "coordinates": [
+          [
+            [73.83055, 18.441655],
+            [73.83220, 18.441835],
+            [73.83220, 18.441825],
+            [73.83055, 18.441645],
+            [73.83055, 18.441655]
+          ]
+        ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "F01-LOBBY",
-        "unitNumber": "Ground Floor Main Lobby",
-        "floorNumber": 1,
-        "spaceType": "Hall",
-        "area": 120.0,
-        "elevationMeters": 0.0,
-        "heightMeters": 3.2,
-        "ulpin": "14-4012-0001-3D-F01-LOBBY"
+        "id": "UTL-WATER-BRANCH",
+        "unitNumber": "Building Feed Branch",
+        "floorNumber": -1,
+        "spaceType": "Passage",
+        "role": "utility-pipe",
+        "areaApproxSqm": 18.0,
+        "elevationMeters": -1.8,
+        "heightMeters": 0.4,
+        "ulpin": "3D-JSPM-UTL-WTR-02",
+        "displayLabel": "Water Feed Branch (150mm HDPE)",
+        "utilityType": "Water Supply",
+        "pipeDiameterMm": 150,
+        "visibleUnit": true
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[[0, 0], [20, 0], [20, 15], [0, 15], [0, 0]]]
+        "coordinates": [
+          [
+            [73.83120, 18.44172],
+            [73.83121, 18.44172],
+            [73.83126, 18.44105],
+            [73.83124, 18.44105],
+            [73.83120, 18.44172]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "UTL-FIRE-MAIN",
+        "unitNumber": "Fire Hydrant Ring",
+        "floorNumber": -1,
+        "spaceType": "Passage",
+        "role": "utility-pipe",
+        "areaApproxSqm": 85.0,
+        "elevationMeters": -2.2,
+        "heightMeters": 0.5,
+        "ulpin": "3D-JSPM-UTL-FIR-01",
+        "displayLabel": "Fire Water Ring Line (250mm Steel)",
+        "utilityType": "Fire Water",
+        "pipeDiameterMm": 250,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [73.83060, 18.44160],
+            [73.83215, 18.44180],
+            [73.83218, 18.44110],
+            [73.83070, 18.44095],
+            [73.83060, 18.44160]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "UTL-SEWER-MAIN",
+        "unitNumber": "Sanitary Sewer Trunk",
+        "floorNumber": -2,
+        "spaceType": "Passage",
+        "role": "utility-pipe",
+        "areaApproxSqm": 52.0,
+        "elevationMeters": -3.5,
+        "heightMeters": 0.8,
+        "ulpin": "3D-JSPM-UTL-SEW-01",
+        "displayLabel": "Sanitary Sewer Trunk (450mm RCP)",
+        "utilityType": "Wastewater",
+        "pipeDiameterMm": 450,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [73.83050, 18.441505],
+            [73.83225, 18.441205],
+            [73.83225, 18.441195],
+            [73.83050, 18.441495],
+            [73.83050, 18.441505]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "UTL-MANHOLE-01",
+        "unitNumber": "Sanitary Manhole 1",
+        "floorNumber": -2,
+        "spaceType": "Lift",
+        "role": "utility-chamber",
+        "areaApproxSqm": 2.5,
+        "elevationMeters": -3.5,
+        "heightMeters": 3.5,
+        "ulpin": "3D-JSPM-UTL-MH-01",
+        "displayLabel": "Inspection Chamber MH-1",
+        "utilityType": "Wastewater",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [73.83109, 18.44141],
+            [73.83111, 18.44141],
+            [73.83111, 18.44139],
+            [73.83109, 18.44139],
+            [73.83109, 18.44141]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "UTL-STORM-DRAIN",
+        "unitNumber": "Stormwater Drainage Culvert",
+        "floorNumber": -1,
+        "spaceType": "Passage",
+        "role": "utility-pipe",
+        "areaApproxSqm": 60.0,
+        "elevationMeters": -2.8,
+        "heightMeters": 0.8,
+        "ulpin": "3D-JSPM-UTL-STM-01",
+        "displayLabel": "Storm Drain Box Culvert (600x600mm)",
+        "utilityType": "Drainage",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [73.83052, 18.441355],
+            [73.83200, 18.441155],
+            [73.83200, 18.441145],
+            [73.83052, 18.441345],
+            [73.83052, 18.441355]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "UTL-GAS-MAIN",
+        "unitNumber": "PNG Gas Line",
+        "floorNumber": -1,
+        "spaceType": "Passage",
+        "role": "utility-pipe",
+        "areaApproxSqm": 32.0,
+        "elevationMeters": -1.2,
+        "heightMeters": 0.35,
+        "ulpin": "3D-JSPM-UTL-GAS-01",
+        "displayLabel": "Natural Gas Main (110mm MDPE)",
+        "utilityType": "Gas Supply",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [73.83058, 18.441205],
+            [73.83190, 18.441025],
+            [73.83190, 18.441015],
+            [73.83058, 18.441195],
+            [73.83058, 18.441205]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "UTL-POWER-DUCT",
+        "unitNumber": "11kV Power Cable Duct",
+        "floorNumber": -1,
+        "spaceType": "Passage",
+        "role": "utility-pipe",
+        "areaApproxSqm": 38.0,
+        "elevationMeters": -1.0,
+        "heightMeters": 0.4,
+        "ulpin": "3D-JSPM-UTL-ELE-01",
+        "displayLabel": "11kV Electric Cable Duct Bank",
+        "utilityType": "Electrical",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [73.83062, 18.441055],
+            [73.83210, 18.440925],
+            [73.83210, 18.440915],
+            [73.83062, 18.441045],
+            [73.83062, 18.441055]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "UTL-OFC-DUCT",
+        "unitNumber": "Telecom Fiber Backbone",
+        "floorNumber": -1,
+        "spaceType": "Passage",
+        "role": "utility-pipe",
+        "areaApproxSqm": 28.0,
+        "elevationMeters": -0.8,
+        "heightMeters": 0.3,
+        "ulpin": "3D-JSPM-UTL-TEL-01",
+        "displayLabel": "Fiber Optic Cable Conduits",
+        "utilityType": "Telecommunications",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [73.83060, 18.441005],
+            [73.83205, 18.440885],
+            [73.83205, 18.440875],
+            [73.83060, 18.440995],
+            [73.83060, 18.441005]
+          ]
+        ]
       }
     }
   ]

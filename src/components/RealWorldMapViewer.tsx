@@ -508,6 +508,13 @@ function normalizeBuilding(
                   unit?.spaceType ??
                   unit?.category ??
                   "RESIDENTIAL",
+
+                fillColor:
+                  unit?.fillColor ??
+                  unit?.color ??
+                  unit?.properties?.fillColor ??
+                  unit?.properties?.color ??
+                  undefined,
               };
             }
           ),
@@ -830,13 +837,6 @@ export default function RealWorldMapViewer({
                 ? unit.polygon
                 : [];
 
-            /**
-             * No valid polygon?
-             * Do not fabricate the unit in GeoJSON.
-             *
-             * A structure marker will still be
-             * displayed for the building.
-             */
             if (
               rawPolygon.length <
               3
@@ -873,9 +873,6 @@ export default function RealWorldMapViewer({
                 }
               );
 
-            /**
-             * Close ring.
-             */
             const first =
               geoPolygon[0];
 
@@ -909,37 +906,52 @@ export default function RealWorldMapViewer({
             const space =
               `${unit.spaceType ?? ""} ${unit.unitNumber ?? ""}`.toLowerCase();
 
-            // Earthy forest green & natural tones strictly conforming to BhuVista design system
-            let fillColor = "#2d6a4f"; // Forest Green (default structure/residential)
-
-            if (
+            /*
+             * IMPORTANT:
+             * The C-block GeoJSON currently contains fillColor="#428AFE"
+             * on every unit. If custom fillColor is checked first, MapLibre
+             * receives the same blue value for every feature and the map
+             * becomes entirely blue.
+             *
+             * Resolve the semantic/unit color FIRST. A custom color is only
+             * honored when the source explicitly marks it as intentional.
+             * This keeps the map colors consistent with the volumetric view.
+             */
+            const semanticColor =
               space.includes("stair") ||
               space.includes("staircase")
-            ) {
-              fillColor = "#d4a373"; // Warm Sand / Earthy Gold
-            } else if (
-              space.includes("lift") ||
-              space.includes("elevator")
-            ) {
-              fillColor = "#52b788"; // Sage Accent
-            } else if (
-              space.includes("corridor") ||
-              space.includes("passage")
-            ) {
-              fillColor = "#74c69d"; // Soft Meadow Green
-            } else if (
-              space.includes("toilet") ||
-              space.includes("restroom") ||
-              space.includes("utility")
-            ) {
-              fillColor = "#b7b7a4"; // Muted Earth Grey/Taupe
-            } else if (
-              space.includes("commercial") ||
-              space.includes("office") ||
-              space.includes("shop")
-            ) {
-              fillColor = "#1b4332"; // Deep Pine
-            }
+                ? "#f97316"       // Orange
+                : space.includes("lift") ||
+                  space.includes("elevator")
+                  ? "#06b6d4"     // Cyan
+                  : space.includes("corridor") ||
+                    space.includes("passage")
+                    ? "#a855f7"   // Purple
+                    : space.includes("toilet") ||
+                      space.includes("restroom") ||
+                      space.includes("utility") ||
+                      space.includes("w/c")
+                      ? "#ec4899" // Pink
+                      : space.includes("lab")
+                        ? "#3b82f6" // Blue
+                        : space.includes("office") ||
+                          space.includes("cell")
+                          ? "#10b981" // Emerald
+                          : space.includes("hall") ||
+                            space.includes("canteen")
+                            ? "#eab308" // Amber
+                            : "#3b82f6"; // Standard Unit Blue
+
+            const explicitColor =
+              (unit as any).mapFillColor ??
+              (unit as any).customFillColor ??
+              (unit as any).properties?.mapFillColor ??
+              (unit as any).properties?.customFillColor;
+
+            const fillColor =
+              typeof explicitColor === "string" && explicitColor.trim()
+                ? explicitColor
+                : semanticColor;
 
             const base =
               Number(
@@ -992,6 +1004,8 @@ export default function RealWorldMapViewer({
                 height,
 
                 fillColor,
+                renderColor: fillColor,
+                mapFillColor: fillColor,
               },
 
               geometry: {
@@ -1040,18 +1054,11 @@ export default function RealWorldMapViewer({
         const anchor =
           item.georeference!;
 
-        /**
-         * Always include GNSS anchor.
-         */
         bounds.extend([
           anchor.longitude,
           anchor.latitude,
         ]);
 
-        /**
-         * Include actual polygon geometry
-         * when available.
-         */
         for (const floor of
           item.floors ??
           []) {
@@ -1186,14 +1193,13 @@ export default function RealWorldMapViewer({
 
     minimapRef.current = miniMap;
 
-    // Viewport location indicator marker on static overview
     const indicatorEl = document.createElement("div");
     indicatorEl.style.width = "12px";
     indicatorEl.style.height = "12px";
     indicatorEl.style.borderRadius = "9999px";
-    indicatorEl.style.backgroundColor = "#2d6a4f";
+    indicatorEl.style.backgroundColor = "#2563eb";
     indicatorEl.style.border = "2px solid #ffffff";
-    indicatorEl.style.boxShadow = "0 0 10px rgba(45,106,79,0.8)";
+    indicatorEl.style.boxShadow = "0 0 10px rgba(37,99,235,0.8)";
 
     const marker = new Marker({
       element: indicatorEl,
@@ -1240,11 +1246,6 @@ export default function RealWorldMapViewer({
    * ----------------------------------------------------------
    * INITIALIZE MAIN MAP
    * ----------------------------------------------------------
-   *
-   * IMPORTANT:
-   * We do NOT block map creation when there is
-   * no building geometry. A valid coordinate alone
-   * is enough to create a visible structure marker.
    */
   useEffect(() => {
     if (!containerRef.current) {
@@ -1307,9 +1308,6 @@ export default function RealWorldMapViewer({
     map.on(
       "load",
       () => {
-        // Add real satellite imagery as a raster source.
-        // MapTiler is used when NEXT_PUBLIC_MAPTILER_KEY exists; otherwise
-        // the public Esri World Imagery tile endpoint is used as an MVP fallback.
         if (!map.getSource(SATELLITE_SOURCE_ID)) {
           const satelliteSource = MAPTILER_KEY
             ? {
@@ -1331,8 +1329,6 @@ export default function RealWorldMapViewer({
             satelliteSource
           );
 
-          // Put imagery above the style background but below the existing
-          // OpenFreeMap vector layers, so labels remain readable.
           const firstDrawableLayer =
             map
               .getStyle()
@@ -1517,11 +1513,6 @@ export default function RealWorldMapViewer({
    * ----------------------------------------------------------
    * ADD BUILDING MARKERS
    * ----------------------------------------------------------
-   *
-   * This is the critical fallback.
-   *
-   * Every building with valid GNSS coordinates gets a
-   * structure marker even when floor geometry isn't returned.
    */
   useEffect(() => {
     const map =
@@ -1534,9 +1525,6 @@ export default function RealWorldMapViewer({
       return;
     }
 
-    /**
-     * Remove old markers.
-     */
     markerRefs.current.forEach(
       (marker) =>
         marker.remove()
@@ -1553,9 +1541,6 @@ export default function RealWorldMapViewer({
         continue;
       }
 
-      /**
-       * Structure-style marker.
-       */
       const element =
         document.createElement(
           "button"
@@ -1589,10 +1574,10 @@ export default function RealWorldMapViewer({
         "9px";
 
       element.style.background =
-        "linear-gradient(135deg, #2d6a4f, #1b4332)";
+        "linear-gradient(135deg, #2563eb, #1d4ed8)";
 
       element.style.boxShadow =
-        "0 5px 18px rgba(45,106,79,0.45)";
+        "0 5px 18px rgba(37,99,235,0.45)";
 
       element.style.cursor =
         "pointer";
@@ -1649,9 +1634,6 @@ export default function RealWorldMapViewer({
               currentBuilding
             );
 
-            /**
-             * Focus on selected building.
-             */
             const bounds =
               getSingleBuildingBounds(
                 currentBuilding
@@ -1699,9 +1681,6 @@ export default function RealWorldMapViewer({
           ])
           .addTo(map);
 
-      /**
-       * Popup for building marker.
-       */
       const popup =
         new Popup({
           offset: 24,
@@ -1812,9 +1791,6 @@ export default function RealWorldMapViewer({
       return;
     }
 
-    /**
-     * Safety cleanup.
-     */
     if (
       map.getLayer(
         OUTLINE_LAYER
@@ -1858,11 +1834,6 @@ export default function RealWorldMapViewer({
     const geojson =
       createGeoJSON();
 
-    /**
-     * It is perfectly valid for this to be empty
-     * when the DB has anchor coordinates but no
-     * usable unit geometry.
-     */
     map.addSource(
       SOURCE_ID,
       {
@@ -1892,15 +1863,15 @@ export default function RealWorldMapViewer({
         "fill-color": [
           "case",
           ["boolean", ["feature-state", "selected"], false],
-          "#d4a373", // Warm earthy gold highlight for selected unit/parcel
+          "#f59e0b", // Amber highlight for selected unit/parcel
           ["get", "fillColor"],
         ],
 
         "fill-opacity": [
           "case",
           ["boolean", ["feature-state", "selected"], false],
-          0.65,
-          multiBuildingMode ? 0.35 : 0.25,
+          0.85,
+          multiBuildingMode ? 0.65 : 0.55,
         ],
       },
     });
@@ -1923,7 +1894,7 @@ export default function RealWorldMapViewer({
         "fill-extrusion-color": [
           "case",
           ["boolean", ["feature-state", "selected"], false],
-          "#d4a373", // Warm earthy gold highlight for selected 3D building
+          "#f59e0b", // Amber highlight for selected 3D building
           ["get", "fillColor"],
         ],
 
@@ -1950,7 +1921,7 @@ export default function RealWorldMapViewer({
         "fill-extrusion-opacity":
           multiBuildingMode
             ? 0.85
-            : 0.8,
+            : 0.75,
 
         "fill-extrusion-vertical-gradient":
           true,
@@ -1975,15 +1946,15 @@ export default function RealWorldMapViewer({
         "line-color": [
           "case",
           ["boolean", ["feature-state", "selected"], false],
-          "#1b4332", // Strong forest green boundary when selected
-          "#2d6a4f", // Restrained BhuVista green parcel boundary
+          "#b45309",
+          "#1e3a8a",
         ],
 
         "line-width": [
           "case",
           ["boolean", ["feature-state", "selected"], false],
           3.5,
-          2.0,
+          1.5,
         ],
 
         "line-opacity":
@@ -1991,11 +1962,6 @@ export default function RealWorldMapViewer({
       },
     });
 
-    /**
-     * --------------------------------------------------------
-     * POLYGON CLICK & UNSELECT ON EMPTY CANVAS
-     * --------------------------------------------------------
-     */
     let selectedFeatureId: string | number | null = null;
 
     const clearFeatureSelection = () => {
@@ -2127,7 +2093,6 @@ export default function RealWorldMapViewer({
       handlePolygonClick
     );
 
-    // Unselect when clicking empty canvas
     const handleMapClick = (event: any) => {
       const features = map.queryRenderedFeatures(event.point, {
         layers: [EXTRUSION_LAYER, FOOTPRINT_LAYER],
@@ -2140,9 +2105,6 @@ export default function RealWorldMapViewer({
 
     map.on("click", handleMapClick);
 
-    /**
-     * Initial fit.
-     */
     fitAllBuildings();
 
     return () => {
@@ -2315,7 +2277,7 @@ export default function RealWorldMapViewer({
    * ----------------------------------------------------------
    */
   return (
-    <div className="relative w-full h-full min-h-[600px] overflow-hidden bg-[#d1e3d4]">
+    <div className="relative w-full h-full min-h-[600px] overflow-hidden bg-[#f8fafc]">
       {/* MAP CANVAS */}
       <div ref={containerRef} className="w-full h-full min-h-[600px]" />
 
@@ -2330,9 +2292,9 @@ export default function RealWorldMapViewer({
               handleSelectSearchResult(searchResults[0]);
             }
           }}
-          className="flex items-center rounded-full border border-[#e2dad0] bg-[#fdfbf7]/95 px-4 py-2 shadow-lg backdrop-blur-md relative"
+          className="flex items-center rounded-full border border-[#cbd5e1] bg-[#ffffff]/95 px-4 py-2 shadow-lg backdrop-blur-md relative"
         >
-          <div className="flex h-8 w-8 items-center justify-center text-[#2d6a4f] shrink-0">
+          <div className="flex h-8 w-8 items-center justify-center text-[#2563eb] shrink-0">
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -2346,7 +2308,7 @@ export default function RealWorldMapViewer({
               setSearchQuery(e.target.value);
               setIsSearchDropdownOpen(true);
             }}
-            className="w-full bg-transparent px-3 py-1 text-xs text-[#162a21] placeholder-[#6b887a] outline-none font-medium"
+            className="w-full bg-transparent px-3 py-1 text-xs text-[#0f172a] placeholder-[#64748b] outline-none font-medium"
           />
           {searchQuery && (
             <button
@@ -2356,7 +2318,7 @@ export default function RealWorldMapViewer({
                 setIsSearchDropdownOpen(false);
               }}
               title="Clear search"
-              className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[#6b887a] hover:text-[#162a21] hover:bg-[#f3efe6] transition"
+              className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[#64748b] hover:text-[#0f172a] hover:bg-[#f1f5f9] transition"
             >
               ✕
             </button>
@@ -2365,12 +2327,12 @@ export default function RealWorldMapViewer({
 
         {/* SEARCH RESULTS DROPDOWN */}
         {isSearchDropdownOpen && searchQuery.trim().length > 0 && (
-          <div className="absolute top-full left-0 right-0 mt-2 z-50 bg-[#fdfbf7] border border-[#e2dad0] rounded-2xl shadow-2xl p-2.5 max-h-80 overflow-y-auto backdrop-blur-md">
+          <div className="absolute top-full left-0 right-0 mt-2 z-50 bg-[#ffffff] border border-[#cbd5e1] rounded-2xl shadow-2xl p-2.5 max-h-80 overflow-y-auto backdrop-blur-md">
             {searchResults.length > 0 ? (
               <div className="space-y-1">
-                <div className="px-3 py-1.5 text-[11px] font-bold text-[#2d6a4f] uppercase tracking-wider border-b border-[#e2dad0]/60 flex items-center justify-between">
+                <div className="px-3 py-1.5 text-[11px] font-bold text-[#2563eb] uppercase tracking-wider border-b border-[#cbd5e1]/60 flex items-center justify-between">
                   <span>{t.matchingPublicRecords}</span>
-                  <span className="text-[10px] bg-[#2d6a4f]/10 text-[#2d6a4f] px-2 py-0.5 rounded-full font-extrabold">
+                  <span className="text-[10px] bg-[#2563eb]/10 text-[#2563eb] px-2 py-0.5 rounded-full font-extrabold">
                     {searchResults.length}
                   </span>
                 </div>
@@ -2379,30 +2341,30 @@ export default function RealWorldMapViewer({
                   <div
                     key={item.id}
                     onClick={() => handleSelectSearchResult(item)}
-                    className="flex items-center justify-between p-3 rounded-xl hover:bg-[#f3efe6] cursor-pointer transition border border-transparent hover:border-[#e2dad0]"
+                    className="flex items-center justify-between p-3 rounded-xl hover:bg-[#f1f5f9] cursor-pointer transition border border-transparent hover:border-[#cbd5e1]"
                   >
                     <div className="flex flex-col min-w-0 pr-2">
                       <div className="flex items-center gap-2">
-                        <span className="shrink-0 text-[10px] font-extrabold px-1.5 py-0.5 rounded bg-[#2d6a4f]/10 text-[#2d6a4f]">
+                        <span className="shrink-0 text-[10px] font-extrabold px-1.5 py-0.5 rounded bg-[#2563eb]/10 text-[#2563eb]">
                           {item.type === "PROPERTY" ? "PARCEL" : "BUILDING"}
                         </span>
-                        <span className="font-bold text-xs text-[#162a21] truncate">
+                        <span className="font-bold text-xs text-[#0f172a] truncate">
                           {item.title}
                         </span>
                       </div>
-                      <span className="text-[11px] font-medium text-[#6b887a] truncate mt-0.5">
+                      <span className="text-[11px] font-medium text-[#64748b] truncate mt-0.5">
                         {item.subtitle}
                       </span>
                     </div>
 
                     <div className="flex flex-col items-end shrink-0">
                       {item.landUse && (
-                        <span className="text-[10px] font-semibold text-[#2d6a4f]">
+                        <span className="text-[10px] font-semibold text-[#2563eb]">
                           {item.landUse}
                         </span>
                       )}
                       {item.area && (
-                        <span className="text-[10px] text-[#6b887a] font-medium">
+                        <span className="text-[10px] text-[#64748b] font-medium">
                           {item.area} m²
                         </span>
                       )}
@@ -2411,7 +2373,7 @@ export default function RealWorldMapViewer({
                 ))}
               </div>
             ) : (
-              <div className="p-4 text-center text-xs font-semibold text-[#6b887a] bg-[#f8f5ee] rounded-xl border border-[#e2dad0]">
+              <div className="p-4 text-center text-xs font-semibold text-[#64748b] bg-[#f8fafc] rounded-xl border border-[#cbd5e1]">
                 {t.noMatchingRecords}
               </div>
             )}
@@ -2422,15 +2384,15 @@ export default function RealWorldMapViewer({
       {/* ---------------------------------------------------- */}
       {/* FLOATING LOCATION CARD (TOP-RIGHT) */}
       {/* ---------------------------------------------------- */}
-      <div className="absolute top-6 right-6 z-30 hidden sm:flex items-center gap-3 rounded-2xl border border-[#e2dad0] bg-[#fdfbf7]/95 px-4 py-3 text-xs text-[#162a21] shadow-lg backdrop-blur-md">
-        <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#f8f5ee] border border-[#e2dad0] text-[#2d6a4f] text-base">
+      <div className="absolute top-6 right-6 z-30 hidden sm:flex items-center gap-3 rounded-2xl border border-[#cbd5e1] bg-[#ffffff]/95 px-4 py-3 text-xs text-[#0f172a] shadow-lg backdrop-blur-md">
+        <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#f1f5f9] border border-[#cbd5e1] text-[#2563eb] text-base">
           📍
         </div>
         <div className="flex flex-col">
-          <span className="font-bold text-[#162a21] text-xs">
+          <span className="font-bold text-[#0f172a] text-xs">
             {building?.name || (multiBuildingMode && mapBuildings.length > 0 ? t.nationalCadastralZone : t.bhuVistaPublicViewer)}
           </span>
-          <span className="text-[10px] font-semibold text-[#3d5a4c]">
+          <span className="text-[10px] font-semibold text-[#475569]">
             {building?.georeference
               ? `${building.georeference.latitude.toFixed(4)}° N, ${building.georeference.longitude.toFixed(4)}° E`
               : t.stateLandRegistry}
@@ -2441,14 +2403,14 @@ export default function RealWorldMapViewer({
       {/* ---------------------------------------------------- */}
       {/* FLOATING PROPERTY DETAILS CARD (LOWER-LEFT) */}
       {/* ---------------------------------------------------- */}
-      <div className="absolute bottom-8 left-6 z-30 w-[360px] max-w-[calc(100vw-3rem)] rounded-2xl border border-[#e2dad0] bg-[#fdfbf7]/95 p-5 text-[#162a21] shadow-xl backdrop-blur-md">
-        <div className="flex items-center justify-between border-b border-[#e2dad0] pb-3 mb-3">
-          <h4 className="text-sm font-bold text-[#162a21]">{t.propertyDetails}</h4>
+      <div className="absolute bottom-8 left-6 z-30 w-[360px] max-w-[calc(100vw-3rem)] rounded-2xl border border-[#cbd5e1] bg-[#ffffff]/95 p-5 text-[#0f172a] shadow-xl backdrop-blur-md">
+        <div className="flex items-center justify-between border-b border-[#cbd5e1] pb-3 mb-3">
+          <h4 className="text-sm font-bold text-[#0f172a]">{t.propertyDetails}</h4>
           {(selectedUnitDetails || selectedBuildingDetails) && (
             <button
               type="button"
               onClick={handleClearSelection}
-              className="text-xs font-semibold text-[#2d6a4f] hover:text-[#1b4332] bg-[#2d6a4f]/10 px-2 py-0.5 rounded-lg transition"
+              className="text-xs font-semibold text-[#2563eb] hover:text-[#1d4ed8] bg-[#2563eb]/10 px-2 py-0.5 rounded-lg transition"
             >
               {t.clearSelection}
             </button>
@@ -2459,110 +2421,110 @@ export default function RealWorldMapViewer({
           {selectedUnitDetails ? (
             <>
               {selectedUnitDetails.ulpin && (
-                <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                  <span className="text-[#6b887a] font-medium">ULPIN</span>
-                  <span className="font-bold text-[#162a21]">{selectedUnitDetails.ulpin}</span>
+                <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                  <span className="text-[#64748b] font-medium">ULPIN</span>
+                  <span className="font-bold text-[#0f172a]">{selectedUnitDetails.ulpin}</span>
                 </div>
               )}
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.unitNumberLabel}</span>
-                <span className="font-bold text-[#162a21]">{selectedUnitDetails.unitNumber}</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.unitNumberLabel}</span>
+                <span className="font-bold text-[#0f172a]">{selectedUnitDetails.unitNumber}</span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.floorLevelLabel}</span>
-                <span className="font-bold text-[#162a21]">{selectedUnitDetails.floorNumber}</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.floorLevelLabel}</span>
+                <span className="font-bold text-[#0f172a]">{selectedUnitDetails.floorNumber}</span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.landUseLabel}</span>
-                <span className="font-bold text-[#2d6a4f]">{selectedUnitDetails.spaceType || "Residential"}</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.landUseLabel}</span>
+                <span className="font-bold text-[#2563eb]">{selectedUnitDetails.spaceType || "Residential"}</span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.areaLabel}</span>
-                <span className="font-bold text-[#162a21]">{selectedUnitDetails.area ? `${selectedUnitDetails.area} m²` : "N/A"}</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.areaLabel}</span>
+                <span className="font-bold text-[#0f172a]">{selectedUnitDetails.area ? `${selectedUnitDetails.area} m²` : "N/A"}</span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.parentStructureLabel}</span>
-                <span className="font-bold text-[#162a21] truncate max-w-[180px]">
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.parentStructureLabel}</span>
+                <span className="font-bold text-[#0f172a] truncate max-w-[180px]">
                   {selectedBuildingDetails?.name || building?.name || "Cadastral Structure"}
                 </span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.verificationLabel}</span>
-                <span className="font-bold text-[#2d6a4f]">{t.approvedCadastre}</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.verificationLabel}</span>
+                <span className="font-bold text-[#2563eb]">{t.approvedCadastre}</span>
               </div>
 
               <button
                 type="button"
                 onClick={() => onPropertyNavigate?.(selectedUnitDetails)}
-                className="mt-4 w-full rounded-xl bg-[#2d6a4f] py-2.5 text-center text-xs font-bold text-white hover:bg-[#1b4332] transition shadow-md cursor-pointer"
+                className="mt-4 w-full rounded-xl bg-[#2563eb] py-2.5 text-center text-xs font-bold text-white hover:bg-[#1d4ed8] transition shadow-md cursor-pointer"
               >
                 {t.viewFullDetails}
               </button>
             </>
           ) : selectedBuildingDetails ? (
             <>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.parentStructureLabel}</span>
-                <span className="font-bold text-[#162a21] truncate max-w-[180px]">{selectedBuildingDetails.name}</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.parentStructureLabel}</span>
+                <span className="font-bold text-[#0f172a] truncate max-w-[180px]">{selectedBuildingDetails.name}</span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.floorLevelLabel}</span>
-                <span className="font-bold text-[#162a21]">{selectedBuildingDetails.floors?.length || 0} Levels</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.floorLevelLabel}</span>
+                <span className="font-bold text-[#0f172a]">{selectedBuildingDetails.floors?.length || 0} Levels</span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.verificationLabel}</span>
-                <span className="font-bold text-[#2d6a4f]">{t.approvedCadastre}</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.verificationLabel}</span>
+                <span className="font-bold text-[#2563eb]">{t.approvedCadastre}</span>
               </div>
 
               <button
                 type="button"
                 onClick={() => onBuildingSelect?.(selectedBuildingDetails)}
-                className="mt-4 w-full rounded-xl bg-[#2d6a4f] py-2.5 text-center text-xs font-bold text-white hover:bg-[#1b4332] transition shadow-md cursor-pointer"
+                className="mt-4 w-full rounded-xl bg-[#2563eb] py-2.5 text-center text-xs font-bold text-white hover:bg-[#1d4ed8] transition shadow-md cursor-pointer"
               >
                 {t.viewFullDetails}
               </button>
             </>
           ) : building ? (
             <>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.parentStructureLabel}</span>
-                <span className="font-bold text-[#162a21] truncate max-w-[180px]">{building.name}</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.parentStructureLabel}</span>
+                <span className="font-bold text-[#0f172a] truncate max-w-[180px]">{building.name}</span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.floorLevelLabel}</span>
-                <span className="font-bold text-[#162a21]">{building.floors?.length || 0} Levels</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.floorLevelLabel}</span>
+                <span className="font-bold text-[#0f172a]">{building.floors?.length || 0} Levels</span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.verificationLabel}</span>
-                <span className="font-bold text-[#2d6a4f]">{t.approvedCadastre}</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.verificationLabel}</span>
+                <span className="font-bold text-[#2563eb]">{t.approvedCadastre}</span>
               </div>
 
               <button
                 type="button"
                 onClick={() => onBuildingSelect?.(building)}
-                className="mt-4 w-full rounded-xl bg-[#2d6a4f] py-2.5 text-center text-xs font-bold text-white hover:bg-[#1b4332] transition shadow-md cursor-pointer"
+                className="mt-4 w-full rounded-xl bg-[#2563eb] py-2.5 text-center text-xs font-bold text-white hover:bg-[#1d4ed8] transition shadow-md cursor-pointer"
               >
                 {t.viewFullDetails}
               </button>
             </>
           ) : (
             <>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.registryZone}</span>
-                <span className="font-bold text-[#162a21]">{t.nationalCadastralZone}</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.registryZone}</span>
+                <span className="font-bold text-[#0f172a]">{t.nationalCadastralZone}</span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.activeParcels}</span>
-                <span className="font-bold text-[#162a21]">{mapBuildings.length} Registered</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.activeParcels}</span>
+                <span className="font-bold text-[#0f172a]">{mapBuildings.length} Registered</span>
               </div>
-              <div className="flex justify-between border-b border-[#e2dad0]/60 pb-1.5">
-                <span className="text-[#6b887a] font-medium">{t.gisSystem}</span>
-                <span className="font-bold text-[#2d6a4f]">MapLibre 3D</span>
+              <div className="flex justify-between border-b border-[#cbd5e1]/60 pb-1.5">
+                <span className="text-[#64748b] font-medium">{t.gisSystem}</span>
+                <span className="font-bold text-[#2563eb]">MapLibre 3D</span>
               </div>
 
               <button
                 type="button"
-                className="mt-4 w-full rounded-xl bg-[#2d6a4f] py-2.5 text-center text-xs font-bold text-white hover:bg-[#1b4332] transition shadow-md cursor-pointer"
+                className="mt-4 w-full rounded-xl bg-[#2563eb] py-2.5 text-center text-xs font-bold text-white hover:bg-[#1d4ed8] transition shadow-md cursor-pointer"
               >
                 {t.viewFullDetails}
               </button>
@@ -2591,8 +2553,8 @@ export default function RealWorldMapViewer({
           }
           className={`flex h-11 w-11 items-center justify-center rounded-full border text-[10px] font-extrabold shadow-md transition cursor-pointer ${
             basemapMode === "satellite"
-              ? "border-[#2d6a4f] bg-[#2d6a4f] text-white"
-              : "border-[#e2dad0] bg-[#fdfbf7] text-[#2d6a4f] hover:bg-[#f3efe6]"
+              ? "border-[#2563eb] bg-[#2563eb] text-white"
+              : "border-[#cbd5e1] bg-[#ffffff] text-[#2563eb] hover:bg-[#f1f5f9]"
           }`}
         >
           {basemapMode === "satellite"
@@ -2604,7 +2566,7 @@ export default function RealWorldMapViewer({
           type="button"
           onClick={fitAllBuildings}
           title="Home / Center View"
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-[#e2dad0] bg-[#fdfbf7] text-base font-bold text-[#2d6a4f] shadow-md hover:bg-[#f3efe6] transition cursor-pointer"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-[#cbd5e1] bg-[#ffffff] text-base font-bold text-[#2563eb] shadow-md hover:bg-[#f1f5f9] transition cursor-pointer"
         >
           ⌂
         </button>
@@ -2613,7 +2575,7 @@ export default function RealWorldMapViewer({
           type="button"
           onClick={zoomIn}
           title="Zoom In"
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-[#e2dad0] bg-[#fdfbf7] text-xl font-bold text-[#2d6a4f] shadow-md hover:bg-[#f3efe6] transition cursor-pointer"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-[#cbd5e1] bg-[#ffffff] text-xl font-bold text-[#2563eb] shadow-md hover:bg-[#f1f5f9] transition cursor-pointer"
         >
           +
         </button>
@@ -2622,7 +2584,7 @@ export default function RealWorldMapViewer({
           type="button"
           onClick={zoomOut}
           title="Zoom Out"
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-[#e2dad0] bg-[#fdfbf7] text-xl font-bold text-[#2d6a4f] shadow-md hover:bg-[#f3efe6] transition cursor-pointer"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-[#cbd5e1] bg-[#ffffff] text-xl font-bold text-[#2563eb] shadow-md hover:bg-[#f1f5f9] transition cursor-pointer"
         >
           −
         </button>
@@ -2633,8 +2595,8 @@ export default function RealWorldMapViewer({
           title="Toggle Parcel Boundaries"
           className={`flex h-11 w-11 items-center justify-center rounded-full border text-[10px] font-extrabold shadow-md transition cursor-pointer ${
             showParcels
-              ? "border-[#2d6a4f] bg-[#2d6a4f] text-white"
-              : "border-[#e2dad0] bg-[#fdfbf7] text-[#2d6a4f] hover:bg-[#f3efe6]"
+              ? "border-[#2563eb] bg-[#2563eb] text-white"
+              : "border-[#cbd5e1] bg-[#ffffff] text-[#2563eb] hover:bg-[#f1f5f9]"
           }`}
         >
           PARCEL
@@ -2646,8 +2608,8 @@ export default function RealWorldMapViewer({
           title="Toggle 2D / 3D Mode"
           className={`flex h-11 w-11 items-center justify-center rounded-full border text-xs font-extrabold shadow-md transition cursor-pointer ${
             is3D
-              ? "border-[#2d6a4f] bg-[#2d6a4f] text-white"
-              : "border-[#e2dad0] bg-[#fdfbf7] text-[#2d6a4f] hover:bg-[#f3efe6]"
+              ? "border-[#2563eb] bg-[#2563eb] text-white"
+              : "border-[#cbd5e1] bg-[#ffffff] text-[#2563eb] hover:bg-[#f1f5f9]"
           }`}
         >
           3D
@@ -2659,8 +2621,8 @@ export default function RealWorldMapViewer({
           title={rotating ? "Stop Rotation" : "Rotate Map"}
           className={`flex h-11 w-11 items-center justify-center rounded-full border text-base font-bold shadow-md transition cursor-pointer ${
             rotating
-              ? "border-[#2d6a4f] bg-[#2d6a4f] text-white"
-              : "border-[#e2dad0] bg-[#fdfbf7] text-[#2d6a4f] hover:bg-[#f3efe6]"
+              ? "border-[#2563eb] bg-[#2563eb] text-white"
+              : "border-[#cbd5e1] bg-[#ffffff] text-[#2563eb] hover:bg-[#f1f5f9]"
           }`}
         >
           ↻
@@ -2671,12 +2633,12 @@ export default function RealWorldMapViewer({
       {/* FLOATING STATIC CITY OVERVIEW MINIMAP (BOTTOM-RIGHT) */}
       {/* ---------------------------------------------------- */}
       <div className="absolute bottom-8 right-6 z-20 hidden md:block pointer-events-none">
-        <div className="w-52 h-36 rounded-2xl border-2 border-white bg-[#f8f5ee] shadow-2xl overflow-hidden relative border-[#e2dad0] pointer-events-auto">
+        <div className="w-52 h-36 rounded-2xl border-2 border-white bg-[#ffffff] shadow-2xl overflow-hidden relative border-[#cbd5e1] pointer-events-auto">
           {/* REAL MAPLIBRE STATIC MINIMAP CANVAS */}
           <div ref={minimapContainerRef} className="w-full h-full pointer-events-none" />
 
           {/* CITY OVERVIEW LABEL BADGE */}
-          <div className="absolute top-2 left-2 z-10 rounded-md bg-[#fdfbf7]/90 px-2 py-0.5 text-[9px] font-extrabold text-[#2d6a4f] shadow-xs border border-[#e2dad0] pointer-events-none">
+          <div className="absolute top-2 left-2 z-10 rounded-md bg-[#ffffff]/90 px-2 py-0.5 text-[9px] font-extrabold text-[#2563eb] shadow-xs border border-[#cbd5e1] pointer-events-none">
             CITY OVERVIEW
           </div>
         </div>
@@ -2686,7 +2648,7 @@ export default function RealWorldMapViewer({
       {/* UNOBTRUSIVE FLOATING NOTIFICATION OVERLAY */}
       {/* ---------------------------------------------------- */}
       {mapBuildings.length === 0 && (
-        <div className="absolute top-20 left-1/2 -translate-x-1/2 z-30 rounded-full border border-[#e2dad0] bg-[#fdfbf7]/95 px-5 py-2.5 text-xs font-semibold text-[#162a21] shadow-lg backdrop-blur-md flex items-center gap-2 text-center">
+        <div className="absolute top-20 left-1/2 -translate-x-1/2 z-30 rounded-full border border-[#cbd5e1] bg-[#ffffff]/95 px-5 py-2.5 text-xs font-semibold text-[#0f172a] shadow-lg backdrop-blur-md flex items-center gap-2 text-center">
           <span className="h-2 w-2 rounded-full bg-amber-500 shrink-0" />
           <span>{t.noPublicParcelsNotice}</span>
         </div>
@@ -2695,17 +2657,17 @@ export default function RealWorldMapViewer({
       {/* ---------------------------------------------------- */}
       {/* LEGEND */}
       {/* ---------------------------------------------------- */}
-      <div className="absolute left-6 bottom-36 z-20 flex flex-wrap items-center gap-3 px-3.5 py-2 bg-[#fdfbf7]/95 rounded-xl border border-[#e2dad0] shadow-md text-[11px] text-[#162a21] backdrop-blur-md">
+      <div className="absolute left-6 bottom-36 z-20 flex flex-wrap items-center gap-3 px-3.5 py-2 bg-[#ffffff]/95 rounded-xl border border-[#cbd5e1] shadow-md text-[11px] text-[#0f172a] backdrop-blur-md">
         <div className="flex items-center gap-1.5">
-          <span className="w-3 h-3 rounded-sm border border-[#2d6a4f] bg-[#2d6a4f]/20 inline-block" />
+          <span className="w-3 h-3 rounded-sm border border-[#2563eb] bg-[#2563eb]/20 inline-block" />
           <span className="font-semibold">Parcel</span>
         </div>
         <div className="flex items-center gap-1.5">
-          <span className="w-3 h-3 rounded-sm border-2 border-[#1b4332] bg-[#d4a373] inline-block" />
+          <span className="w-3 h-3 rounded-sm border-2 border-[#b45309] bg-[#f59e0b] inline-block" />
           <span className="font-semibold">Selected</span>
         </div>
         <div className="flex items-center gap-1.5">
-          <LegendDot color="#2d6a4f" />
+          <LegendDot color="#2563eb" />
           <span className="font-semibold">3D Building</span>
         </div>
       </div>

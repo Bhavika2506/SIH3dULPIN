@@ -1,0 +1,3929 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-107",
+        "unitNumber": "Electronics Lab",
+        "floorNumber": 1,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 55,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-A-107",
+        "displayLabel": "Electronics Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83168609954416,
+              18.44179154533078
+            ],
+            [
+              73.83175437625525,
+              18.44179978134752
+            ],
+            [
+              73.83174177167368,
+              18.441851993314806
+            ],
+            [
+              73.83167302664506,
+              18.441844293909703
+            ],
+            [
+              73.83168609954416,
+              18.44179154533078
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CANTEEN",
+        "unitNumber": "Canteen",
+        "floorNumber": 1,
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 143,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-CANTEEN",
+        "displayLabel": "Canteen",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "notes": "Includes the large canteen volume shown north-west of passage",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83148800763364,
+              18.44176756451032
+            ],
+            [
+              73.83168075016816,
+              18.441790899412478
+            ],
+            [
+              73.83166764030572,
+              18.44184369007297
+            ],
+            [
+              73.83147353963899,
+              18.441821875148477
+            ],
+            [
+              73.83148800763364,
+              18.44176756451032
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CANTEEN-ENTRY",
+        "unitNumber": "Canteen Entrance / Sink",
+        "floorNumber": 1,
+        "spaceType": "Entrance",
+        "role": "accessory",
+        "areaApproxSqm": 11.7,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-CANTEEN-ENTRY",
+        "displayLabel": "Canteen Entrance / Sink",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83147283981518,
+              18.44181841078725
+            ],
+            [
+              73.83166992919814,
+              18.441840665016507
+            ],
+            [
+              73.83166901349578,
+              18.441844356999678
+            ],
+            [
+              73.83147182755778,
+              18.441822211467606
+            ],
+            [
+              73.83147283981518,
+              18.44181841078725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-N",
+        "unitNumber": "Central Stair Core",
+        "floorNumber": 1,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 88,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-STAIRS-N",
+        "displayLabel": "Central Stair Core",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83175828323586,
+              18.44179975054051
+            ],
+            [
+              73.83187076786065,
+              18.441813293883023
+            ],
+            [
+              73.83185872386292,
+              18.441865558390006
+            ],
+            [
+              73.83174546801138,
+              18.441852913639444
+            ],
+            [
+              73.83175828323586,
+              18.44179975054051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-108",
+        "unitNumber": "Computer Centre",
+        "floorNumber": 1,
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 132,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-A-108",
+        "displayLabel": "Computer Centre",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83187433007421,
+              18.441814214379015
+            ],
+            [
+              73.83203509082912,
+              18.44183348409597
+            ],
+            [
+              73.83202434422087,
+              18.44188349958211
+            ],
+            [
+              73.83186253271475,
+              18.441865485825026
+            ],
+            [
+              73.83187433007421,
+              18.441814214379015
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-109",
+        "unitNumber": "Server Room",
+        "floorNumber": 1,
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 30.8,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-A-109",
+        "displayLabel": "Server Room",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83203995113925,
+              18.441834065373488
+            ],
+            [
+              73.8320727213854,
+              18.441837982586446
+            ],
+            [
+              73.83206221559486,
+              18.44188770483313
+            ],
+            [
+              73.83202923574434,
+              18.441884042969097
+            ],
+            [
+              73.83203995113925,
+              18.441834065373488
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "MAINT",
+        "unitNumber": "Maintenance & Housekeeping",
+        "floorNumber": 1,
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 40.7,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-MAINT",
+        "displayLabel": "Maintenance & Housekeeping",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83207753113315,
+              18.441838557229133
+            ],
+            [
+              73.83212184938422,
+              18.441843848596477
+            ],
+            [
+              73.83211165505556,
+              18.441893188441483
+            ],
+            [
+              73.8320670559822,
+              18.441888242016123
+            ],
+            [
+              73.83207753113315,
+              18.441838557229133
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PASSAGE",
+        "unitNumber": "Main Passage",
+        "floorNumber": 1,
+        "spaceType": "Passage",
+        "role": "circulation",
+        "areaApproxSqm": 126,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-PASSAGE",
+        "displayLabel": "Main Passage",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83149217166911,
+              18.441745702637665
+            ],
+            [
+              73.83212765443638,
+              18.441825073394597
+            ],
+            [
+              73.8321242169672,
+              18.44184368825909
+            ],
+            [
+              73.83148803863064,
+              18.441767371611938
+            ],
+            [
+              73.83149217166911,
+              18.441745702637665
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-103",
+        "unitNumber": "Programming Lab 2",
+        "floorNumber": 1,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 160,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-A-103",
+        "displayLabel": "Programming Lab 2",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83170308960166,
+              18.44172310631012
+            ],
+            [
+              73.8319264342148,
+              18.441752488066584
+            ],
+            [
+              73.83191611540043,
+              18.44179794820498
+            ],
+            [
+              73.83169141626554,
+              18.44177011464595
+            ],
+            [
+              73.83170308960166,
+              18.44172310631012
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-102",
+        "unitNumber": "Programming Lab 1",
+        "floorNumber": 1,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 60,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-A-102",
+        "displayLabel": "Programming Lab 1",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83193141956836,
+              18.441753141771816
+            ],
+            [
+              73.83200864647284,
+              18.441763256245704
+            ],
+            [
+              73.83199881066255,
+              18.44180814841249
+            ],
+            [
+              73.83192113028227,
+              18.441798567438834
+            ],
+            [
+              73.83193141956836,
+              18.441753141771816
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-101",
+        "unitNumber": "Chemistry Lab",
+        "floorNumber": 1,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 50,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-A-101",
+        "displayLabel": "Chemistry Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8320135205388,
+              18.441763893855182
+            ],
+            [
+              73.83207575947186,
+              18.441772027908026
+            ],
+            [
+              73.83206631173852,
+              18.44181645719142
+            ],
+            [
+              73.8320037131007,
+              18.441808752381686
+            ],
+            [
+              73.8320135205388,
+              18.441763893855182
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-S",
+        "unitNumber": "South-East Stairs",
+        "floorNumber": 1,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 45,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-STAIRS-S",
+        "displayLabel": "South-East Stairs",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83207931267515,
+              18.441772020878506
+            ],
+            [
+              73.83213650774539,
+              18.44177948665616
+            ],
+            [
+              73.83212721709842,
+              18.441824411319686
+            ],
+            [
+              73.83206968917209,
+              18.441817347633297
+            ],
+            [
+              73.83207931267515,
+              18.441772020878506
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFT",
+        "unitNumber": "Lift",
+        "floorNumber": 1,
+        "spaceType": "Lift",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 8,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F01-LIFT",
+        "displayLabel": "Lift",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83212853334311,
+              18.44182556030205
+            ],
+            [
+              73.83215263368014,
+              18.441828512835652
+            ],
+            [
+              73.8321490430431,
+              18.441846102466688
+            ],
+            [
+              73.83212488837253,
+              18.441843216619514
+            ],
+            [
+              73.83212853334311,
+              18.44182556030205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-204",
+        "unitNumber": "Gents W/C",
+        "floorNumber": 2,
+        "spaceType": "Restroom",
+        "role": "unit",
+        "areaApproxSqm": 37.4,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-A-204",
+        "displayLabel": "Gents W/C",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83148800763364,
+              18.44176756451032
+            ],
+            [
+              73.83153525467759,
+              18.441773295749005
+            ],
+            [
+              73.83152112434034,
+              18.441827233123238
+            ],
+            [
+              73.83147353963899,
+              18.441821875148477
+            ],
+            [
+              73.83148800763364,
+              18.44176756451032
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-207",
+        "unitNumber": "Ladies W/C",
+        "floorNumber": 2,
+        "spaceType": "Restroom",
+        "role": "unit",
+        "areaApproxSqm": 33,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-A-207",
+        "displayLabel": "Ladies W/C",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8320935171613,
+              18.441840466613264
+            ],
+            [
+              73.83212843675443,
+              18.44184463454907
+            ],
+            [
+              73.83211828393576,
+              18.441893923156755
+            ],
+            [
+              73.83208314361744,
+              18.44189002693025
+            ],
+            [
+              73.8320935171613,
+              18.441840466613264
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-205",
+        "unitNumber": "Training and Placement Office",
+        "floorNumber": 2,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 49.5,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-A-205",
+        "displayLabel": "Training and Placement Office",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83187433007421,
+              18.441814214379015
+            ],
+            [
+              73.83193232249492,
+              18.4418211753657
+            ],
+            [
+              73.83192090828457,
+              18.441871993140886
+            ],
+            [
+              73.83186253271475,
+              18.441865485825026
+            ],
+            [
+              73.83187433007421,
+              18.441814214379015
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-206",
+        "unitNumber": "Seminar Hall",
+        "floorNumber": 2,
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 126.5,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-A-206",
+        "displayLabel": "Seminar Hall",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8319373222358,
+              18.441821774986686
+            ],
+            [
+              73.83208872884191,
+              18.44183989477965
+            ],
+            [
+              73.83207832490044,
+              18.44188949237388
+            ],
+            [
+              73.83192594084126,
+              18.441872553680817
+            ],
+            [
+              73.8319373222358,
+              18.441821774986686
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-STAIRS-N",
+        "unitNumber": "Central Stair Core",
+        "floorNumber": 2,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 88,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-F2-STAIRS-N",
+        "displayLabel": "Central Stair Core",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83175828323586,
+              18.44179975054051
+            ],
+            [
+              73.83187076786065,
+              18.441813293883023
+            ],
+            [
+              73.83185872386292,
+              18.441865558390006
+            ],
+            [
+              73.83174546801138,
+              18.441852913639444
+            ],
+            [
+              73.83175828323586,
+              18.44179975054051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECEPTION",
+        "unitNumber": "Reception",
+        "floorNumber": 2,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 146,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-RECEPTION",
+        "displayLabel": "Reception",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83155912094968,
+              18.441704067598177
+            ],
+            [
+              73.8317707592075,
+              18.441732028236665
+            ],
+            [
+              73.83175950280736,
+              18.441778566699313
+            ],
+            [
+              73.83154654165406,
+              18.441752077871783
+            ],
+            [
+              73.83155912094968,
+              18.441704067598177
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-202",
+        "unitNumber": "Library",
+        "floorNumber": 2,
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 40,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-A-202",
+        "displayLabel": "Library",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83177595873114,
+              18.441732713059597
+            ],
+            [
+              73.8318281283466,
+              18.441739578643578
+            ],
+            [
+              73.83181722096461,
+              18.44178571929572
+            ],
+            [
+              73.83176473413185,
+              18.4417792154471
+            ],
+            [
+              73.83177595873114,
+              18.441732713059597
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-201",
+        "unitNumber": "Admission Cell",
+        "floorNumber": 2,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 50,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-A-201",
+        "displayLabel": "Admission Cell",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83183324842089,
+              18.441740251901372
+            ],
+            [
+              73.83189861362762,
+              18.441748838375347
+            ],
+            [
+              73.83188812946544,
+              18.441794490949857
+            ],
+            [
+              73.83182237198949,
+              18.441786357073973
+            ],
+            [
+              73.83183324842089,
+              18.441740251901372
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "MBA-ADMISSION",
+        "unitNumber": "MBA Admission Cell",
+        "floorNumber": 2,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 150,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-MBA-ADMISSION",
+        "displayLabel": "MBA Admission Cell",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8319036369251,
+              18.441749497580084
+            ],
+            [
+              73.83210225755661,
+              18.441775486547353
+            ],
+            [
+              73.83209296150815,
+              18.441819733264083
+            ],
+            [
+              73.83189318268927,
+              18.441795115399486
+            ],
+            [
+              73.8319036369251,
+              18.441749497580084
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-STAIRS-W",
+        "unitNumber": "West End Stairs",
+        "floorNumber": 2,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 30,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-F2-STAIRS-W",
+        "displayLabel": "West End Stairs",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83150538957055,
+              18.441696425366427
+            ],
+            [
+              73.83154915151198,
+              18.441702233096805
+            ],
+            [
+              73.83153624537039,
+              18.441751311315798
+            ],
+            [
+              73.83149219654491,
+              18.441745815168282
+            ],
+            [
+              73.83150538957055,
+              18.441696425366427
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-STAIRS-E",
+        "unitNumber": "East End Stairs",
+        "floorNumber": 2,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 30,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-F2-STAIRS-E",
+        "displayLabel": "East End Stairs",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83210578371667,
+              18.44177547772115
+            ],
+            [
+              73.8321430384667,
+              18.44178033834079
+            ],
+            [
+              73.8321337855628,
+              18.44182521712542
+            ],
+            [
+              73.83209631478121,
+              18.441820618315116
+            ],
+            [
+              73.83210578371667,
+              18.44177547772115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-PASSAGE",
+        "unitNumber": "Passage",
+        "floorNumber": 2,
+        "spaceType": "Passage",
+        "role": "circulation",
+        "areaApproxSqm": 168,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-F2-PASSAGE",
+        "displayLabel": "Passage",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83149215532853,
+              18.44174593658696
+            ],
+            [
+              73.8321274019471,
+              18.44182444227905
+            ],
+            [
+              73.83212463562744,
+              18.441843447499366
+            ],
+            [
+              73.83148802774181,
+              18.441767527590176
+            ],
+            [
+              73.83149215532853,
+              18.44174593658696
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-LIFT",
+        "unitNumber": "Lift",
+        "floorNumber": 2,
+        "spaceType": "Lift",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 8,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-F2-LIFT",
+        "displayLabel": "Lift",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83212837369865,
+              18.44182552279372
+            ],
+            [
+              73.83215242992148,
+              18.441828469950174
+            ],
+            [
+              73.83214885539384,
+              18.441846045132305
+            ],
+            [
+              73.83212474501948,
+              18.441843164540057
+            ],
+            [
+              73.83212837369865,
+              18.44182552279372
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-ENTRANCE",
+        "unitNumber": "Entrance Stairs",
+        "floorNumber": 2,
+        "spaceType": "Stairs",
+        "role": "access",
+        "areaApproxSqm": -16,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-F2-ENTRANCE",
+        "displayLabel": "Entrance Stairs",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83177463111289,
+              18.44173204306991
+            ],
+            [
+              73.83188613428652,
+              18.44174671405483
+            ],
+            [
+              73.83188848642848,
+              18.44173653276169
+            ],
+            [
+              73.8317771332359,
+              18.441721691025784
+            ],
+            [
+              73.83177463111289,
+              18.44173204306991
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-200",
+        "unitNumber": "Library",
+        "floorNumber": 2,
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 160.6,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F02-A-200",
+        "displayLabel": "Library",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "notes": "Large upper-left library shown in plan",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83154081165156,
+              18.44177396935452
+            ],
+            [
+              73.83175437625525,
+              18.44179978134752
+            ],
+            [
+              73.83174177167368,
+              18.441851993314806
+            ],
+            [
+              73.83152672082575,
+              18.441827862855774
+            ],
+            [
+              73.83154081165156,
+              18.44177396935452
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-309",
+        "unitNumber": "Ladies W/C",
+        "floorNumber": 3,
+        "spaceType": "Restroom",
+        "role": "unit",
+        "areaApproxSqm": 37.4,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-309",
+        "displayLabel": "Ladies W/C",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83148800763364,
+              18.44176756451032
+            ],
+            [
+              73.83153525467759,
+              18.441773295749005
+            ],
+            [
+              73.83152112434034,
+              18.441827233123238
+            ],
+            [
+              73.83147353963899,
+              18.441821875148477
+            ],
+            [
+              73.83148800763364,
+              18.44176756451032
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-313",
+        "unitNumber": "Gents W/C",
+        "floorNumber": 3,
+        "spaceType": "Restroom",
+        "role": "unit",
+        "areaApproxSqm": 33,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-313",
+        "displayLabel": "Gents W/C",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8320935171613,
+              18.441840466613264
+            ],
+            [
+              73.83212843675443,
+              18.44184463454907
+            ],
+            [
+              73.83211828393576,
+              18.441893923156755
+            ],
+            [
+              73.83208314361744,
+              18.44189002693025
+            ],
+            [
+              73.8320935171613,
+              18.441840466613264
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-310",
+        "unitNumber": "Administrative Office",
+        "floorNumber": 3,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 160.6,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-310",
+        "displayLabel": "Administrative Office",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83154081165156,
+              18.44177396935452
+            ],
+            [
+              73.83175437625525,
+              18.44179978134752
+            ],
+            [
+              73.83174177167368,
+              18.441851993314806
+            ],
+            [
+              73.83152672082575,
+              18.441827862855774
+            ],
+            [
+              73.83154081165156,
+              18.44177396935452
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-311",
+        "unitNumber": "Admission Cell",
+        "floorNumber": 3,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 49.5,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-311",
+        "displayLabel": "Admission Cell",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83187433007421,
+              18.441814214379015
+            ],
+            [
+              73.83193232249492,
+              18.4418211753657
+            ],
+            [
+              73.83192090828457,
+              18.441871993140886
+            ],
+            [
+              73.83186253271475,
+              18.441865485825026
+            ],
+            [
+              73.83187433007421,
+              18.441814214379015
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-312",
+        "unitNumber": "Physics Lab",
+        "floorNumber": 3,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 126.5,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-312",
+        "displayLabel": "Physics Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8319373222358,
+              18.441821774986686
+            ],
+            [
+              73.83208872884191,
+              18.44183989477965
+            ],
+            [
+              73.83207832490044,
+              18.44188949237388
+            ],
+            [
+              73.83192594084126,
+              18.441872553680817
+            ],
+            [
+              73.8319373222358,
+              18.441821774986686
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-STAIRS-N",
+        "unitNumber": "Central Stair Core",
+        "floorNumber": 3,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 88,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-F3-STAIRS-N",
+        "displayLabel": "Central Stair Core",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83175828323586,
+              18.44179975054051
+            ],
+            [
+              73.83187076786065,
+              18.441813293883023
+            ],
+            [
+              73.83185872386292,
+              18.441865558390006
+            ],
+            [
+              73.83174546801138,
+              18.441852913639444
+            ],
+            [
+              73.83175828323586,
+              18.44179975054051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-308",
+        "unitNumber": "Faculty Room",
+        "floorNumber": 3,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 37,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-308",
+        "displayLabel": "Faculty Room",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83155300293349,
+              18.441703256818695
+            ],
+            [
+              73.83160379158939,
+              18.44170998324721
+            ],
+            [
+              73.83159149614971,
+              18.44175768231051
+            ],
+            [
+              73.83154038456844,
+              18.441751309738038
+            ],
+            [
+              73.83155300293349,
+              18.441703256818695
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-307",
+        "unitNumber": "Faculty Room",
+        "floorNumber": 3,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 35,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-307",
+        "displayLabel": "Faculty Room",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83160922582087,
+              18.44171070238218
+            ],
+            [
+              73.83165629883645,
+              18.44171692712333
+            ],
+            [
+              73.83164433388102,
+              18.441764260757957
+            ],
+            [
+              73.83159696474345,
+              18.44175836360652
+            ],
+            [
+              73.83160922582087,
+              18.44171070238218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-306",
+        "unitNumber": "Project Lab",
+        "floorNumber": 3,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 36,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-306",
+        "displayLabel": "Project Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83166165869999,
+              18.441717635362913
+            ],
+            [
+              73.83170955906616,
+              18.441723960021534
+            ],
+            [
+              73.83169792583645,
+              18.441770923406068
+            ],
+            [
+              73.83164972728734,
+              18.44176493171814
+            ],
+            [
+              73.83166165869999,
+              18.441717635362913
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-305",
+        "unitNumber": "Board Room",
+        "floorNumber": 3,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 37,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-305",
+        "displayLabel": "Board Room",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83171484401835,
+              18.4417246573081
+            ],
+            [
+              73.8317635256312,
+              18.441731075342503
+            ],
+            [
+              73.83175222493385,
+              18.44177766399964
+            ],
+            [
+              73.83170324351332,
+              18.441771583976244
+            ],
+            [
+              73.83171484401835,
+              18.4417246573081
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-304",
+        "unitNumber": "Director's Office",
+        "floorNumber": 3,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 85,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-304",
+        "displayLabel": "Director's Office",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83176873521585,
+              18.44173176163178
+            ],
+            [
+              73.83188462390231,
+              18.441747002011876
+            ],
+            [
+              73.8318740562311,
+              18.441792751398538
+            ],
+            [
+              73.83175746642767,
+              18.441778314138308
+            ],
+            [
+              73.83176873521585,
+              18.44173176163178
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-303",
+        "unitNumber": "BEE Lab",
+        "floorNumber": 3,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 40,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-303",
+        "displayLabel": "BEE Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8318896663344,
+              18.441747663992153
+            ],
+            [
+              73.8319402656768,
+              18.441754301489514
+            ],
+            [
+              73.83193002871033,
+              18.441799665999213
+            ],
+            [
+              73.83187912879107,
+              18.44179337848058
+            ],
+            [
+              73.8318896663344,
+              18.441747663992153
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-302",
+        "unitNumber": "BEE Lab",
+        "floorNumber": 3,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 40,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-302",
+        "displayLabel": "BEE Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83194523221945,
+              18.44175495247051
+            ],
+            [
+              73.83199507287831,
+              18.441761480122096
+            ],
+            [
+              73.83198515790005,
+              18.441806465991718
+            ],
+            [
+              73.83193502458462,
+              18.441800282649425
+            ],
+            [
+              73.83194523221945,
+              18.44175495247051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-301",
+        "unitNumber": "Drawing Hall",
+        "floorNumber": 3,
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 80,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-A-301",
+        "displayLabel": "Drawing Hall",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8319999652318,
+              18.441762120373035
+            ],
+            [
+              73.83210225755661,
+              18.441775486547353
+            ],
+            [
+              73.83209296150815,
+              18.441819733264083
+            ],
+            [
+              73.83199007881453,
+              18.441807072465913
+            ],
+            [
+              73.8319999652318,
+              18.441762120373035
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-STAIRS-W",
+        "unitNumber": "West End Stairs",
+        "floorNumber": 3,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 30,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-F3-STAIRS-W",
+        "displayLabel": "West End Stairs",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83150538957055,
+              18.441696425366427
+            ],
+            [
+              73.83154915151198,
+              18.441702233096805
+            ],
+            [
+              73.83153624537039,
+              18.441751311315798
+            ],
+            [
+              73.83149219654491,
+              18.441745815168282
+            ],
+            [
+              73.83150538957055,
+              18.441696425366427
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-STAIRS-E",
+        "unitNumber": "East End Stairs",
+        "floorNumber": 3,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 30,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-F3-STAIRS-E",
+        "displayLabel": "East End Stairs",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83210578371667,
+              18.44177547772115
+            ],
+            [
+              73.8321430384667,
+              18.44178033834079
+            ],
+            [
+              73.8321337855628,
+              18.44182521712542
+            ],
+            [
+              73.83209631478121,
+              18.441820618315116
+            ],
+            [
+              73.83210578371667,
+              18.44177547772115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-PASSAGE",
+        "unitNumber": "Passage",
+        "floorNumber": 3,
+        "spaceType": "Passage",
+        "role": "circulation",
+        "areaApproxSqm": 168,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-F3-PASSAGE",
+        "displayLabel": "Passage",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83149226110606,
+              18.441745865064128
+            ],
+            [
+              73.8321278670955,
+              18.441824933066613
+            ],
+            [
+              73.83212411216724,
+              18.44184340706952
+            ],
+            [
+              73.83148802774181,
+              18.441767527590176
+            ],
+            [
+              73.83149226110606,
+              18.441745865064128
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F3-LIFT",
+        "unitNumber": "Lift",
+        "floorNumber": 3,
+        "spaceType": "Lift",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 8,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F03-F3-LIFT",
+        "displayLabel": "Lift",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83212821985705,
+              18.44182556568697
+            ],
+            [
+              73.83215227606698,
+              18.44182851281164
+            ],
+            [
+              73.83214870157327,
+              18.441846088077284
+            ],
+            [
+              73.83212459121195,
+              18.441843207517163
+            ],
+            [
+              73.83212821985705,
+              18.44182556568697
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-408",
+        "unitNumber": "Gents W/C",
+        "floorNumber": 4,
+        "spaceType": "Restroom",
+        "role": "unit",
+        "areaApproxSqm": 37.4,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-408",
+        "displayLabel": "Gents W/C",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83148800763364,
+              18.44176756451032
+            ],
+            [
+              73.83153525467759,
+              18.441773295749005
+            ],
+            [
+              73.83152112434034,
+              18.441827233123238
+            ],
+            [
+              73.83147353963899,
+              18.441821875148477
+            ],
+            [
+              73.83148800763364,
+              18.44176756451032
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-415",
+        "unitNumber": "Ladies W/C",
+        "floorNumber": 4,
+        "spaceType": "Restroom",
+        "role": "unit",
+        "areaApproxSqm": 33,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-415",
+        "displayLabel": "Ladies W/C",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8320935171613,
+              18.441840466613264
+            ],
+            [
+              73.83212843675443,
+              18.44184463454907
+            ],
+            [
+              73.83211828393576,
+              18.441893923156755
+            ],
+            [
+              73.83208314361744,
+              18.44189002693025
+            ],
+            [
+              73.8320935171613,
+              18.441840466613264
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-409",
+        "unitNumber": "HOD Office (FE)",
+        "floorNumber": 4,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 36.3,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-409",
+        "displayLabel": "HOD Office (FE)",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83154081165156,
+              18.44177396935452
+            ],
+            [
+              73.83158589564586,
+              18.441779430646484
+            ],
+            [
+              73.83157212380425,
+              18.4418329684268
+            ],
+            [
+              73.83152672082575,
+              18.441827862855774
+            ],
+            [
+              73.83154081165156,
+              18.44177396935452
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-410",
+        "unitNumber": "Faculty Room",
+        "floorNumber": 4,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 39.6,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-410",
+        "displayLabel": "Faculty Room",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83159137991555,
+              18.44178009453896
+            ],
+            [
+              73.83164038732816,
+              18.441786022748857
+            ],
+            [
+              73.83162699729364,
+              18.44183913111058
+            ],
+            [
+              73.83157764668583,
+              18.44183358907448
+            ],
+            [
+              73.83159137991555,
+              18.44178009453896
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-411",
+        "unitNumber": "PG Research Lab",
+        "floorNumber": 4,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 38.5,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-411",
+        "displayLabel": "PG Research Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83164579389948,
+              18.441786676280735
+            ],
+            [
+              73.83169262740883,
+              18.441792333421663
+            ],
+            [
+              73.8316795995628,
+              18.44184503065591
+            ],
+            [
+              73.83163244152404,
+              18.44183974206805
+            ],
+            [
+              73.83164579389948,
+              18.441786676280735
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-412",
+        "unitNumber": "Class Room 'G'",
+        "floorNumber": 4,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 46.2,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-412",
+        "displayLabel": "Class Room 'G'",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83169796001233,
+              18.441792977109394
+            ],
+            [
+              73.83175437625525,
+              18.44179978134752
+            ],
+            [
+              73.83174177167368,
+              18.441851993314806
+            ],
+            [
+              73.8316849689265,
+              18.441845632406483
+            ],
+            [
+              73.83169796001233,
+              18.441792977109394
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-413",
+        "unitNumber": "Class Room 'H'",
+        "floorNumber": 4,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 44,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-413",
+        "displayLabel": "Class Room 'H'",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83187433007421,
+              18.441814214379015
+            ],
+            [
+              73.83192536705515,
+              18.441820341061906
+            ],
+            [
+              73.83191390713549,
+              18.441871213213442
+            ],
+            [
+              73.83186253271475,
+              18.441865485825026
+            ],
+            [
+              73.83187433007421,
+              18.441814214379015
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-414",
+        "unitNumber": "Newton Hall",
+        "floorNumber": 4,
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 132,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-414",
+        "displayLabel": "Newton Hall",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83193037630399,
+              18.441820941936264
+            ],
+            [
+              73.83208872884191,
+              18.44183989477965
+            ],
+            [
+              73.83207832490044,
+              18.44188949237388
+            ],
+            [
+              73.8319189493105,
+              18.441871774925442
+            ],
+            [
+              73.83193037630399,
+              18.441820941936264
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-STAIRS-N",
+        "unitNumber": "Central Stair Core",
+        "floorNumber": 4,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 88,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-F4-STAIRS-N",
+        "displayLabel": "Central Stair Core",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83175828323586,
+              18.44179975054051
+            ],
+            [
+              73.83187076786065,
+              18.441813293883023
+            ],
+            [
+              73.83185872386292,
+              18.441865558390006
+            ],
+            [
+              73.83174546801138,
+              18.441852913639444
+            ],
+            [
+              73.83175828323586,
+              18.44179975054051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-407",
+        "unitNumber": "Class Room 'F'",
+        "floorNumber": 4,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 40,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-407",
+        "displayLabel": "Class Room 'F'",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83155300293349,
+              18.441703256818695
+            ],
+            [
+              73.83160832065221,
+              18.441710582605037
+            ],
+            [
+              73.83159605385369,
+              18.441758250131834
+            ],
+            [
+              73.83154038456844,
+              18.441751309738038
+            ],
+            [
+              73.83155300293349,
+              18.441703256818695
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-406",
+        "unitNumber": "Class Room 'E'",
+        "floorNumber": 4,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 40,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-406",
+        "displayLabel": "Class Room 'E'",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83161374844883,
+              18.44171130079641
+            ],
+            [
+              73.83166819937577,
+              18.44171849948633
+            ],
+            [
+              73.83165630884723,
+              18.441765750355067
+            ],
+            [
+              73.83160151594137,
+              18.441758930532686
+            ],
+            [
+              73.83161374844883,
+              18.44171130079641
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-405",
+        "unitNumber": "Class Room 'D'",
+        "floorNumber": 4,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 45,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-405",
+        "displayLabel": "Class Room 'D'",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83167354245538,
+              18.441719205269955
+            ],
+            [
+              73.83173445083246,
+              18.441727243279026
+            ],
+            [
+              73.83172297143068,
+              18.44177403376842
+            ],
+            [
+              73.83166168528561,
+              18.44176641898549
+            ],
+            [
+              73.83167354245538,
+              18.441719205269955
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-404",
+        "unitNumber": "PG Laboratory",
+        "floorNumber": 4,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 105,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-404",
+        "displayLabel": "PG Laboratory",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83173970095461,
+              18.441727935480547
+            ],
+            [
+              73.83188462390231,
+              18.441747002011876
+            ],
+            [
+              73.8318740562311,
+              18.441792751398538
+            ],
+            [
+              73.83172825389967,
+              18.441774689515096
+            ],
+            [
+              73.83173970095461,
+              18.441727935480547
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-403",
+        "unitNumber": "Class Room 'C'",
+        "floorNumber": 4,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 45,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-403",
+        "displayLabel": "Class Room 'C'",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8318896663344,
+              18.441747663992153
+            ],
+            [
+              73.83194716183012,
+              18.441755205365922
+            ],
+            [
+              73.83193696558303,
+              18.441800522207593
+            ],
+            [
+              73.83187912879107,
+              18.44179337848058
+            ],
+            [
+              73.8318896663344,
+              18.441747663992153
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-402",
+        "unitNumber": "Class Room 'B'",
+        "floorNumber": 4,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 40,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-402",
+        "displayLabel": "Class Room 'B'",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83195211900716,
+              18.441755854991122
+            ],
+            [
+              73.83200186603185,
+              18.441762369102094
+            ],
+            [
+              73.83199199070322,
+              18.441807308072857
+            ],
+            [
+              73.83194195199403,
+              18.441801137571986
+            ],
+            [
+              73.83195211900716,
+              18.441755854991122
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-401",
+        "unitNumber": "Class Room 'A'",
+        "floorNumber": 4,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 75,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-A-401",
+        "displayLabel": "Class Room 'A'",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83200674922873,
+              18.44176300803027
+            ],
+            [
+              73.83210225755661,
+              18.441775486547353
+            ],
+            [
+              73.83209296150815,
+              18.441819733264083
+            ],
+            [
+              73.8319969023665,
+              18.44180791329263
+            ],
+            [
+              73.83200674922873,
+              18.44176300803027
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-STAIRS-W",
+        "unitNumber": "West End Stairs",
+        "floorNumber": 4,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 30,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-F4-STAIRS-W",
+        "displayLabel": "West End Stairs",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83150538957055,
+              18.441696425366427
+            ],
+            [
+              73.83154915151198,
+              18.441702233096805
+            ],
+            [
+              73.83153624537039,
+              18.441751311315798
+            ],
+            [
+              73.83149219654491,
+              18.441745815168282
+            ],
+            [
+              73.83150538957055,
+              18.441696425366427
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-STAIRS-E",
+        "unitNumber": "East End Stairs",
+        "floorNumber": 4,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 30,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-F4-STAIRS-E",
+        "displayLabel": "East End Stairs",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83210578371667,
+              18.44177547772115
+            ],
+            [
+              73.8321430384667,
+              18.44178033834079
+            ],
+            [
+              73.8321337855628,
+              18.44182521712542
+            ],
+            [
+              73.83209631478121,
+              18.441820618315116
+            ],
+            [
+              73.83210578371667,
+              18.44177547772115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-PASSAGE",
+        "unitNumber": "Passage",
+        "floorNumber": 4,
+        "spaceType": "Passage",
+        "role": "circulation",
+        "areaApproxSqm": 168,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-F4-PASSAGE",
+        "displayLabel": "Passage",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8314924781088,
+              18.44174564403744
+            ],
+            [
+              73.83212805659909,
+              18.441825392033387
+            ],
+            [
+              73.83212438560109,
+              18.44184322187412
+            ],
+            [
+              73.83148814437965,
+              18.441767300018938
+            ],
+            [
+              73.8314924781088,
+              18.44174564403744
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-LIFT",
+        "unitNumber": "Lift",
+        "floorNumber": 4,
+        "spaceType": "Lift",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 8,
+        "elevationMeters": 9.6,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F04-F4-LIFT",
+        "displayLabel": "Lift",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8321276783689,
+              18.441825656873526
+            ],
+            [
+              73.8321517345511,
+              18.441828603929928
+            ],
+            [
+              73.83214816017625,
+              18.44184617948813
+            ],
+            [
+              73.83212404984313,
+              18.44184329899741
+            ],
+            [
+              73.8321276783689,
+              18.441825656873526
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-508",
+        "unitNumber": "Ladies W/C",
+        "floorNumber": 5,
+        "spaceType": "Restroom",
+        "role": "unit",
+        "areaApproxSqm": 37.4,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-508",
+        "displayLabel": "Ladies W/C",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83148800763364,
+              18.44176756451032
+            ],
+            [
+              73.83153525467759,
+              18.441773295749005
+            ],
+            [
+              73.83152112434034,
+              18.441827233123238
+            ],
+            [
+              73.83147353963899,
+              18.441821875148477
+            ],
+            [
+              73.83148800763364,
+              18.44176756451032
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-515",
+        "unitNumber": "Gents W/C",
+        "floorNumber": 5,
+        "spaceType": "Restroom",
+        "role": "unit",
+        "areaApproxSqm": 33,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-515",
+        "displayLabel": "Gents W/C",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8320935171613,
+              18.441840466613264
+            ],
+            [
+              73.83212843675443,
+              18.44184463454907
+            ],
+            [
+              73.83211828393576,
+              18.441893923156755
+            ],
+            [
+              73.83208314361744,
+              18.44189002693025
+            ],
+            [
+              73.8320935171613,
+              18.441840466613264
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-509",
+        "unitNumber": "HOD Office",
+        "floorNumber": 5,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 36.3,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-509",
+        "displayLabel": "HOD Office",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83154081165156,
+              18.44177396935452
+            ],
+            [
+              73.83158589564586,
+              18.441779430646484
+            ],
+            [
+              73.83157212380425,
+              18.4418329684268
+            ],
+            [
+              73.83152672082575,
+              18.441827862855774
+            ],
+            [
+              73.83154081165156,
+              18.44177396935452
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-510",
+        "unitNumber": "Faculty Room",
+        "floorNumber": 5,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 39.6,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-510",
+        "displayLabel": "Faculty Room",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83159137991555,
+              18.44178009453896
+            ],
+            [
+              73.83164038732816,
+              18.441786022748857
+            ],
+            [
+              73.83162699729364,
+              18.44183913111058
+            ],
+            [
+              73.83157764668583,
+              18.44183358907448
+            ],
+            [
+              73.83159137991555,
+              18.44178009453896
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-511",
+        "unitNumber": "Software Development Lab",
+        "floorNumber": 5,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 38.5,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-511",
+        "displayLabel": "Software Development Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83164579389948,
+              18.441786676280735
+            ],
+            [
+              73.83169262740883,
+              18.441792333421663
+            ],
+            [
+              73.8316795995628,
+              18.44184503065591
+            ],
+            [
+              73.83163244152404,
+              18.44183974206805
+            ],
+            [
+              73.83164579389948,
+              18.441786676280735
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-512",
+        "unitNumber": "Network Lab",
+        "floorNumber": 5,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 46.2,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-512",
+        "displayLabel": "Network Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83169796001233,
+              18.441792977109394
+            ],
+            [
+              73.83175437625525,
+              18.44179978134752
+            ],
+            [
+              73.83174177167368,
+              18.441851993314806
+            ],
+            [
+              73.8316849689265,
+              18.441845632406483
+            ],
+            [
+              73.83169796001233,
+              18.441792977109394
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-513",
+        "unitNumber": "Charles Babbage Museum",
+        "floorNumber": 5,
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 44,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-513",
+        "displayLabel": "Charles Babbage Museum",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83187433007421,
+              18.441814214379015
+            ],
+            [
+              73.83192536705515,
+              18.441820341061906
+            ],
+            [
+              73.83191390713549,
+              18.441871213213442
+            ],
+            [
+              73.83186253271475,
+              18.441865485825026
+            ],
+            [
+              73.83187433007421,
+              18.441814214379015
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-514",
+        "unitNumber": "Seminar Hall",
+        "floorNumber": 5,
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 132,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-514",
+        "displayLabel": "Seminar Hall",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83193037630399,
+              18.441820941936264
+            ],
+            [
+              73.83208872884191,
+              18.44183989477965
+            ],
+            [
+              73.83207832490044,
+              18.44188949237388
+            ],
+            [
+              73.8319189493105,
+              18.441871774925442
+            ],
+            [
+              73.83193037630399,
+              18.441820941936264
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F5-STAIRS-N",
+        "unitNumber": "Central Stair Core",
+        "floorNumber": 5,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 88,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-F5-STAIRS-N",
+        "displayLabel": "Central Stair Core",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83175828323586,
+              18.44179975054051
+            ],
+            [
+              73.83187076786065,
+              18.441813293883023
+            ],
+            [
+              73.83185872386292,
+              18.441865558390006
+            ],
+            [
+              73.83174546801138,
+              18.441852913639444
+            ],
+            [
+              73.83175828323586,
+              18.44179975054051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-507",
+        "unitNumber": "Self Learning Lab",
+        "floorNumber": 5,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 50,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-507",
+        "displayLabel": "Self Learning Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83155300293349,
+              18.441703256818695
+            ],
+            [
+              73.83162337884653,
+              18.441712574792877
+            ],
+            [
+              73.8316112070908,
+              18.44176013748916
+            ],
+            [
+              73.83154038456844,
+              18.441751309738038
+            ],
+            [
+              73.83155300293349,
+              18.441703256818695
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-506",
+        "unitNumber": "Micro Embedded Lab",
+        "floorNumber": 5,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 50,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-506",
+        "displayLabel": "Micro Embedded Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.831628785276,
+              18.44171328985214
+            ],
+            [
+              73.83169778813885,
+              18.44172240661139
+            ],
+            [
+              73.8316860818984,
+              18.44176945178764
+            ],
+            [
+              73.83161664757532,
+              18.44176081491873
+            ],
+            [
+              73.831628785276,
+              18.44171328985214
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-505",
+        "unitNumber": "Red Hat Lab",
+        "floorNumber": 5,
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 40,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-505",
+        "displayLabel": "Red Hat Lab",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83170308960166,
+              18.44172310631012
+            ],
+            [
+              73.83175627804636,
+              18.441730120406177
+            ],
+            [
+              73.83174493290089,
+              18.441776759362916
+            ],
+            [
+              73.83169141626554,
+              18.44177011464595
+            ],
+            [
+              73.83170308960166,
+              18.44172310631012
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-504",
+        "unitNumber": "Class Room",
+        "floorNumber": 5,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 50,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-504",
+        "displayLabel": "Class Room",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83176149772126,
+              18.441730808166465
+            ],
+            [
+              73.8318281283466,
+              18.441739578643578
+            ],
+            [
+              73.83181722096461,
+              18.44178571929572
+            ],
+            [
+              73.83175018459369,
+              18.44177741089688
+            ],
+            [
+              73.83176149772126,
+              18.441730808166465
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-503",
+        "unitNumber": "Exam Control Room",
+        "floorNumber": 5,
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 50,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-503",
+        "displayLabel": "Exam Control Room",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83183324842089,
+              18.441740251901372
+            ],
+            [
+              73.83189861362762,
+              18.441748838375347
+            ],
+            [
+              73.83188812946544,
+              18.441794490949857
+            ],
+            [
+              73.83182237198949,
+              18.441786357073973
+            ],
+            [
+              73.83183324842089,
+              18.441740251901372
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-502",
+        "unitNumber": "Class Room",
+        "floorNumber": 5,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 70,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-502",
+        "displayLabel": "Class Room",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8319036369251,
+              18.441749497580084
+            ],
+            [
+              73.83199507287831,
+              18.441761480122096
+            ],
+            [
+              73.83198515790005,
+              18.441806465991718
+            ],
+            [
+              73.83189318268927,
+              18.441795115399486
+            ],
+            [
+              73.8319036369251,
+              18.441749497580084
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "A-501",
+        "unitNumber": "Class Room",
+        "floorNumber": 5,
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 80,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-A-501",
+        "displayLabel": "Class Room",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8319999652318,
+              18.441762120373035
+            ],
+            [
+              73.83210225755661,
+              18.441775486547353
+            ],
+            [
+              73.83209296150815,
+              18.441819733264083
+            ],
+            [
+              73.83199007881453,
+              18.441807072465913
+            ],
+            [
+              73.8319999652318,
+              18.441762120373035
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F5-STAIRS-W",
+        "unitNumber": "West End Stairs",
+        "floorNumber": 5,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 30,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-F5-STAIRS-W",
+        "displayLabel": "West End Stairs",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83150538957055,
+              18.441696425366427
+            ],
+            [
+              73.83154915151198,
+              18.441702233096805
+            ],
+            [
+              73.83153624537039,
+              18.441751311315798
+            ],
+            [
+              73.83149219654491,
+              18.441745815168282
+            ],
+            [
+              73.83150538957055,
+              18.441696425366427
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F5-STAIRS-E",
+        "unitNumber": "East End Stairs",
+        "floorNumber": 5,
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 30,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-F5-STAIRS-E",
+        "displayLabel": "East End Stairs",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83210578371667,
+              18.44177547772115
+            ],
+            [
+              73.8321430384667,
+              18.44178033834079
+            ],
+            [
+              73.8321337855628,
+              18.44182521712542
+            ],
+            [
+              73.83209631478121,
+              18.441820618315116
+            ],
+            [
+              73.83210578371667,
+              18.44177547772115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F5-PASSAGE",
+        "unitNumber": "Passage",
+        "floorNumber": 5,
+        "spaceType": "Passage",
+        "role": "circulation",
+        "areaApproxSqm": 168,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-F5-PASSAGE",
+        "displayLabel": "Passage",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83149236143672,
+              18.44174587152439
+            ],
+            [
+              73.8321281102412,
+              18.44182526994004
+            ],
+            [
+              73.83212404032899,
+              18.44184362145332
+            ],
+            [
+              73.83148804407504,
+              18.44176729362282
+            ],
+            [
+              73.83149236143672,
+              18.44174587152439
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F5-LIFT",
+        "unitNumber": "Lift",
+        "floorNumber": 5,
+        "spaceType": "Lift",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 8,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-F05-F5-LIFT",
+        "displayLabel": "Lift",
+        "coordinateReference": "local-plan-relative-to-surveyed-georeference",
+        "geometrySource": "reconstructed proportionally from supplied floor-plan drawing",
+        "outsideBuilding": true,
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8321276170519,
+              18.44182556672122
+            ],
+            [
+              73.83215167326073,
+              18.44182851384316
+            ],
+            [
+              73.83214809889839,
+              18.441846089432172
+            ],
+            [
+              73.83212398853863,
+              18.441843208875884
+            ],
+            [
+              73.8321276170519,
+              18.44182556672122
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "properties": {},
+  "georeference": {
+    "coordinateSystem": "WGS84",
+    "surveyedFootprintWGS84": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            73.8321473,
+            18.4418957
+          ],
+          [
+            73.8321597,
+            18.4417395
+          ],
+          [
+            73.8314807,
+            18.4416948
+          ],
+          [
+            73.8314696,
+            18.4418542
+          ],
+          [
+            73.8321473,
+            18.4418957
+          ]
+        ]
+      ]
+    },
+    "fitMethod": "building_level_bilinear_transform",
+    "sourceExtentWGS84": [
+      73.8314638,
+      18.441697288817025,
+      73.8321401549746,
+      18.441901601686627
+    ]
+  }
+}

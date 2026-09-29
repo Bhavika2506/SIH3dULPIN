@@ -1,0 +1,4572 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B102",
+        "unitNumber": "Geotechnical Engg. Lab",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B102",
+        "displayLabel": "Geotechnical Engg. Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83204206663461,
+              18.441036698272594
+            ],
+            [
+              73.83204796492099,
+              18.441099045448386
+            ],
+            [
+              73.83212758657436,
+              18.441091195975666
+            ],
+            [
+              73.83212193887914,
+              18.441028741050577
+            ],
+            [
+              73.83204206663461,
+              18.441036698272594
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B101",
+        "unitNumber": "Environmental Engg. Lab",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B101",
+        "displayLabel": "Environmental Engg. Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83212382260025,
+              18.441028553419848
+            ],
+            [
+              73.83212947047008,
+              18.441091010268185
+            ],
+            [
+              73.8322090942223,
+              18.44108316189424
+            ],
+            [
+              73.83220369959228,
+              18.441020598644425
+            ],
+            [
+              73.83212382260025,
+              18.441028553419848
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B106",
+        "unitNumber": "Strength Of Materials Lab",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B106",
+        "displayLabel": "Strength Of Materials Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83164502420009,
+              18.441076210556805
+            ],
+            [
+              73.83165210217915,
+              18.441138005989707
+            ],
+            [
+              73.83173171400018,
+              18.441130151292796
+            ],
+            [
+              73.83172487427677,
+              18.441068241836067
+            ],
+            [
+              73.83164502420009,
+              18.441076210556805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B105",
+        "unitNumber": "Fluid Mechanics Lab",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B105",
+        "displayLabel": "Fluid Mechanics Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83172675766197,
+              18.441068053913842
+            ],
+            [
+              73.83173359761744,
+              18.441129965464885
+            ],
+            [
+              73.83181321152618,
+              18.44112211177994
+            ],
+            [
+              73.83180661229667,
+              18.441060087461235
+            ],
+            [
+              73.83172675766197,
+              18.441068053913842
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B104",
+        "unitNumber": "Turbo Machine Lab",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B104",
+        "displayLabel": "Turbo Machine Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8318084956962,
+              18.441059899602127
+            ],
+            [
+              73.83181509514556,
+              18.4411219259809
+            ],
+            [
+              73.83189471114495,
+              18.441114073325462
+            ],
+            [
+              73.83188835492713,
+              18.441051935453338
+            ],
+            [
+              73.8318084956962,
+              18.441059899602127
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B111",
+        "unitNumber": "Transportation Engg. Lab",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B111",
+        "displayLabel": "Transportation Engg. Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83197176439349,
+              18.44116082429985
+            ],
+            [
+              73.83197789930199,
+              18.44122305461684
+            ],
+            [
+              73.83205705707363,
+              18.441215403309872
+            ],
+            [
+              73.83205116961092,
+              18.441153063650855
+            ],
+            [
+              73.83197176439349,
+              18.44116082429985
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B109",
+        "unitNumber": "Ultratech Concrete Technology Lab",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B109",
+        "displayLabel": "Ultratech Concrete Technology Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83169886464444,
+              18.44118749587251
+            ],
+            [
+              73.83170581006713,
+              18.441249342254316
+            ],
+            [
+              73.83178497706618,
+              18.441241695532337
+            ],
+            [
+              73.83177827020147,
+              18.44117973528705
+            ],
+            [
+              73.83169886464444,
+              18.44118749587251
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B110B",
+        "unitNumber": "Rivulis Irrigation & Concept Lab",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 20.8,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B110B",
+        "displayLabel": "Rivulis Irrigation & Concept Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing; adjusted eastern boundary to snap to STAIRS-C western edge",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83184406670702,
+              18.441173713949436
+            ],
+            [
+              73.83185050390452,
+              18.44123499702424
+            ],
+            [
+              73.8318887407108,
+              18.441223766378556
+            ],
+            [
+              73.83188516326915,
+              18.441189022045414
+            ],
+            [
+              73.83184406670702,
+              18.441173713949436
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B113H",
+        "unitNumber": "Ladies Toilet (Physically Challenged)",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Restroom",
+        "role": "accessory",
+        "areaApproxSqm": 36,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B113H",
+        "displayLabel": "Ladies Toilet (Physically Challenged)",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8322146264791,
+              18.441136348784983
+            ],
+            [
+              73.83226688561071,
+              18.44113124133362
+            ],
+            [
+              73.83227225659876,
+              18.441195671384698
+            ],
+            [
+              73.83222016631133,
+              18.44120070941104
+            ],
+            [
+              73.8322146264791,
+              18.441136348784983
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B107H",
+        "unitNumber": "Gents Toilet (Physically Challenged)",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Restroom",
+        "role": "accessory",
+        "areaApproxSqm": 36,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B107H",
+        "displayLabel": "Gents Toilet (Physically Challenged)",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83160491551672,
+              18.441195769439386
+            ],
+            [
+              73.8316571753254,
+              18.441190661927955
+            ],
+            [
+              73.83166384431198,
+              18.44125398887942
+            ],
+            [
+              73.83161186901495,
+              18.44125998868582
+            ],
+            [
+              73.83160491551672,
+              18.441195769439386
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B112",
+        "unitNumber": "Aryabhatta Seminar Hall",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 112,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B112",
+        "displayLabel": "Aryabhatta Seminar Hall",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83205305354869,
+              18.441152879524353
+            ],
+            [
+              73.83205894119895,
+              18.44121522116195
+            ],
+            [
+              73.83221913218401,
+              18.441199732128087
+            ],
+            [
+              73.83221374749213,
+              18.441137174051374
+            ],
+            [
+              73.83205305354869,
+              18.441152879524353
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B108",
+        "unitNumber": "First Aid And Sick Room",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 28,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B108",
+        "displayLabel": "First Aid And Sick Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83165821994436,
+              18.441191468211972
+            ],
+            [
+              73.83166528356345,
+              18.44125325610599
+            ],
+            [
+              73.83170392600546,
+              18.44124952422108
+            ],
+            [
+              73.83169698082433,
+              18.441187679984544
+            ],
+            [
+              73.83165821994436,
+              18.441191468211972
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B110A",
+        "unitNumber": "Padmashree B. G. Shirke Precast Lab",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 44,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-B110A",
+        "displayLabel": "Padmashree B. G. Shirke Precast Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83178013601847,
+              18.441179385129356
+            ],
+            [
+              73.8317868431321,
+              18.441241347500497
+            ],
+            [
+              73.83184864069435,
+              18.441235377190388
+            ],
+            [
+              73.83184212289137,
+              18.44117332673277
+            ],
+            [
+              73.83178013601847,
+              18.441179385129356
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F0-UNLABELED-1",
+        "unitNumber": "Unlabeled Room 1",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-F0-UNLABELED-1",
+        "displayLabel": "Unlabeled Room 1",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83196031550028,
+              18.44104484558922
+            ],
+            [
+              73.8319664615812,
+              18.441107081728017
+            ],
+            [
+              73.83204608113874,
+              18.441099231175414
+            ],
+            [
+              73.83204018303843,
+              18.441036885959083
+            ],
+            [
+              73.83196031550028,
+              18.44104484558922
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFT",
+        "unitNumber": "Lift",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Lift",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 8.8,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-LIFT",
+        "displayLabel": "Lift",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "outsideBuilding": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83156510292815,
+              18.441149027880385
+            ],
+            [
+              73.83159778456809,
+              18.44114389494352
+            ],
+            [
+              73.8316023768576,
+              18.44119354595195
+            ],
+            [
+              73.83156991952261,
+              18.44119728558038
+            ],
+            [
+              73.83156510292815,
+              18.441149027880385
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-C",
+        "unitNumber": "Central Stair Core",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 33.7,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-STAIRS-C",
+        "displayLabel": "Central Stair Core",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8318860487361,
+              18.44118838183586
+            ],
+            [
+              73.83197269881421,
+              18.441179942638627
+            ],
+            [
+              73.8319762573032,
+              18.44121604196704
+            ],
+            [
+              73.83188975866265,
+              18.441224412868554
+            ],
+            [
+              73.8318860487361,
+              18.44118838183586
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-E",
+        "unitNumber": "East End Stairs",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 32.3,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-STAIRS-E",
+        "displayLabel": "East End Stairs",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83221275801515,
+              18.441080181429463
+            ],
+            [
+              73.8322071915447,
+              18.441014660505527
+            ],
+            [
+              73.83222537180059,
+              18.441013594740262
+            ],
+            [
+              73.8322592239437,
+              18.441012176910696
+            ],
+            [
+              73.83226299285666,
+              18.441075679147872
+            ],
+            [
+              73.83221275801515,
+              18.441080181429463
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-W",
+        "unitNumber": "West End Stairs",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 32.3,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-STAIRS-W",
+        "displayLabel": "West End Stairs",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8315967177717,
+              18.441142999634366
+            ],
+            [
+              73.83158990722596,
+              18.44107900219361
+            ],
+            [
+              73.83164327437107,
+              18.441071563843405
+            ],
+            [
+              73.8316509368979,
+              18.44113672612101
+            ],
+            [
+              73.8315967177717,
+              18.441142999634366
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PASSAGE",
+        "unitNumber": "Main Passage",
+        "floorNumber": 0,
+        "floorLabel": "Ground Floor",
+        "spaceType": "Passage",
+        "role": "circulation",
+        "areaApproxSqm": 368.7,
+        "elevationMeters": 0,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F00-PASSAGE",
+        "displayLabel": "Main Passage",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83159906841225,
+              18.44114294601962
+            ],
+            [
+              73.8322625531683,
+              18.441077431879236
+            ],
+            [
+              73.83226690170638,
+              18.441129532433795
+            ],
+            [
+              73.83160508105709,
+              18.441194302338367
+            ],
+            [
+              73.83159906841225,
+              18.44114294601962
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B210",
+        "unitNumber": "Tutorial Room",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 32,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B210",
+        "displayLabel": "Tutorial Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83204167925167,
+              18.441032605406978
+            ],
+            [
+              73.83204757789947,
+              18.441094952774115
+            ],
+            [
+              73.83209227777087,
+              18.441090542908338
+            ],
+            [
+              73.83208652208276,
+              18.441028134645105
+            ],
+            [
+              73.83204167925167,
+              18.441032605406978
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B203",
+        "unitNumber": "Class Room",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B203",
+        "displayLabel": "Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83182039246294,
+              18.441171756273622
+            ],
+            [
+              73.83182697984232,
+              18.44123377633635
+            ],
+            [
+              73.83190615776213,
+              18.441226120841087
+            ],
+            [
+              73.83189981288324,
+              18.441163988920035
+            ],
+            [
+              73.83182039246294,
+              18.441171756273622
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B202",
+        "unitNumber": "Class Room",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B202",
+        "displayLabel": "Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83173908833324,
+              18.44117970792104
+            ],
+            [
+              73.83174591537325,
+              18.441241612700036
+            ],
+            [
+              73.83182509583263,
+              18.441233958477998
+            ],
+            [
+              73.83181850867636,
+              18.44117194050959
+            ],
+            [
+              73.83173908833324,
+              18.44117970792104
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B201",
+        "unitNumber": "Class Room",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B201",
+        "displayLabel": "Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83165778430171,
+              18.441187659624866
+            ],
+            [
+              73.83166484841117,
+              18.441249447772346
+            ],
+            [
+              73.83174403134515,
+              18.441241794807524
+            ],
+            [
+              73.8317372045408,
+              18.441179892159123
+            ],
+            [
+              73.83165778430171,
+              18.441187659624866
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B207",
+        "unitNumber": "Surveying & Engg. Mechanics Lab",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B207",
+        "displayLabel": "Surveying & Engg. Mechanics Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83213399504808,
+              18.441141086177712
+            ],
+            [
+              73.83213963304604,
+              18.44120353790764
+            ],
+            [
+              73.83221880053699,
+              18.441195877345578
+            ],
+            [
+              73.83221341550404,
+              18.44113331908221
+            ],
+            [
+              73.83213399504808,
+              18.441141086177712
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B206",
+        "unitNumber": "Class Room",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B206",
+        "displayLabel": "Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83205269052816,
+              18.441149037599438
+            ],
+            [
+              73.83205857854341,
+              18.44121137943643
+            ],
+            [
+              73.8321377488373,
+              18.441203720212325
+            ],
+            [
+              73.832132111016,
+              18.441141270431554
+            ],
+            [
+              73.83205269052816,
+              18.441149037599438
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B205",
+        "unitNumber": "Smart Class Room",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B205",
+        "displayLabel": "Smart Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83197138611125,
+              18.441156989080966
+            ],
+            [
+              73.83197752140208,
+              18.441219219597325
+            ],
+            [
+              73.8320566944286,
+              18.441211561693944
+            ],
+            [
+              73.83205080660174,
+              18.441149221844572
+            ],
+            [
+              73.83197138611125,
+              18.441156989080966
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B212",
+        "unitNumber": "Engg. Geology Lab",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B212",
+        "displayLabel": "Engg. Geology Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83180807105407,
+              18.441055910459824
+            ],
+            [
+              73.83181467091889,
+              18.441117937055864
+            ],
+            [
+              73.83189430256513,
+              18.441110077380834
+            ],
+            [
+              73.83188794595706,
+              18.44104793930402
+            ],
+            [
+              73.83180807105407,
+              18.441055910459824
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B209",
+        "unitNumber": "Girl’S Common Room",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 80,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B209",
+        "displayLabel": "Girl’S Common Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83208840573653,
+              18.441027946882834
+            ],
+            [
+              73.83209416160331,
+              18.44109035707592
+            ],
+            [
+              73.83220874027896,
+              18.441079055340712
+            ],
+            [
+              73.83220334531202,
+              18.44101649192013
+            ],
+            [
+              73.83208840573653,
+              18.441027946882834
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B211",
+        "unitNumber": "Computer Lab",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B211",
+        "displayLabel": "Computer Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83195991182644,
+              18.441040759857
+            ],
+            [
+              73.83196605828668,
+              18.441102996193298
+            ],
+            [
+              73.83204569412963,
+              18.441095138630217
+            ],
+            [
+              73.83203979566815,
+              18.441032793225386
+            ],
+            [
+              73.83195991182644,
+              18.441040759857
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B214",
+        "unitNumber": "Gents Toilet",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Restroom",
+        "role": "accessory",
+        "areaApproxSqm": 36,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B214",
+        "displayLabel": "Gents Toilet",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83158993930306,
+              18.44107914312758
+            ],
+            [
+              73.83164359454838,
+              18.44107157050698
+            ],
+            [
+              73.8316515223328,
+              18.441136494638297
+            ],
+            [
+              73.83159665348184,
+              18.441142682590502
+            ],
+            [
+              73.83158993930306,
+              18.44107914312758
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B208",
+        "unitNumber": "Ladies Toilet",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Restroom",
+        "role": "accessory",
+        "areaApproxSqm": 36,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B208",
+        "displayLabel": "Ladies Toilet",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83220410512156,
+              18.44101823562428
+            ],
+            [
+              73.83225670398824,
+              18.441013009371073
+            ],
+            [
+              73.83226208200956,
+              18.441077442999042
+            ],
+            [
+              73.83220965181873,
+              18.441082599741605
+            ],
+            [
+              73.83220410512156,
+              18.44101823562428
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B213",
+        "unitNumber": "Drawing Hall",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 112,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B213",
+        "displayLabel": "Drawing Hall",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83164456871435,
+              18.44107223593744
+            ],
+            [
+              73.8316516471699,
+              18.441134031612204
+            ],
+            [
+              73.83181278731416,
+              18.44111812299208
+            ],
+            [
+              73.83180618767004,
+              18.44105609846371
+            ],
+            [
+              73.83164456871435,
+              18.44107223593744
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B204",
+        "unitNumber": "Hod Civil Engg / Civil Department Office/ Faculty Room",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 48,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-B204",
+        "displayLabel": "Hod Civil Engg / Civil Department Office/ Faculty Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83190167968125,
+              18.441163638187227
+            ],
+            [
+              73.83190802478852,
+              18.44122577217625
+            ],
+            [
+              73.83197562092089,
+              18.44121923507745
+            ],
+            [
+              73.8319694858136,
+              18.441157006576525
+            ],
+            [
+              73.83190167968125,
+              18.441163638187227
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFT",
+        "unitNumber": "Lift",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Lift",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 14.6,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-LIFT",
+        "displayLabel": "Lift",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "outsideBuilding": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8315651181255,
+              18.441148923380542
+            ],
+            [
+              73.83159802308153,
+              18.441143768679208
+            ],
+            [
+              73.83160245179155,
+              18.441193609668414
+            ],
+            [
+              73.83156973220692,
+              18.441197070536326
+            ],
+            [
+              73.8315651181255,
+              18.441148923380542
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-C",
+        "unitNumber": "Central Stair Core",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 35.2,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-STAIRS-C",
+        "displayLabel": "Central Stair Core",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83189471280204,
+              18.441046596013926
+            ],
+            [
+              73.83195860913395,
+              18.441040004373484
+            ],
+            [
+              73.8319656792812,
+              18.441105299857327
+            ],
+            [
+              73.83190097581053,
+              18.441111451836218
+            ],
+            [
+              73.83189471280204,
+              18.441046596013926
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-E",
+        "unitNumber": "East End Stairs",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 32.3,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-STAIRS-E",
+        "displayLabel": "East End Stairs",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83221967012273,
+              18.441199456767567
+            ],
+            [
+              73.8322138287212,
+              18.441135332750846
+            ],
+            [
+              73.83226674967504,
+              18.441131536127116
+            ],
+            [
+              73.83227210957362,
+              18.441195735789915
+            ],
+            [
+              73.83221967012273,
+              18.441199456767567
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-W",
+        "unitNumber": "West End Stairs",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 32.3,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-STAIRS-W",
+        "displayLabel": "West End Stairs",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83161167468324,
+              18.441259982043807
+            ],
+            [
+              73.83160471119861,
+              18.441196408076234
+            ],
+            [
+              73.83165750077282,
+              18.441190703133056
+            ],
+            [
+              73.83166305472021,
+              18.44125427788377
+            ],
+            [
+              73.83161167468324,
+              18.441259982043807
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PASSAGE",
+        "unitNumber": "Main Passage",
+        "floorNumber": 1,
+        "floorLabel": "First Floor",
+        "spaceType": "Passage",
+        "role": "circulation",
+        "areaApproxSqm": 370.5,
+        "elevationMeters": 3.2,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F01-PASSAGE",
+        "displayLabel": "Main Passage",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83159823000909,
+              18.4411415001431
+            ],
+            [
+              73.83226212470588,
+              18.441076068982834
+            ],
+            [
+              73.8322664916859,
+              18.441128419951603
+            ],
+            [
+              73.83160426637532,
+              18.44119310187638
+            ],
+            [
+              73.83159823000909,
+              18.4411415001431
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F2-UNLABELED-1",
+        "unitNumber": "Tutorial Room 312",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 32,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-F2-UNLABELED-1",
+        "displayLabel": "Tutorial Room 312",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83204167925167,
+              18.441032605406978
+            ],
+            [
+              73.83204757789947,
+              18.441094952774115
+            ],
+            [
+              73.83209227777087,
+              18.441090542908338
+            ],
+            [
+              73.83208652208276,
+              18.441028134645105
+            ],
+            [
+              73.83204167925167,
+              18.441032605406978
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B303",
+        "unitNumber": "Tutorial Room",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 28,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B303",
+        "displayLabel": "Tutorial Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83177972240182,
+              18.441175566042403
+            ],
+            [
+              73.83178642995748,
+              18.441237528647697
+            ],
+            [
+              73.83182507819105,
+              18.44123379229957
+            ],
+            [
+              73.8318184910157,
+              18.441171774316782
+            ],
+            [
+              73.83177972240182,
+              18.441175566042403
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B302",
+        "unitNumber": "Nss Room",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 28,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B302",
+        "displayLabel": "Nss Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83173907002836,
+              18.441179542024503
+            ],
+            [
+              73.83174589708877,
+              18.441241446818523
+            ],
+            [
+              73.83178454594267,
+              18.441237710777333
+            ],
+            [
+              73.83177783861638,
+              18.441175750284568
+            ],
+            [
+              73.83173907002836,
+              18.441179542024503
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B301B",
+        "unitNumber": "Central Store",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 40,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B301B",
+        "displayLabel": "Central Store",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83168099525462,
+              18.441185222024995
+            ],
+            [
+              73.83168799191341,
+              18.441247043645692
+            ],
+            [
+              73.83174401306108,
+              18.44124162892972
+            ],
+            [
+              73.83173718623655,
+              18.441179726268235
+            ],
+            [
+              73.83168099525462,
+              18.441185222024995
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B308",
+        "unitNumber": "Java Lab",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B308",
+        "displayLabel": "Java Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83213397993487,
+              18.441140918849346
+            ],
+            [
+              73.83213961794802,
+              18.441203370587168
+            ],
+            [
+              73.83221878611704,
+              18.441195709745667
+            ],
+            [
+              73.83221340106928,
+              18.441133151474617
+            ],
+            [
+              73.83213397993487,
+              18.441140918849346
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B307",
+        "unitNumber": "Project Lab",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B307",
+        "displayLabel": "Project Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83205267474416,
+              18.44114887055899
+            ],
+            [
+              73.83205856277522,
+              18.441211212404195
+            ],
+            [
+              73.83213773373974,
+              18.441203552896948
+            ],
+            [
+              73.83213209590323,
+              18.441141103108244
+            ],
+            [
+              73.83205267474416,
+              18.44114887055899
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B306",
+        "unitNumber": "Class Room",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B306",
+        "displayLabel": "Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83197136966362,
+              18.441156822332047
+            ],
+            [
+              73.83197750497114,
+              18.44121905285708
+            ],
+            [
+              73.8320566786609,
+              18.441211394666894
+            ],
+            [
+              73.83205079081824,
+              18.441149054809273
+            ],
+            [
+              73.83197136966362,
+              18.441156822332047
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B314",
+        "unitNumber": "Class Room",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B314",
+        "displayLabel": "Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83180807105407,
+              18.441055910459824
+            ],
+            [
+              73.83181467091889,
+              18.441117937055864
+            ],
+            [
+              73.83189430256513,
+              18.441110077380834
+            ],
+            [
+              73.83188794595706,
+              18.44104793930402
+            ],
+            [
+              73.83180807105407,
+              18.441055910459824
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B310",
+        "unitNumber": "Dean Cabin/Department Office",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 24,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B310",
+        "displayLabel": "Dean Cabin/Department Office",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83217018105051,
+              18.441019796445755
+            ],
+            [
+              73.83217568497464,
+              18.441082315525207
+            ],
+            [
+              73.83220874027823,
+              18.441079055332377
+            ],
+            [
+              73.83220334531045,
+              18.441016491901777
+            ],
+            [
+              73.83217018105051,
+              18.441019796445755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B311",
+        "unitNumber": "Self Learning Lab/ Departmental Library",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B311",
+        "displayLabel": "Self Learning Lab/ Departmental Library",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83208840573585,
+              18.441027946875263
+            ],
+            [
+              73.83209416160298,
+              18.44109035707222
+            ],
+            [
+              73.83217380101188,
+              18.44108250134937
+            ],
+            [
+              73.83216829725626,
+              18.441019984176485
+            ],
+            [
+              73.83208840573585,
+              18.441027946875263
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B313",
+        "unitNumber": "Self Learning Lab/ Departmental Library",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B313",
+        "displayLabel": "Self Learning Lab/ Departmental Library",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83195991182644,
+              18.441040759857
+            ],
+            [
+              73.83196605828668,
+              18.441102996193298
+            ],
+            [
+              73.83204569412963,
+              18.441095138630217
+            ],
+            [
+              73.83203979566815,
+              18.441032793225386
+            ],
+            [
+              73.83195991182644,
+              18.441040759857
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B316",
+        "unitNumber": "Ladies Toilet",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Restroom",
+        "role": "accessory",
+        "areaApproxSqm": 36,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B316",
+        "displayLabel": "Ladies Toilet",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83158989284948,
+              18.441079107110923
+            ],
+            [
+              73.83164346196523,
+              18.441071779029077
+            ],
+            [
+              73.83165074467405,
+              18.441136858263153
+            ],
+            [
+              73.83159666814784,
+              18.44114257782043
+            ],
+            [
+              73.83158989284948,
+              18.441079107110923
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B309",
+        "unitNumber": "Gents Toilet",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Restroom",
+        "role": "accessory",
+        "areaApproxSqm": 36,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B309",
+        "displayLabel": "Gents Toilet",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8322041573803,
+              18.44101686644
+            ],
+            [
+              73.83225674497618,
+              18.441011634454817
+            ],
+            [
+              73.83226212470838,
+              18.44107606895288
+            ],
+            [
+              73.83220970593368,
+              18.441081231501332
+            ],
+            [
+              73.8322041573803,
+              18.44101686644
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B315",
+        "unitNumber": "Dr. A. P. J. Abdul Kalam Innovation Cell",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 112,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B315",
+        "displayLabel": "Dr. A. P. J. Abdul Kalam Innovation Cell",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83164456871435,
+              18.44107223593744
+            ],
+            [
+              73.8316516471699,
+              18.441134031612204
+            ],
+            [
+              73.83181278731416,
+              18.44111812299208
+            ],
+            [
+              73.83180618767004,
+              18.44105609846371
+            ],
+            [
+              73.83164456871435,
+              18.44107223593744
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B305",
+        "unitNumber": "Faculty Room",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 48,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B305",
+        "displayLabel": "Faculty Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83190167968125,
+              18.441163638187227
+            ],
+            [
+              73.83190802478852,
+              18.44122577217625
+            ],
+            [
+              73.83197562092089,
+              18.44121923507745
+            ],
+            [
+              73.8319694858136,
+              18.441157006576525
+            ],
+            [
+              73.83190167968125,
+              18.441163638187227
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B304",
+        "unitNumber": "Sports Room",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B304",
+        "displayLabel": "Sports Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83182037480172,
+              18.441171590075687
+            ],
+            [
+              73.83182696219968,
+              18.441233610148124
+            ],
+            [
+              73.8319061407694,
+              18.441225954359425
+            ],
+            [
+              73.83189979587306,
+              18.441163822429232
+            ],
+            [
+              73.83182037480172,
+              18.441171590075687
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B301A",
+        "unitNumber": "Stationery Store & Reprography",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 20,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-B301A",
+        "displayLabel": "Stationery Store & Reprography",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83165776536002,
+              18.441187494033393
+            ],
+            [
+              73.83166482949143,
+              18.441249282197873
+            ],
+            [
+              73.831691898434,
+              18.44124666608805
+            ],
+            [
+              73.83168491891945,
+              18.441184838269802
+            ],
+            [
+              73.83165776536002,
+              18.441187494033393
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFT",
+        "unitNumber": "Lift",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Lift",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 8.8,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-LIFT",
+        "displayLabel": "Lift",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "outsideBuilding": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83156499465477,
+              18.441149025154093
+            ],
+            [
+              73.83159722092168,
+              18.441144063779117
+            ],
+            [
+              73.83160221857443,
+              18.44119370796654
+            ],
+            [
+              73.83156957680016,
+              18.441197380525676
+            ],
+            [
+              73.83156499465477,
+              18.441149025154093
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-C",
+        "unitNumber": "Central Stair Core",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 39.2,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-STAIRS-C",
+        "displayLabel": "Central Stair Core",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83189482063713,
+              18.441046598517318
+            ],
+            [
+              73.83195904101171,
+              18.441040014660377
+            ],
+            [
+              73.83196515099486,
+              18.441105068420722
+            ],
+            [
+              73.83190098199917,
+              18.44111187318353
+            ],
+            [
+              73.83189482063713,
+              18.441046598517318
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-E",
+        "unitNumber": "East End Stairs",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 32.3,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-STAIRS-E",
+        "displayLabel": "East End Stairs",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83221721196908,
+              18.441199358066935
+            ],
+            [
+              73.83221331423839,
+              18.4411336639406
+            ],
+            [
+              73.83226553164086,
+              18.441131492392756
+            ],
+            [
+              73.8322733,
+              18.441197000000003
+            ],
+            [
+              73.83221721196908,
+              18.441199358066935
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-W",
+        "unitNumber": "West End Stairs",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 32.3,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-STAIRS-W",
+        "displayLabel": "West End Stairs",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83161210484403,
+              18.44125989171607
+            ],
+            [
+              73.83160463544887,
+              18.441195985462805
+            ],
+            [
+              73.83165691407204,
+              18.441190791162224
+            ],
+            [
+              73.83166371957986,
+              18.44125409001147
+            ],
+            [
+              73.83161210484403,
+              18.44125989171607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PASSAGE",
+        "unitNumber": "Main Passage",
+        "floorNumber": 2,
+        "floorLabel": "Second Floor",
+        "spaceType": "Passage",
+        "role": "circulation",
+        "areaApproxSqm": 370.5,
+        "elevationMeters": 6.4,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F02-PASSAGE",
+        "displayLabel": "Main Passage",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83159681057867,
+              18.44114146445925
+            ],
+            [
+              73.83226068587473,
+              18.44107602343236
+            ],
+            [
+              73.83226504075739,
+              18.441128368248783
+            ],
+            [
+              73.83160283537858,
+              18.441193060310237
+            ],
+            [
+              73.83159681057867,
+              18.44114146445925
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B401",
+        "unitNumber": "Corporate Culture Lab",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 27.5,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B401",
+        "displayLabel": "Corporate Culture Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; adjusted western boundary to snap to STAIRS-W eastern edge",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83165875654826,
+              18.441193346141077
+            ],
+            [
+              73.83166188650853,
+              18.441251939349243
+            ],
+            [
+              73.83170830628443,
+              18.44124711348276
+            ],
+            [
+              73.83170138324064,
+              18.441185342122736
+            ],
+            [
+              73.83165875654826,
+              18.441193346141077
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B402",
+        "unitNumber": "Tutee Hub-1 Class Room",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 66.2,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B402",
+        "displayLabel": "Tutee Hub-1 Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83170325735885,
+              18.441185071461916
+            ],
+            [
+              73.83171018956742,
+              18.441246924589258
+            ],
+            [
+              73.83180407111882,
+              18.441237852977007
+            ],
+            [
+              73.83179742118037,
+              18.441175865179947
+            ],
+            [
+              73.83170325735885,
+              18.441185071461916
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B403",
+        "unitNumber": "Tutee Hub-2 Smart Class Room",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 66.2,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B403",
+        "displayLabel": "Tutee Hub-2 Smart Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8317993049723,
+              18.44117568100419
+            ],
+            [
+              73.83180595513718,
+              18.441237670905668
+            ],
+            [
+              73.83189983305662,
+              18.44122859746043
+            ],
+            [
+              73.83189346880562,
+              18.441166474749128
+            ],
+            [
+              73.8317993049723,
+              18.44117568100419
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B404",
+        "unitNumber": "Computer Lab",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 62.1,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B404",
+        "displayLabel": "Computer Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83189535261765,
+              18.441166290571953
+            ],
+            [
+              73.83190171708054,
+              18.441228415344927
+            ],
+            [
+              73.83198969856038,
+              18.44121990978132
+            ],
+            [
+              73.83198360580064,
+              18.441157662218135
+            ],
+            [
+              73.83189535261765,
+              18.441166290571953
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B405",
+        "unitNumber": "Tutee Hub-3 Class Room",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 62.1,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B405",
+        "displayLabel": "Tutee Hub-3 Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83198548966784,
+              18.441157478036114
+            ],
+            [
+              73.83199158262593,
+              18.441219727618826
+            ],
+            [
+              73.83207956072438,
+              18.441211220394493
+            ],
+            [
+              73.83207374278808,
+              18.44114884971399
+            ],
+            [
+              73.83198548966784,
+              18.441157478036114
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B406",
+        "unitNumber": "A Space With D-Square Class Room",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 66.2,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B406",
+        "displayLabel": "A Space With D-Square Class Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83207562674644,
+              18.44114866552363
+            ],
+            [
+              73.83208144486778,
+              18.441211038180732
+            ],
+            [
+              73.83217531175103,
+              18.44120195930019
+            ],
+            [
+              73.83216979038842,
+              18.441139459370845
+            ],
+            [
+              73.83207562674644,
+              18.44114866552363
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B407",
+        "unitNumber": "Mindtree Lab",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Lab",
+        "role": "unit",
+        "areaApproxSqm": 30.7,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B407",
+        "displayLabel": "Mindtree Lab",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; adjusted eastern boundary to snap to STAIRS-E western edge",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83217167264772,
+              18.441139254375344
+            ],
+            [
+              73.83217719599877,
+              18.44120177680544
+            ],
+            [
+              73.8322189690762,
+              18.441197725638027
+            ],
+            [
+              73.8322140848498,
+              18.441134132662697
+            ],
+            [
+              73.83217167264772,
+              18.441139254375344
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B416",
+        "unitNumber": "Gents Toilet",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Restroom",
+        "role": "accessory",
+        "areaApproxSqm": 40.7,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B416",
+        "displayLabel": "Gents Toilet",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83158979999997,
+              18.441078999999995
+            ],
+            [
+              73.83164356927239,
+              18.441071781263975
+            ],
+            [
+              73.83165109571416,
+              18.441136794853122
+            ],
+            [
+              73.83159655986191,
+              18.44114257508775
+            ],
+            [
+              73.83158979999997,
+              18.441078999999995
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B415",
+        "unitNumber": "Prism Seminar Hall",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 92.6,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B415",
+        "displayLabel": "Prism Seminar Hall",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83165167814862,
+              18.44107354141457
+            ],
+            [
+              73.831658736421,
+              18.441135346790556
+            ],
+            [
+              73.83179166182434,
+              18.441122228194104
+            ],
+            [
+              73.83178499918168,
+              18.441060233715156
+            ],
+            [
+              73.83165167814862,
+              18.44107354141457
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B414",
+        "unitNumber": "Knowledge Waves Facility Room-Ii",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 33.6,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B414",
+        "displayLabel": "Knowledge Waves Facility Room-Ii",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83178688256599,
+              18.441060045758185
+            ],
+            [
+              73.83179354543263,
+              18.441122042314884
+            ],
+            [
+              73.83184055007258,
+              18.441117404206857
+            ],
+            [
+              73.83183403249681,
+              18.441055341248433
+            ],
+            [
+              73.83178688256599,
+              18.441060045758185
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B413",
+        "unitNumber": "Dean Cabin/Department Office",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Office",
+        "role": "unit",
+        "areaApproxSqm": 32.6,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B413",
+        "displayLabel": "Dean Cabin/Department Office",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83183591590068,
+              18.441055153346372
+            ],
+            [
+              73.83184243369222,
+              18.44111721835273
+            ],
+            [
+              73.83188795761006,
+              18.44111272678829
+            ],
+            [
+              73.83188158157458,
+              18.441050597885738
+            ],
+            [
+              73.83183591590068,
+              18.441055153346372
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B411",
+        "unitNumber": "Tutorial Room",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Classroom",
+        "role": "unit",
+        "areaApproxSqm": 67.2,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B411",
+        "displayLabel": "Tutorial Room",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83196667983916,
+              18.441042111198154
+            ],
+            [
+              73.83197280629615,
+              18.44110435640785
+            ],
+            [
+              73.83206870574048,
+              18.44109489762169
+            ],
+            [
+              73.83206287729979,
+              18.441032521458514
+            ],
+            [
+              73.83196667983916,
+              18.441042111198154
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B410",
+        "unitNumber": "Dcd Studio",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 37.7,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B410",
+        "displayLabel": "Dcd Studio",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83206476092111,
+              18.441032333715697
+            ],
+            [
+              73.83207058954504,
+              18.44109471183259
+            ],
+            [
+              73.83212352499172,
+              18.441089491520174
+            ],
+            [
+              73.83211786516189,
+              18.44102704168113
+            ],
+            [
+              73.83206476092111,
+              18.441032333715697
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B409",
+        "unitNumber": "Dcd Cell",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 62.1,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B409",
+        "displayLabel": "Dcd Cell",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83211974887135,
+              18.441026853993268
+            ],
+            [
+              73.83212540887591,
+              18.441089305752637
+            ],
+            [
+              73.83221390495315,
+              18.44108057991936
+            ],
+            [
+              73.83220852573278,
+              18.441018009994902
+            ],
+            [
+              73.83211974887135,
+              18.441026853993268
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B408",
+        "unitNumber": "Ladies Toilet",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Restroom",
+        "role": "accessory",
+        "areaApproxSqm": 32.6,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-B408",
+        "displayLabel": "Ladies Toilet",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83220944132036,
+              18.441015645545807
+            ],
+            [
+              73.83225699548746,
+              18.441010903489076
+            ],
+            [
+              73.83226237846917,
+              18.441075339639745
+            ],
+            [
+              73.83221497735519,
+              18.441080019030508
+            ],
+            [
+              73.83220944132036,
+              18.441015645545807
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFT",
+        "unitNumber": "Lift",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Lift",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 8.8,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-LIFT",
+        "displayLabel": "Lift",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true,
+        "outsideBuilding": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83156522639766,
+              18.441148926106223
+            ],
+            [
+              73.83159756052271,
+              18.441143967246365
+            ],
+            [
+              73.83160221857443,
+              18.44119370796654
+            ],
+            [
+              73.83156970133363,
+              18.441197279292613
+            ],
+            [
+              73.83156522639766,
+              18.441148926106223
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-C",
+        "unitNumber": "Central Stair Core",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 39.2,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-STAIRS-C",
+        "displayLabel": "Central Stair Core",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83189461437905,
+              18.44104648606849
+            ],
+            [
+              73.83195837649346,
+              18.44104021519361
+            ],
+            [
+              73.83196556165589,
+              18.441105404603668
+            ],
+            [
+              73.83190084831566,
+              18.44111164277276
+            ],
+            [
+              73.83189461437905,
+              18.44104648606849
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-E",
+        "unitNumber": "East End Stairs",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 32.3,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-STAIRS-E",
+        "displayLabel": "East End Stairs",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83221962373094,
+              18.44120055546158
+            ],
+            [
+              73.83221618955602,
+              18.44113547258791
+            ],
+            [
+              73.83226549588908,
+              18.44113259649795
+            ],
+            [
+              73.83226949497292,
+              18.441196844379533
+            ],
+            [
+              73.83221962373094,
+              18.44120055546158
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-W",
+        "unitNumber": "West End Stairs",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 32.3,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-STAIRS-W",
+        "displayLabel": "West End Stairs",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83161219999997,
+              18.441259999999996
+            ],
+            [
+              73.83160470002147,
+              18.441196302650468
+            ],
+            [
+              73.83165711870197,
+              18.441190902783024
+            ],
+            [
+              73.83166313880467,
+              18.441254280795633
+            ],
+            [
+              73.83161219999997,
+              18.441259999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PASSAGE",
+        "unitNumber": "Main Passage",
+        "floorNumber": 3,
+        "floorLabel": "Third Floor",
+        "spaceType": "Passage",
+        "role": "circulation",
+        "areaApproxSqm": 370.6,
+        "elevationMeters": 9.600000000000001,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F03-PASSAGE",
+        "displayLabel": "Main Passage",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied Third Floor layout image; stair/lift core positions carried over from the Second Floor for vertical alignment",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83159686056871,
+              18.44114475710113
+            ],
+            [
+              73.83226081082513,
+              18.441079415828685
+            ],
+            [
+              73.83226516500117,
+              18.441131770406873
+            ],
+            [
+              73.83160288346787,
+              18.441196361783945
+            ],
+            [
+              73.83159686056871,
+              18.44114475710113
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B515",
+        "unitNumber": "Cultural Room B514",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 112,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-B515",
+        "displayLabel": "Cultural Room B514",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83164441290862,
+              18.441074281197707
+            ],
+            [
+              73.83165268152057,
+              18.441137941705684
+            ],
+            [
+              73.83181903285443,
+              18.441121537537498
+            ],
+            [
+              73.83181244974142,
+              18.441059494155276
+            ],
+            [
+              73.83164441290862,
+              18.441074281197707
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B503",
+        "unitNumber": "Yoga Center",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-B503",
+        "displayLabel": "Yoga Center",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83182660503587,
+              18.441175011339503
+            ],
+            [
+              73.83183317477118,
+              18.441237039362
+            ],
+            [
+              73.83191233754778,
+              18.441229390518547
+            ],
+            [
+              73.83190601047583,
+              18.4411672507208
+            ],
+            [
+              73.83182660503587,
+              18.441175011339503
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B516",
+        "unitNumber": "Gents Toilet",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Restroom",
+        "role": "accessory",
+        "areaApproxSqm": 36,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-B516",
+        "displayLabel": "Gents Toilet",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83158978562192,
+              18.441079104916483
+            ],
+            [
+              73.83164356927239,
+              18.441071781263975
+            ],
+            [
+              73.8316508904992,
+              18.441136252594443
+            ],
+            [
+              73.83159674710475,
+              18.441142790094748
+            ],
+            [
+              73.83158978562192,
+              18.441079104916483
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-UNLABELED-1",
+        "unitNumber": "Unlabeled Room 1",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-F4-UNLABELED-1",
+        "displayLabel": "Unlabeled Room 1",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83174531571255,
+              18.44118295604894
+            ],
+            [
+              73.8317521252654,
+              18.441244868868797
+            ],
+            [
+              73.83183129074834,
+              18.441237221380298
+            ],
+            [
+              73.83182472123538,
+              18.441175195450697
+            ],
+            [
+              73.83174531571255,
+              18.44118295604894
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-UNLABELED-2",
+        "unitNumber": "Unlabeled Room 2",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-F4-UNLABELED-2",
+        "displayLabel": "Unlabeled Room 2",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83165717089575,
+              18.44119049870011
+            ],
+            [
+              73.8316641484485,
+              18.441252247792907
+            ],
+            [
+              73.83174933194466,
+              18.441242674326467
+            ],
+            [
+              73.83174462681157,
+              18.44118165132067
+            ],
+            [
+              73.83165717089575,
+              18.44119049870011
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-UNLABELED-3",
+        "unitNumber": "Unlabeled Room 3",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 56,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-F4-UNLABELED-3",
+        "displayLabel": "Unlabeled Room 3",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83181433430389,
+              18.441059317241375
+            ],
+            [
+              73.83182091647839,
+              18.441121351772274
+            ],
+            [
+              73.8319005326272,
+              18.44111349919106
+            ],
+            [
+              73.83189419386463,
+              18.44105135325854
+            ],
+            [
+              73.83181433430389,
+              18.441059317241375
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-UNLABELED-4",
+        "unitNumber": "Multipurpose Hall (Unlabeled)",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Hall",
+        "role": "unit",
+        "areaApproxSqm": 573.8,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-F4-UNLABELED-4",
+        "displayLabel": "Multipurpose Hall (Unlabeled)",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83195954366334,
+              18.4410428953474
+            ],
+            [
+              73.83197689909328,
+              18.441221114503882
+            ],
+            [
+              73.83227012528998,
+              18.441192703204408
+            ],
+            [
+              73.83225540009174,
+              18.441013368436696
+            ],
+            [
+              73.83195954366334,
+              18.4410428953474
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "F4-UNLABELED-5",
+        "unitNumber": "Unlabeled Room 5",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Facility",
+        "role": "unit",
+        "areaApproxSqm": 48,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-F4-UNLABELED-5",
+        "displayLabel": "Unlabeled Room 5",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true,
+        "unitGapMeters": 0.2,
+        "unitInsetMeters": 0.1,
+        "gapRendering": "geometry-inset",
+        "gapNote": "Unit footprint inset to create a visible separation from adjacent units; floor/elevation/height metadata unchanged."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83190789429983,
+              18.441167066606617
+            ],
+            [
+              73.83191422158194,
+              18.441229208461717
+            ],
+            [
+              73.83198180403475,
+              18.441222677229277
+            ],
+            [
+              73.83197568689678,
+              18.441160440935654
+            ],
+            [
+              73.83190789429983,
+              18.441167066606617
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-C",
+        "unitNumber": "Central Stair Core",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 35.2,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-STAIRS-C",
+        "displayLabel": "Central Stair Core",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83189483004531,
+              18.441046491073287
+            ],
+            [
+              73.83195894138407,
+              18.44103990410229
+            ],
+            [
+              73.83196493284895,
+              18.441105062154847
+            ],
+            [
+              73.83190067672696,
+              18.44111141888864
+            ],
+            [
+              73.83189483004531,
+              18.441046491073287
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STAIRS-W",
+        "unitNumber": "West End Stairs",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Stairs",
+        "role": "vertical-circulation",
+        "areaApproxSqm": 32.3,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-STAIRS-W",
+        "displayLabel": "West End Stairs",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83161178904291,
+              18.441259775895247
+            ],
+            [
+              73.83160437238692,
+              18.44119629304025
+            ],
+            [
+              73.83165707665759,
+              18.441191218086782
+            ],
+            [
+              73.83166369495999,
+              18.44125345645631
+            ],
+            [
+              73.83161178904291,
+              18.441259775895247
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PASSAGE",
+        "unitNumber": "Main Passage",
+        "floorNumber": 4,
+        "floorLabel": "Fourth Floor",
+        "spaceType": "Passage",
+        "role": "circulation",
+        "areaApproxSqm": 204.8,
+        "elevationMeters": 12.8,
+        "heightMeters": 3.2,
+        "ulpin": "3D-JSPM-NTC-B-BLOCK-F04-PASSAGE",
+        "displayLabel": "Main Passage",
+        "coordinateReference": "WGS84_FITTED_TO_SURVEYED_FOOTPRINT",
+        "geometrySource": "reconstructed proportionally from supplied PPTX floor-layout drawing",
+        "visibleUnit": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.83159741482474,
+              18.441144714974307
+            ],
+            [
+              73.83196416210262,
+              18.44110855142574
+            ],
+            [
+              73.83196921935613,
+              18.441160552466542
+            ],
+            [
+              73.83160337881529,
+              18.44119629391913
+            ],
+            [
+              73.83159741482474,
+              18.441144714974307
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "georeference": {
+    "coordinateSystem": "WGS84",
+    "surveyedFootprintWGS84": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            73.8316122,
+            18.44126
+          ],
+          [
+            73.8322733,
+            18.441197
+          ],
+          [
+            73.832257,
+            18.4410109
+          ],
+          [
+            73.8315898,
+            18.441079
+          ],
+          [
+            73.8316122,
+            18.44126
+          ]
+        ]
+      ]
+    },
+    "fitMethod": "bilinear quadrilateral transform",
+    "sourceFootprintCornersWGS84": {
+      "NW": [
+        73.8316339,
+        18.4412439
+      ],
+      "NE": [
+        73.8322219,
+        18.4411624
+      ],
+      "SE": [
+        73.83220182,
+        18.4409946
+      ],
+      "SW": [
+        73.83159,
+        18.4410723
+      ]
+    },
+    "targetFootprintCornersWGS84": {
+      "NW": [
+        73.8316122,
+        18.44126
+      ],
+      "NE": [
+        73.8322733,
+        18.441197
+      ],
+      "SE": [
+        73.832257,
+        18.4410109
+      ],
+      "SW": [
+        73.8315898,
+        18.441079
+      ]
+    },
+    "latitude": 18.441079,
+    "longitude": 73.8315898,
+    "elevationOffset": 0.0,
+    "anchorType": "surveyedStructureFootprint",
+    "referenceNote": "Feature geometries remain in WGS84 longitude/latitude coordinates fitted to the surveyed footprint. The local mapping below describes the target footprint corners relative to the southwest anchor; it does not convert feature geometries to local plan coordinates.",
+    "localBounds": {
+      "xmin": 0.0,
+      "ymin": -7.5300894000017,
+      "xmax": 72.180100077833,
+      "ymax": 20.013894000145847,
+      "units": "metres (local tangent approximation)"
+    },
+    "mapping": {
+      "type": "affine_quadrilateral",
+      "localSouthWest": [
+        0.0,
+        0.0
+      ],
+      "localNorthWest": [
+        2.3655219329384516,
+        20.013894000145847
+      ],
+      "localNorthEast": [
+        72.180100077833,
+        13.047732000056016
+      ],
+      "localSouthEast": [
+        70.45876045650033,
+        -7.5300894000017
+      ],
+      "worldSouthWest": [
+        73.8315898,
+        18.441079
+      ],
+      "worldNorthWest": [
+        73.8316122,
+        18.44126
+      ],
+      "worldNorthEast": [
+        73.8322733,
+        18.441197
+      ],
+      "worldSouthEast": [
+        73.832257,
+        18.4410109
+      ]
+    }
+  },
+  "bbox": [
+    73.83156499465477,
+    18.441010903489076,
+    73.8322733,
+    18.441259999999996
+  ],
+  "buildingName": "JSPM_NTC_Narhe_B_Block",
+  "buildingId": "JSPM-NTC-B-BLOCK",
+  "localCoordinateSystem": {
+    "units": "metres",
+    "origin": "southwest corner of surveyed target footprint",
+    "xAxis": "east-west",
+    "yAxis": "south-north",
+    "verticalAxis": "elevationMeters",
+    "floorHeightMeters": 3.2,
+    "drawingBasis": "Building B geometry fitted to the surveyed footprint using a bilinear quadrilateral transform. Feature geometries are retained in WGS84 coordinates."
+  },
+  "rendering": {
+    "unitGapMeters": 0.2,
+    "unitGapMethod": "inset-unit-footprints",
+    "unitGapAppliesTo": "features where properties.role == 'unit'",
+    "unitGapPreservesElevation": true
+  }
+}
